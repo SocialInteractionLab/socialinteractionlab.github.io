@@ -1,4 +1,4 @@
-basic_settings:
+ople/basic_settings:
   site_title: Social Interaction
   site_tagline: at UW-Madison
   favicon_image: /images/icon.png
@@ -15,7 +15,7 @@ menu_settings:
     - title: 'Projects'
       url: '/projects/'
     - title: 'People'
-      url: '/'
+      url: '/people/'
     #- title: 'Contact'
      # url: '/contact'
 
