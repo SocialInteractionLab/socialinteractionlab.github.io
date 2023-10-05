@@ -1,6 +1,6 @@
-site_title: Social Interaction Lab
+site: Social Interaction Lab
 site_tagline: Social Interaction Lab at UW-Madison!
-logo_image:
+logo_image: images/icon.png
 url: socialinteractionlab@github.io
 baseurl: 
 
