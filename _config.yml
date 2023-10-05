@@ -1,6 +1,7 @@
-site: Journal Jekyll Theme
-
-url: 
+site_title: Social Interaction Lab
+site_tagline: Social Interaction Lab at UW-Madison!
+logo_image:
+url: socialinteractionlab@github.io
 baseurl: 
 
 collections:
