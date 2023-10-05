@@ -15,7 +15,7 @@ menu_settings:
     - title: 'Projects'
       url: '/projects/'
     - title: 'People'
-      url: '/about'
+      url: '/'
     #- title: 'Contact'
      # url: '/contact'
 
