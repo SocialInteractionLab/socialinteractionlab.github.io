@@ -6,12 +6,12 @@ basic_settings:
 header_settings:
   logo_image: 
   logo_width: 200
-  overlay_opacity: 0.7
+  overlay_opacity: 0.9
 
 menu_settings:
   menu_items:
     - title: 'Papers'
-      url: '/papers/'
+      url: '/papers'
     - title: 'Projects'
       url: '/projects/'
     - title: 'People'
@@ -63,7 +63,7 @@ color_settings:
   text_light_color: '#ABB7B7'
   accent_color: '#A2DED0'
   border_color: '#dddddd'
-  overlay_background_color: '#161B21'
+  overlay_background_color: '#000000'
   overlay_text_color: '#ffffff'
   error_color: '#D64541'
 
@@ -87,9 +87,9 @@ font_settings:
     letter_spacing: 0
     line_height: 1.5
   menu:
-    small_size: 30
-    medium_size: 17
-    large_size: 18
+    small_size: 20
+    medium_size: 20
+    large_size: 20
     weight: 400
     letter_spacing: 0
   h1:

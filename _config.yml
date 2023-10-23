@@ -2,12 +2,12 @@ site: Social Interaction Lab
 site_tagline: Social Interaction Lab at UW-Madison!
 logo_image: images/icon.png
 url: socialinteractionlab@github.io
-baseurl: 
+baseurl:
 
 collections:
-  pages:
+  papers:
     output: true
-    permalink: /:name
+    permalink: /papers/:title
   posts:
     output: true
     permalink: /blog/:slug
