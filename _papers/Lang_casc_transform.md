@@ -3,8 +3,8 @@ title: "Reconstructing the cascade of language processing in the brain using the
 collection: publications
 permalink: 
 excerpt: 'Preprint, under review.'
-date: '1900-01-01' #jekyll requires this or the site will not build 
-publicationdate: 'TBD'
+date: '1900-01-01' #jekyll requires this or the site will not build. not sure what it does yet. order?
+publicationdate: 'TBD' #this is the one that shows up on the site
 venue: ''
 paperurl: 'https://www.biorxiv.org/content/10.1101/2022.06.08.495348v1.full.pdf'
 openmaterials: 'https://github.com/tsumers/bert-brains'

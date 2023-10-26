@@ -14,6 +14,9 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+  people:
+    output: true
+    permalink: /people/:slug
     
 
 defaults:

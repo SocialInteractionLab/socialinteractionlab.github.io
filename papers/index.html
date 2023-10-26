@@ -15,7 +15,7 @@ featured_image: /images/monstera3.jpg
 
   .file-list__item {
     margin-bottom: 5px; /* Add space between items */
-    display: flex; /* Display image and content side by side */
+    display: flex;/* Display image and content side by side */
     align-items: center; /* Vertically center content */
   }
 
@@ -44,7 +44,7 @@ featured_image: /images/monstera3.jpg
       {% for file in site.papers %}
         <li class="file-list__item">
           <div class="file-list__image">
-            <img class="image-max-width" src="/papers/images/{{ file.name | remove: '.md' }}.png">
+            <img class="image-max-width" src="/papers/images/{{ file.name | remove: '.md' }}.png" onerror="this.onerror=null; this.src='/papers/images/{{ file.name | remove: '.md' }}.jpg'; this.onerror=function() { this.src='/papers/images/no image.png'; };">
           </div>
           <div class="file-list__content">
             <p class="file-list__title"><a class="file-list__link" href="{{ file.paperurl }}" target="_blank">{{ file.title }} </a></p>

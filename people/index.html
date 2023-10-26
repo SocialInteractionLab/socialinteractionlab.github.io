@@ -1,47 +1,118 @@
 ---
-layout: defaultpeople
+layout: defaultpapers
 title: People
 subtitle: Members of the Social Interaction Lab.
 description: 
 featured_image: /images/monstera3.jpg
 ---
 
+
+<style>
+
+.file-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default list padding */
+  display: flex; /* Use flexbox to display items side by side */
+  flex-wrap: wrap; /* Wrap items to the next row if they don't fit */
+  justify-content: space-between; /* Distribute items with equal space between them */
+}
+
+.file-list__item {
+  margin-bottom: 5px; /* Add space between items */
+  align-items: center; /* Vertically center content */
+  width: calc(25% - 10px); /* Set the width to 25% minus some spacing (adjust as needed) */
+}
+
+.file-list__image {
+  margin-right: 15px !important;
+}
+
+.file-list__title {
+  font-size: 20px !important;
+}
+
+.image-max-width {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the images horizontally within the items */
+}
+
+/* Remove borders and padding on each item */
+.file-list__item {
+  border: none;
+  padding: 0;
+}
+
+  .image-container {
+    background-image: url('/images/group.jpg');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+    
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+
+</style>
+
+<script>
+  // Function to set container size based on the image
+  function setContainerSize() {
+    const imageContainer = document.querySelector('.image-container');
+    const image = new Image();
+    image.src = '/images/group.jpg';
+    image.onload = function () {
+      const width = this.width;
+      const height = this.height;
+      imageContainer.style.width = width + 'px';
+      imageContainer.style.height = height + 'px';
+    };
+  }
+
+  // Function to change the background image
+  function changeImage(imageUrl) {
+    const imageContainer = document.querySelector('.image-container');
+    imageContainer.style.backgroundImage = `url(${imageUrl})`;
+  }
+
+  // Set the initial size based on the default image
+  setContainerSize();
+</script>
+
 <section class="intro">
-
-	<div class="wrap">
-
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.subtitle }}</p>
-
-	</div>
-
+  <div class="image-container">
+    <div class="image" onmouseover="this.style.backgroundImage='url(/images/group2.jpg)'" onmouseout="this.style.backgroundImage='url(/images/group.jpg)'">
+    </div>
+  </div>
+  <div class="wrap">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
 </section>
+
 
 <section class="portfolio">
 
-	<div class="wrap">
-
-		{% for project in site.projects reversed %}
-
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
-
-				<div class="portfolio-item__image" style="background-image: url({{ project.featured_image | relative_url }});"></div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ project.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		{% endfor %}
-
-	</div>
-
+  <div class="wrap">
+    <ul class="file-list">
+     
+      {% for file in site.people %}
+        <li class="file-list__item">
+          <div class="file-list__image">
+            <img class="image-max-width" src="/images/people/{{ file.name | remove: '.md' }}.png" onerror="this.onerror=null; this.src='/images/people/{{ file.name | remove: '.md' }}.jpg'; this.onerror=function() { this.src='/images/no image 2.png'; };">
+          </div>
+          <div class="file-list__content">
+            <h2>{{ file.role }}</h2>
+            <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }} </a></p>
+            
+  	    {{ file.content | markdownify }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
