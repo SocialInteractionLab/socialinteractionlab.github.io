@@ -14,6 +14,7 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+    
 
 defaults:
   -

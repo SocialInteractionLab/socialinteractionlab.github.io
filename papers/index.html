@@ -14,14 +14,20 @@ featured_image: /images/monstera3.jpg
   }
 
   .file-list__item {
-    margin-bottom: 20px; /* Add space between items */
+    margin-bottom: 5px; /* Add space between items */
     display: flex; /* Display image and content side by side */
     align-items: center; /* Vertically center content */
   }
 
   .file-list__image {
-    flex: 0 0 auto; /* Make the image a fixed width */
-    margin-right: 20px; /* Add space between image and content */
+    margin-right: 15px !important;
+  }
+  .file-list__title {
+  font-size: 20px !important; 
+  }
+  .image-max-width {
+  max-width: 200px;
+  height: auto; 
   }
 </style>
 
@@ -38,21 +44,22 @@ featured_image: /images/monstera3.jpg
       {% for file in site.papers %}
         <li class="file-list__item">
           <div class="file-list__image">
-            <img src="/papers/images/{{ file.name | remove: '.md' }}.png">
+            <img class="image-max-width" src="/papers/images/{{ file.name | remove: '.md' }}.png">
           </div>
           <div class="file-list__content">
-            <h2 class="file-list__title">{{ file.title }}</h2>
+            <p class="file-list__title"><a class="file-list__link" href="{{ file.paperurl }}" target="_blank">{{ file.title }} </a></p>
             <p class="file-list__subtitle">{{ file.subtitle }}</p>
             <div class="file-list__description">
               {{ file.description }}
             </div>
-            <a class="file-list__link" href="{{ file.download_link }}" target="_blank">Download paper</a>
-            <div class="file-list__citation">
-              Recommended citation: {{ file.recommended_citation }}
-            </div>
+            <p>publication date: {{ file.publicationdate }}</p>
+            <!--<p><a class="file-list__link" href="{{ file.paperurl }}" target="_blank">view paper</a></p>-->
+            <p><a class="file-list__link" href="{{ file.openmaterials }}" target="_blank">open materials</a></p>
+  	    {{ file.content | markdownify }}
           </div>
         </li>
       {% endfor %}
     </ul>
   </div>
 </section>
+
