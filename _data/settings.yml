@@ -12,10 +12,12 @@ menu_settings:
   menu_items:
     - title: 'Papers'
       url: '/papers'
-    - title: 'Projects'
-      url: '/projects/'
     - title: 'People'
       url: '/people/'
+    - title: 'Lab News'
+      url: '/news/'
+    - title: 'Joining the Lab'
+      url: '/joining/'
     #- title: 'Contact'
      # url: '/contact'
 grid_settings:
