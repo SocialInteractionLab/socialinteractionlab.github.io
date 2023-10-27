@@ -6,113 +6,115 @@ description:
 featured_image: /images/monstera3.jpg
 ---
 
+<head>
+  <style>
+    .file-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-<style>
+    .file-list__item {
+      margin-bottom: 5px;
+      width: calc(25% - 10px);
+      position: relative;
+    }
 
-.file-list {
-  list-style: none; /* Remove bullet points */
-  padding: 0; /* Remove default list padding */
-  display: flex; /* Use flexbox to display items side by side */
-  flex-wrap: wrap; /* Wrap items to the next row if they don't fit */
-  justify-content: space-between; /* Distribute items with equal space between them */
-}
+    .file-list__image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      transition: opacity 0s ease; /* Remove the delay by setting transition duration to 0s */
+    }
 
-.file-list__item {
-  margin-bottom: 5px; /* Add space between items */
-  align-items: center; /* Vertically center content */
-  width: calc(25% - 10px); /* Set the width to 25% minus some spacing (adjust as needed) */
-}
+    .file-list__title {
+      font-size: 20px !important;
+    }
 
-.file-list__image {
-  margin-right: 15px !important;
-}
+    .file-list__text {
+      max-width: 100%;
+      height: auto;
+      display: none;
+      position: absolute;
+      background-color: white;
+      padding: 10px;
+      z-index: 1;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      top: 0;
+    }
 
-.file-list__title {
-  font-size: 20px !important;
-}
+    .file-list__item {
+      border: none;
+      padding: 0;
+    }
 
-.image-max-width {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto; /* Center the images horizontally within the items */
-}
+    .image-container {
+      position: relative;
+    }
 
-/* Remove borders and padding on each item */
-.file-list__item {
-  border: none;
-  padding: 0;
-}
+    .image {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
 
-  .image-container {
-    background-image: url('/images/group.jpg');
-    background-size: cover;
-    transition: background-image 0.3s ease;
-    
-  }
-  .image {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
+    .file-list__role-title {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
 
+    .image-container:hover .file-list__image {
+      opacity: 0; /* Make the image transparent on hover */
+    }
 
-</style>
+    .image-container:hover .file-list__text {
+      display: block;
+    }
+.group-image {
+      margin-bottom: 20px; 
+    }
+  </style>
+</head>
 
-<script>
-  // Function to set container size based on the image
-  function setContainerSize() {
-    const imageContainer = document.querySelector('.image-container');
-    const image = new Image();
-    image.src = '/images/group.jpg';
-    image.onload = function () {
-      const width = this.width;
-      const height = this.height;
-      imageContainer.style.width = width + 'px';
-      imageContainer.style.height = height + 'px';
-    };
-  }
-
-  // Function to change the background image
-  function changeImage(imageUrl) {
-    const imageContainer = document.querySelector('.image-container');
-    imageContainer.style.backgroundImage = `url(${imageUrl})`;
-  }
-
-  // Set the initial size based on the default image
-  setContainerSize();
-</script>
-
-<section class="intro">
-  <div class="image-container">
-    <div class="image" onmouseover="this.style.backgroundImage='url(/images/group2.jpg)'" onmouseout="this.style.backgroundImage='url(/images/group.jpg)'">
-    </div>
-  </div>
-  <div class="wrap">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.subtitle }}</p>
-  </div>
-</section>
-
-
-<section class="portfolio">
-
-  <div class="wrap">
-    <ul class="file-list">
-     
-      {% for file in site.people %}
-        <li class="file-list__item">
-          <div class="file-list__image">
-            <img class="image-max-width" src="/images/people/{{ file.name | remove: '.md' }}.png" onerror="this.onerror=null; this.src='/images/people/{{ file.name | remove: '.md' }}.jpg'; this.onerror=function() { this.src='/images/no image 2.png'; };">
+<body>
+  <section class="intro">
+  <div class="group-image">
+            <img src="/images/group.jpg">
+            <!--<div class="groupimage2">
+              <img src="/images/group2.jpg">
+            </div>-->
           </div>
-          <div class="file-list__content">
+    <div class="wrap">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.subtitle }}</p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="wrap">
+      <ul class="file-list">
+        {% for file in site.people %}
+        <li class="file-list__item">
+          <div class="image-container">
+            <img class="file-list__image" src="/images/people/{{ file.name | remove: '.md' }}.png"
+              onerror="this.onerror=null; this.src='/images/people/{{ file.name | remove: '.md' }}.jpg'; this.onerror=function() { this.src='/images/no image 2.png'; };">
+            <div class="file-list__text">
+              {{ file.content | markdownify }}
+            </div>
+          </div>
+          <div class="file-list__role-title">
             <h2>{{ file.role }}</h2>
-            <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }} </a></p>
-            
-  	    {{ file.content | markdownify }}
+            <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a></p>
           </div>
         </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</body>
