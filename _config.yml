@@ -11,9 +11,6 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
   people:
     output: true
     permalink: /people/:slug
@@ -38,11 +35,7 @@ defaults:
     values:
       layout: "post"
   -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
+
 
 markdown: kramdown
 
