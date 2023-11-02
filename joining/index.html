@@ -1,0 +1,120 @@
+---
+layout: defaultpapers
+title: People
+subtitle: Members of the Social Interaction Lab.
+description: 
+featured_image: /images/monstera3.jpg
+---
+
+<head>
+  <style>
+    .file-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .file-list__item {
+      margin-bottom: 5px;
+      width: calc(25% - 10px);
+      position: relative;
+    }
+
+    .file-list__image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      transition: opacity 0s ease; /* Remove the delay by setting transition duration to 0s */
+    }
+
+    .file-list__title {
+      font-size: 20px !important;
+    }
+
+    .file-list__text {
+      max-width: 100%;
+      height: auto;
+      display: none;
+      position: absolute;
+      background-color: white;
+      padding: 10px;
+      z-index: 1;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      top: 0;
+    }
+
+    .file-list__item {
+      border: none;
+      padding: 0;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .file-list__role-title {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .image-container:hover .file-list__image {
+      opacity: 0; /* Make the image transparent on hover */
+    }
+
+    .image-container:hover .file-list__text {
+      display: block;
+    }
+.group-image {
+      margin-bottom: 20px; 
+    }
+  </style>
+</head>
+
+<body>
+  <section class="intro">
+  <div class="group-image">
+            <img src="/images/group.jpg">
+            <!--<div class="groupimage2">
+              <img src="/images/group2.jpg">
+            </div>-->
+          </div>
+    <div class="wrap">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.subtitle }}</p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="wrap">
+      <ul class="file-list">
+        {% for file in site.people %}
+        <li class="file-list__item">
+          <div class="image-container">
+            <img class="file-list__image" src="/images/people/{{ file.name | remove: '.md' }}.jpg"
+             onerror="this.onerror=null; this.src='../images/people/{{ file.name | remove: '.md' }}.png'; this.onerror=function() { this.src='/images/no image 2.png'; };">
+            <div class="file-list__text">
+              {{ file.content | markdownify }}
+            </div>
+          </div>
+          <div class="file-list__role-title">
+            <h2>{{ file.role }}</h2>
+            <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a></p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</body>

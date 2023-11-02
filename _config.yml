@@ -14,6 +14,12 @@ collections:
   people:
     output: true
     permalink: /people/:slug
+  news:
+    output: true
+    permalink: /news/:slug
+  joining:
+    output: true
+    permalink: /joining/:slug
     
 
 defaults:
