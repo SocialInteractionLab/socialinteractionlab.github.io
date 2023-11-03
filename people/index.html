@@ -84,7 +84,7 @@ featured_image: /images/monstera3.jpg
             <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
             <div class="file-list__role-title">
                 <h2>{{ file.role }}</h2>
-              <p class="file-list__title">{{ file.title }}</p>
+              <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a></p>
             </div>
             <p class="file-list__bio">{{ file.content | markdownify }}</p>
           </div>
