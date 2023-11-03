@@ -5,7 +5,7 @@ journal: "Proceedings of the 43rd Annual Conference of the Cognitive Science Soc
 paperurl: 'https://escholarship.org/content/qt6xz612cb/qt6xz612cb.pdf'
 openmaterials: 'https://github.com/hawkrobe/code_switching'
 dataset: ' '
-image: 'code.png'
+image: '/images/papers/code.png'
 authors: "RD Hawkins, I Liu, AE Goldberg, TL Griffiths."
 
 

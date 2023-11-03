@@ -5,7 +5,7 @@ journal: ''
 paperurl: 'https://psyarxiv.com/4u5g6'
 openmaterials: ''
 dataset: ' '
-image: '/images/papers/Lang_casc_transform.png'
+image: ''
 authors: "AM Chen, A Palacci, N Vélez, RD Hawkins*, SJ Gershman*."
 
 

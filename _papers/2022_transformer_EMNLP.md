@@ -5,7 +5,7 @@ journal: "EMNLP."
 paperurl: 'https://arxiv.org/pdf/2205.01749.pdf'
 openmaterials: ' '
 dataset: ' '
-image: 'Transformer.png'
+image: '/images/papers/Transformer.png'
 authors: "J White, ND Goodman, RD Hawkins."
 
 collection: publications

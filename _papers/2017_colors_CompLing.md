@@ -9,6 +9,6 @@ journal: 'Transactions of the Association for Computational Linguistics.'
 paperurl: 'https://arxiv.org/abs/1703.10186'
 openmaterials: 'https://github.com/futurulus/coop-nets' 
 dataset: 'https://cocolab.stanford.edu/datasets/colors.html'
-image:'colors.png'
+image:'/images/papers/colors.png'
 authors: 'W Monroe, RD Hawkins, ND Goodman, C Potts.'
 ---

@@ -5,7 +5,7 @@ journal: "Open Mind."
 paperurl: 'https://direct.mit.edu/opmi/article/doi/10.1162/opmi_a_00061/112696/A-Pragmatic-Account-of-the-Weak-Evidence-Effect'
 openmaterials: 'https://github.com/s-a-barnett/bayesian-persuasion'
 dataset: ' '
-image: 'judgement.png'
+image: '/images/papers/judgement.png'
 authors: "SA Barnett, TL Griffiths, RD Hawkins."
 
 

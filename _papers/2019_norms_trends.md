@@ -5,7 +5,7 @@ journal: "Trends in Cognitive Sciences."
 paperurl: 'https://pcl.sitehost.iu.edu/papers/normEmergence.pdf'
 openmaterials: ' ' 
 dataset: ' '
-image: 'norms.png'
+image: '/images/papers/norms.png'
 authors: 'RD Hawkins, ND Goodman, RL Goldstone.'
 
 

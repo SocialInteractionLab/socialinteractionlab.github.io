@@ -6,7 +6,7 @@ paperurl: 'https://arxiv.org/abs/2107.00077'
 openmaterials: 'https://github.com/cogtoolslab/compositional-abstractions'
 talk:'https://www.youtube.com/watch?v=ZaAxG1-sKG0'
 dataset: ''
-image: 'shared.png'
+image: '/images/papers/shared.png'
 authors: "W McCarthy*, RD Hawkins*, C Holdaway, H Wang,  J Fan."
 
 

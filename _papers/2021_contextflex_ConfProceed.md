@@ -5,7 +5,7 @@ journal: "Proceedings of the 43rd Annual Conference of the Cognitive Science Soc
 paperurl: 'http://abhilashak.weebly.com/uploads/5/9/6/0/59603701/kumar_garg_hawkins_2021.pdf'
 openmaterials: 'https://github.com/hawkrobe/connector_cogsci'
 dataset: ' '
-image: 'contextflex.png'
+image: '/images/papers/contextflex.png'
 authors: "A Kumar, K Garg, RD Hawkins."
 
 

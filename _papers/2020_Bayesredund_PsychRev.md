@@ -5,7 +5,7 @@ journal: "Psychological Review."
 paperurl: 'https://rxdhawkins.files.wordpress.com/2023/07/2020-22960-001-1.pdf'
 openmaterials: 'https://github.com/thegricean/RE_production' 
 dataset: ' '
-image: 'Bayesredund.png'
+image: '/images/papers/Bayesredund.png'
 authors: "J Degen, RD Hawkins, C Graf, E Kreiss, ND Goodman."
 
 

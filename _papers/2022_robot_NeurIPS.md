@@ -5,7 +5,7 @@ journal: "NeurIPS."
 paperurl: 'https://arxiv.org/abs/2206.07870'
 openmaterials: 'https://github.com/tsumers/how-to-talk'
 context: "winner of best paper prize at 2022 NeurIPS Workshop on Language and Reinforcement Learning (LaReL)"
-image: 'robot.png'
+image: '/images/papers/robot.png'
 authors: "TR Sumers, RD Hawkins, MK Ho, TL Griffiths, D Hadfield-Menell."
 
 

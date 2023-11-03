@@ -8,6 +8,6 @@ publicationdate: '2016' #this is the one that shows up on the site
 journal: 'Vision Research.'
 paperurl: 'https://rxdhawkins.files.wordpress.com/2015/06/hawkinshoupteidelstownsend2015_dots.pdf'
 openmaterials: 'https://github.com/hawkrobe/dots-gestalt'
-image:'GestaltDots.png'
+image:'/images/papers/GestaltDots.png'
 authors: 'RD Hawkins, JW Houpt, A Eidels, JT Townsend.'
 ---

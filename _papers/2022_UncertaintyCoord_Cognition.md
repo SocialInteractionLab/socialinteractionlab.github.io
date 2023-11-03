@@ -5,7 +5,7 @@ journal: "Cognition."
 paperurl: 'http://arxiv.org/abs/2105.06546'
 openmaterials: 'https://github.com/hawkrobe/color-ref'
 dataset: ' '
-image: 'uncertainty.png'
+image: '/images/papers/uncertainty.png'
 authors: "S Murthy, TL Griffiths, RD Hawkins."
 
 collection: publications

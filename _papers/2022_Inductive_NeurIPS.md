@@ -5,7 +5,7 @@ journal: "NeurIPS."
 paperurl: 'https://arxiv.org/abs/2205.11558'
 openmaterials: ''
 context: "winner of NeurIPS outstanding paper award"
-image: 'inductiveBias.png'
+image: '/images/papers/inductiveBias.png'
 authors: ' '
 
 

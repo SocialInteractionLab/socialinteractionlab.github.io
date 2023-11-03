@@ -6,7 +6,7 @@ paperurl: 'https://psyarxiv.com/4fpr3'
 openmaterials: 'https://github.com/ashleychuikay/tangramgame'
 talk:'https://www.youtube.com/watch?v=pyGWuBbYMMk'
 context: "an earlier iteration of this paper appeared in the Proceedings of the 42nd Annual Conference of the Cognitive Science Society."
-image: 'convopacts.png'
+image: '/images/papers/convopacts.png'
 authors: "A Leung, D Yurovsky, RD Hawkins."
 
 
