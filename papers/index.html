@@ -41,7 +41,7 @@ featured_image: /images/monstera3.jpg
 <section class="portfolio">
   <div class="wrap">
     <ul class="file-list">
-      {% for file in site.papers %}
+      {% for file in site.papers reversed %}
         <li class="file-list__item">
           <div class="file-list__image">
             <!--<img class="image-max-width" src="/images/papers/{{ file.name | r: '.md' }}.png" onerror="this.onerror=null; this.src='/images/papers/{{ file.name | remove: '.md' }}.jpg'; this.onerror=function() { this.src='images/noimage.png'; };">-->
