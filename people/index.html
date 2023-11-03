@@ -13,11 +13,11 @@ featured_image: /images/monstera3.jpg
       padding: 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     .file-list__item {
-      margin-bottom: 5px;
+      margin-bottom: 100px;
       width: calc(25% - 10px);
       position: relative;
     }
@@ -27,8 +27,7 @@ featured_image: /images/monstera3.jpg
       height: auto;
       display: block;
       margin: 0 auto;
-      transition: opacity 0s ease; /* Remove the delay by setting transition duration to 0s */
-    }
+      transition: opacity 0.3s ease-in-out; /* Ensure ease-in-out timing function */    }
 
     .file-list__title {
       font-size: 20px !important;
@@ -55,6 +54,7 @@ featured_image: /images/monstera3.jpg
 
     .image-container {
       position: relative;
+      overflow: hidden; /* Add this line to hide overflowing elements (the image) */
     }
 
     .image {
