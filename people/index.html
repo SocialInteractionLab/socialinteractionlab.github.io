@@ -6,6 +6,8 @@ description:
 featured_image: /images/monstera3.jpg
 ---
 
+<!DOCTYPE html>
+<html>
 <head>
   <style>
     .file-list {
@@ -13,83 +15,60 @@ featured_image: /images/monstera3.jpg
       padding: 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     .file-list__item {
-      margin-bottom: 100px;
-      width: calc(25% - 10px);
+      margin-bottom: 20px;
+      width: calc(33.33% - 20px);
       position: relative;
-    }
-
-    .file-list__image {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      transition: opacity 0.3s ease-in-out; /* Ensure ease-in-out timing function */    }
-
-    .file-list__title {
-      font-size: 20px !important;
-    }
-
-    .file-list__text {
-      max-width: 100%;
-      height: auto;
-      display: none;
-      position: absolute;
-      background-color: white;
-      padding: 10px;
-      z-index: 1;
-      width: 100%;
-      text-align: center;
-      font-size: 16px;
-      top: 0;
-    }
-
-    .file-list__item {
-      border: none;
-      padding: 0;
     }
 
     .image-container {
-      position: relative;
-      overflow: hidden; /* Add this line to hide overflowing elements (the image) */
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center; /* Center the content */
     }
 
     .image {
       width: 100%;
-      height: 100%;
+      height: auto;
       cursor: pointer;
     }
 
     .file-list__role-title {
-      position: relative;
-      z-index: 2;
       text-align: center;
+      margin-top: 10px; /* Add margin to separate name from the bio */
     }
 
-    .image-container:hover .file-list__image {
-      opacity: 0; /* Make the image transparent on hover */
+    .file-list__title {
+      font-size: 20px !important;
+      display: block; /* Display the title */
     }
 
-    .image-container:hover .file-list__text {
-      display: block;
+    .file-list__bio {
+      font-size: 16px;
+      display: none; /* Hide the bio initially */
     }
-.group-image {
-      margin-bottom: 20px; 
+
+    .file-list__item:hover .file-list__bio {
+      display: block; /* Show the bio on hover */
+    }
+
+    .group-image {
+      margin-bottom: 20px;
     }
   </style>
 </head>
-
 <body>
   <section class="intro">
-  <div class="group-image">
-            <img src="/images/group.jpg">
-            <!--<div class="groupimage2">
-              <img src="/images/group2.jpg">
-            </div>-->
-          </div>
+    <div class="group-image">
+      <img src="/images/group.jpg">
+      <!--<div class="groupimage2">
+        <img src="/images/group2.jpg">
+      </div>-->
+    </div>
     <div class="wrap">
       <h1>{{ page.title }}</h1>
       <p>{{ page.subtitle }}</p>
@@ -102,14 +81,12 @@ featured_image: /images/monstera3.jpg
         {% for file in site.people %}
         <li class="file-list__item">
           <div class="image-container">
-            <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" />
-            <div class="file-list__text">
-              {{ file.content | markdownify }}
+            <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
+            <div class="file-list__role-title">
+                <h2>{{ file.role }}</h2>
+              <p class="file-list__title">{{ file.title }}</p>
             </div>
-          </div>
-          <div class="file-list__role-title">
-            <h2>{{ file.role }}</h2>
-            <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a></p>
+            <p class="file-list__bio">{{ file.content | markdownify }}</p>
           </div>
         </li>
         {% endfor %}
@@ -117,3 +94,4 @@ featured_image: /images/monstera3.jpg
     </div>
   </section>
 </body>
+</html>
