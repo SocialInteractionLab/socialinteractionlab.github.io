@@ -68,10 +68,10 @@
 	background: rgba($overlay-background-color, $overlay-opacity);
 
 	@include mq(tabletl) {
-		background: -moz-linear-gradient(bottom, rgba($overlay-background-color, 0) 0%, rgba($overlay-background-color, 0.01) 1%, rgba($overlay-background-color, $overlay-opacity) 70%, rgba($overlay-background-color, $overlay-opacity) 100%);
-		background: -webkit-linear-gradient(bottom, rgba($overlay-background-color, 0) 0%, rgba($overlay-background-color, 0.01) 1%, rgba($overlay-background-color, $overlay-opacity) 70%, rgba($overlay-background-color, $overlay-opacity) 100%);
-		background: linear-gradient(to top, rgba($overlay-background-color, 0) 0%, rgba($overlay-background-color, 0.01) 1%, rgba($overlay-background-color, $overlay-opacity) 70%, rgba($overlay-background-color, $overlay-opacity) 100%);
-	}
+		background: -moz-linear-gradient(bottom, rgba($overlay-background-color, 0) 30%, rgba($overlay-background-color, 0.01) 40%, rgba($overlay-background-color, $overlay-opacity) 70%, rgba($overlay-background-color, $overlay-opacity) 100%);
+background: -webkit-linear-gradient(bottom, rgba($overlay-background-color, 0) 30%, rgba($overlay-background-color, 0.01) 40%, rgba($overlay-background-color, $overlay-opacity) 70%, rgba($overlay-background-color, $overlay-opacity) 100%);
+background: linear-gradient(to top, rgba($overlay-background-color, 0) 30%, rgba($overlay-background-color, 0.01) 40%, rgba($overlay-background-color, $overlay-opacity) 70%, rgba($overlay-background-color, $overlay-opacity) 100%);
+}
 }
 
 .header__content {

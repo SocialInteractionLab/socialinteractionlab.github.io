@@ -15,19 +15,21 @@ featured_image: /images/monstera3.jpg
 
   .file-list__item {
     margin-bottom: 5px; /* Add space between items */
-    display: flex;/* Display image and content side by side */
+    display: flex; /* Display image and content side by side */
     align-items: center; /* Vertically center content */
   }
 
   .file-list__image {
     margin-right: 15px !important;
   }
+
   .file-list__title {
-  font-size: 20px !important; 
+    font-size: 20px !important;
   }
+
   .image-max-width {
-  max-width: 200px;
-  height: auto; 
+    max-width: 200px;
+    height: auto;
   }
 </style>
 
@@ -44,10 +46,13 @@ featured_image: /images/monstera3.jpg
       {% for file in site.papers reversed %}
         <li class="file-list__item">
           <div class="file-list__image">
-             <img src="{% if file.image %}{{ file.image }}{% else %}/images/noimage.png{% endif %}" />
+            <img class="image-max-width" src="{% if file.image %}{{ file.image }}{% else %}/images/noimage.png{% endif %}" />
           </div>
           <div class="file-list__content">
-            <p class="file-list__title"><a class="file-list__link" href="{{ file.paperurl }}" target="_blank">{{ file.title }} </a></p>
+            <p class="file-list__title">
+  <a class="file-list__link" href="{{ file.paperurl | default: '' }}" target="_blank">{{ file.title }}</a>
+</p>
+
             <p class="file-list__subtitle">{{ file.subtitle }}</p>
             <div class="file-list__description">
               {{ file.description }}
@@ -55,11 +60,10 @@ featured_image: /images/monstera3.jpg
             <p>publication date: {{ file.publicationdate }}</p>
             <!--<p><a class="file-list__link" href="{{ file.paperurl }}" target="_blank">view paper</a></p>-->
             <p><a class="file-list__link" href="{{ file.openmaterials }}" target="_blank">open materials</a></p>
-  	    {{ file.content | markdownify }}
+            {{ file.content | markdownify }}
           </div>
         </li>
       {% endfor %}
     </ul>
   </div>
 </section>
-
