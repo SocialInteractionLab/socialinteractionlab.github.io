@@ -5,7 +5,7 @@ journal: 'TBA'
 paperurl: 'https://psyarxiv.com/gscy6'
 openmaterials: ''
 dataset: ' '
-image: 'GroupCoord.png'
+image: 'images/GroupCoord.png'
 authors: "CM Wu, R Dale, RD Hawkins."
 
 

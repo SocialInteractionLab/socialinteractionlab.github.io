@@ -102,8 +102,7 @@ featured_image: /images/monstera3.jpg
         {% for file in site.people %}
         <li class="file-list__item">
           <div class="image-container">
-            <img class="file-list__image" src="/images/people/{{ file.name | remove: '.md' }}.jpg"
-             onerror="this.onerror=null; this.src='../images/people/{{ file.name | remove: '.md' }}.png'; this.onerror=function() { this.src='/images/no image 2.png'; };">
+            <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" />
             <div class="file-list__text">
               {{ file.content | markdownify }}
             </div>

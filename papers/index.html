@@ -44,8 +44,7 @@ featured_image: /images/monstera3.jpg
       {% for file in site.papers reversed %}
         <li class="file-list__item">
           <div class="file-list__image">
-            <!--<img class="image-max-width" src="/images/papers/{{ file.name | r: '.md' }}.png" onerror="this.onerror=null; this.src='/images/papers/{{ file.name | remove: '.md' }}.jpg'; this.onerror=function() { this.src='images/noimage.png'; };">-->
-            <img class="image-max-width" src="/images/noimage.png">
+             <img src="{% if file.image %}{{ file.image }}{% else %}/images/noimage.png{% endif %}" />
           </div>
           <div class="file-list__content">
             <p class="file-list__title"><a class="file-list__link" href="{{ file.paperurl }}" target="_blank">{{ file.title }} </a></p>
