@@ -31,20 +31,23 @@ featured_image: /images/monstera3.jpg
     height: auto;
   }
 </style>
-
+<head>
 <section class="intro">
   <div class="wrap">
     <h1>{{ page.title }}</h1>
     <p>{{ page.subtitle }}</p>
   </div>
 </section>
+</head>
+<body>
  <section class="portfolio">
     <div class="wrap">
       <ul class="file-list">
       {% for file in site.papers reversed %}
         <li class="file-list__item">
+          <div class="image-container">
           <div class="file-list__image">
-            <img class="image-max-width" src="{% if file.image %}{{ file.image }}{% else %}/images/noimage.png{% endif %}" />
+            <img src="{% if file.image %}{{ file.image }}{% else %}/images/noimage.png{% endif %}" />
           </div>
           <div class="file-list__content">
             <div class="file-list__title"> <a href="{{ file.paperurl }}" >{{ file.title }}</a> </div>
@@ -61,9 +64,8 @@ featured_image: /images/monstera3.jpg
   </div>
 </section>
 
-</head>
-<body>
-  
-
+</body>
  
-     
+      
+  
+            
