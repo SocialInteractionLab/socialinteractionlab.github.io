@@ -8,19 +8,24 @@ collections:
   papers:
     output: true
     permalink: /papers/:title
-  posts:
-    output: true
-    permalink: /blog/:slug
+  
+
   people:
     output: true
     permalink: /people/:slug
+  
+
   news:
     output: true
     permalink: /news/:slug
   joining:
     output: true
     permalink: /joining/:slug
-    
+  
+  
+
+
+
 
 defaults:
   -

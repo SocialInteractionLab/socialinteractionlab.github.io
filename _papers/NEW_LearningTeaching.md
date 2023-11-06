@@ -1,7 +1,7 @@
 ---
 title: "Learning to teach, teaching to learn."
-publicationdate: ''
-journal: ''
+publicationdate: '2023'
+journal: 'TBA'
 paperurl: 'https://psyarxiv.com/4u5g6'
 openmaterials: ''
 dataset: ' '

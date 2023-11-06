@@ -1,5 +1,5 @@
 ---
-title: "Can two dots form a Gestalt? Measuring emergent features with the capacity co­effi­cient."
+title: "Can two dots form a Gestalt? Measuring emergent features with the capacity coefficient."
 collection: publications
 permalink: 
 excerpt: 

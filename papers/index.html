@@ -7,16 +7,15 @@ featured_image: /images/monstera3.jpg
 ---
 
 <style>
-  /* Custom CSS for the file list */
   .file-list {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default list padding */
+    list-style: none; 
+    padding: 0; 
   }
 
   .file-list__item {
-    margin-bottom: 5px; /* Add space between items */
-    display: flex; /* Display image and content side by side */
-    align-items: center; /* Vertically center content */
+    margin-bottom: 5px; 
+    display: flex;
+    align-items: center; 
   }
 
   .file-list__image {
@@ -39,28 +38,19 @@ featured_image: /images/monstera3.jpg
     <p>{{ page.subtitle }}</p>
   </div>
 </section>
-
-<section class="portfolio">
-  <div class="wrap">
-    <ul class="file-list">
       {% for file in site.papers reversed %}
         <li class="file-list__item">
           <div class="file-list__image">
             <img class="image-max-width" src="{% if file.image %}{{ file.image }}{% else %}/images/noimage.png{% endif %}" />
           </div>
           <div class="file-list__content">
-            <p class="file-list__title">
-  <a class="file-list__link" href="{{ file.paperurl | default: '' }}" target="_blank">{{ file.title }}</a>
-</p>
-
+            <div class="file-list__title"> <a href="{{ file.paperurl }}" >{{ file.title }}</a> </div>
             <p class="file-list__subtitle">{{ file.subtitle }}</p>
             <div class="file-list__description">
               {{ file.description }}
             </div>
             <p>publication date: {{ file.publicationdate }}</p>
-            <!--<p><a class="file-list__link" href="{{ file.paperurl }}" target="_blank">view paper</a></p>-->
             <p><a class="file-list__link" href="{{ file.openmaterials }}" target="_blank">open materials</a></p>
-            {{ file.content | markdownify }}
           </div>
         </li>
       {% endfor %}

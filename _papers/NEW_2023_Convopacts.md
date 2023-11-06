@@ -1,6 +1,6 @@
 ---
 title: "Parents scaffold the formation of conversational pacts with their children."
-publicationdate: (under review)
+publicationdate: '2023'
 journal: ''
 paperurl: 'https://psyarxiv.com/4fpr3'
 openmaterials: 'https://github.com/ashleychuikay/tangramgame'
@@ -10,6 +10,6 @@ image: '/images/papers/convopacts.png'
 authors: "A Leung, D Yurovsky, RD Hawkins."
 
 
-collection: publications
+collection: papers/new
 date: '1900-01-01' #jekyll requires this. publicationdate is what shows up
 ---
