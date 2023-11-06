@@ -6,9 +6,9 @@ description:
 featured_image: /images/monstera3.jpg
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     .file-list {
       list-style: none;
@@ -20,7 +20,7 @@ featured_image: /images/monstera3.jpg
 
     .file-list__item {
       margin-bottom: 20px;
-      width: calc(33.33% - 20px);
+      width: calc(33.33% - 10px);
       position: relative;
     }
 
@@ -47,18 +47,33 @@ featured_image: /images/monstera3.jpg
       display: block; /* Display the title */
     }
 
-    .file-list__bio {
-      font-size: 16px;
-      display: none; /* Hide the bio initially */
-    }
-
-    .file-list__item:hover .file-list__bio {
-      display: block; /* Show the bio on hover */
-    }
-
     .group-image {
       margin-bottom: 20px;
     }
+
+
+@media (max-width: 768px) {
+  .file-list__item {
+      margin-bottom: 20px;
+      width: calc(100% - 20px);
+      position: relative;}
+
+  .file-list__image,.file-list__role-title, .file-list__bio{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: calc(50% - 10px);
+    float: left; 
+  }
+
+  
+ .file-list__bio {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      float: center; 
+    }
+
+}
   </style>
 </head>
 <body>
@@ -81,13 +96,13 @@ featured_image: /images/monstera3.jpg
         {% for file in site.people %}
         <li class="file-list__item">
           <div class="image-container">
-            <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
+            <div class="file-list__image">
+            <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" /> </div>
             <div class="file-list__role-title">
                 <h2>{{ file.role }}</h2>
-              <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a></p>
-
-            </div>
-            <p class="file-list__bio">{{ file.content | markdownify }}</p>
+              <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a></p></div>
+            <div class="file-list__bio">
+            <p>{{ file.content | markdownify }}</p> </div>
           </div>
         </li>
         {% endfor %}
