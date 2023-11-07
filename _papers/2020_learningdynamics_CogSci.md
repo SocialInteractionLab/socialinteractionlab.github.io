@@ -4,7 +4,7 @@ publicationdate: "2020"
 journal: "Cognitive Science."
 paperurl: 'https://rxdhawkins.files.wordpress.com/2021/10/tangrams_paper.pdf'
 openmaterials: 'https://github.com/hawkrobe/tangrams'
-dataset: ' '
+dataset: ''
 image: '/images/papers/tanagrams.png'
 authors: "RD Hawkins, MC Frank, ND Goodman."
 

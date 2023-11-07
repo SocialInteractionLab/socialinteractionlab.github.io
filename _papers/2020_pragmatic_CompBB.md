@@ -4,7 +4,7 @@ publicationdate: "2020"
 journal: "Computational Brain & Behavior."
 paperurl: 'https://rdcu.be/bQqxr'
 openmaterials: 'https://github.com/judithfan/visual_communication_in_context' 
-dataset: ' '
+dataset: ''
 image: '/images/papers/pragmatic.png'
 authors: "JE Fan, RD Hawkins, M Wu, ND Goodman."
 

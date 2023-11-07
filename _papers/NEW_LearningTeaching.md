@@ -1,10 +1,10 @@
 ---
 title: "Learning to teach, teaching to learn."
-publicationdate: '2023'
-journal: 'TBA'
+publicationdate: 'Preprint'
+journal: ''
 paperurl: 'https://psyarxiv.com/4u5g6'
 openmaterials: ''
-dataset: ' '
+dataset: ''
 image: ''
 authors: "AM Chen, A Palacci, N Vélez, RD Hawkins*, SJ Gershman*."
 

@@ -9,6 +9,6 @@ journal: 'Advances in Methods and Practices in Psychological Science.'
 paperurl: 'https://psyarxiv.com/p73he'
 openmaterials: 'https://osf.io/98ta4/' 
 dataset: ''
-image:'/images/papers/pedagogyrep.png'
+image: '/images/papers/pedagogyrep.png'
 authors: 'RD Hawkins*, EN Smith*, C Au, JM Arias, R Catapano, E Hermann, M Keil, A Lampinen, S Raposo, J Reynolds, S Salehi, J Salloum, J Tan, MC Frank.'
 ---

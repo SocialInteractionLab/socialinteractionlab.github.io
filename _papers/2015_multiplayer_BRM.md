@@ -8,6 +8,6 @@ publicationdate: '2015' #this is the one that shows up on the site
 journal: 'Behavior Research Methods.'
 paperurl: 'https://rxdhawkins.files.wordpress.com/2014/10/hawkins14_realtimewebexperiments.pdf'
 openmaterials: 'https://github.com/hawkrobe/MWERT'
-image:'/images/papers/multiplayer.png'
+image: '/images/papers/multiplayer.png'
 authors: 'RD Hawkins.'
 ---

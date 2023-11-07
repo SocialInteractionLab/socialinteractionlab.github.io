@@ -4,10 +4,10 @@ collection: publications
 permalink: 
 
 date: '1900-01-01' #jekyll requires this or the site will not build.
-publicationdate: '2013'
-journal: 'TBD'
+publicationdate: 'Preprint'
+journal: ''
 paperurl: 'https://www.biorxiv.org/content/10.1101/2022.06.08.495348v1.full.pdf'
 openmaterials: 'https://github.com/tsumers/bert-brains'
-image:'/images/papers/lang_casc_transform.png'
+image: '/images/papers/lang.png'
 authors: 'TR Sumers*, S Kumar*, T Yamakoshi, KA Norman, U Hasson, TL Griffiths, RD Hawkins, SA Nastase'
 ---

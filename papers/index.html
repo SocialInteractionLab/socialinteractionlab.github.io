@@ -8,64 +8,127 @@ featured_image: /images/monstera3.jpg
 
 <style>
   .file-list {
-    list-style: none; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
   }
 
   .file-list__item {
-    margin-bottom: 5px; 
+    margin-bottom: 70px;
     display: flex;
-    align-items: center; 
+    align-items: center;
   }
 
   .file-list__image {
     margin-right: 15px !important;
+    width: 200px;
+    height: 150px;
   }
 
   .file-list__title {
     font-size: 20px !important;
   }
 
-  .image-max-width {
-    max-width: 200px;
-    height: auto;
+  .file-list__content {
+    flex: 1;
+    padding-left: 20px;
   }
+
+  .another_image_container {
+    width: 200px;
+    height: 150px;
+  }
+
+
+  .sticky-date {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; 
+    z-index: 1; 
+    padding: 10px; 
+  }
+
 </style>
-<head>
-<section class="intro">
-  <div class="wrap">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.subtitle }}</p>
-  </div>
-</section>
-</head>
+
 <body>
- <section class="portfolio">
+
+  <section class="portfolio">
     <div class="wrap">
       <ul class="file-list">
-      {% for file in site.papers reversed %}
-        <li class="file-list__item">
-          <div class="image-container">
-          <div class="file-list__image">
-            <img src="{% if file.image %}{{ file.image }}{% else %}/images/noimage.png{% endif %}" />
+        {% assign papersByDate = site.papers | group_by: "publicationdate" | reverse %}
+        {% for date_group in papersByDate  %}
+          <!-- Make the date "sticky" here -->
+          <div class="sticky-date">
+            <h2>{{ date_group.name }}</h2>
           </div>
-          <div class="file-list__content">
-            <div class="file-list__title"> <a href="{{ file.paperurl }}" >{{ file.title }}</a> </div>
-            <p class="file-list__subtitle">{{ file.subtitle }}</p>
-            <div class="file-list__description">
-              {{ file.description }}
-            </div>
-            <p>publication date: {{ file.publicationdate }}</p>
-            <p><a class="file-list__link" href="{{ file.openmaterials }}" target="_blank">open materials</a></p>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+          {% for file in date_group.items %}
+            <li class="file-list__item" >
+              {% if file.image and file.image != "" %}
+              <div class="file-list__image">
+                <img class="another_image_container" src="{{ file.image }}" />
+              </div>
+              {% endif %}
+              <div class="file-list__content" > 
+                <div class="file-list__title"> <a href="{{ file.paperurl }}" >{{ file.title }}</a> </div>
+                <p class="file-list__authors">{{ file.authors }}</p>
+                <p class="file-list__journal">{{ file.journal }}</p>
+                <div class="file-list__description">
+                  {{ file.context }}
+                </div>
+{% assign item_count = 0 %}
 
-</body>
- 
-      
+<p> <!-- yes this is overdone no I don't want to change it. if statements to include a dash each time there's more than one item -->
+  {% if file.openmaterials and file.openmaterials != "" %}
+    {% assign item_count = item_count | plus: 1 %}
+    {% if item_count > 1 %}
+      - 
+    {% endif %}
+    <a href="{{ file.openmaterials }}" target="_blank">open materials</a>
+  {% endif %}
   
-            
+  {% if file.talk and file.talk != "" %}
+    {% assign item_count = item_count | plus: 1 %}
+    {% if item_count > 1 %}
+      - 
+    {% endif %}
+    <a href="{{ file.talk }}" target="_blank">talk</a>
+  {% endif %}
+
+  {% if file.dataset and file.dataset != "" %}
+    {% assign item_count = item_count | plus: 1 %}
+    {% if item_count > 1 %}
+      - 
+    {% endif %}
+    <a href="{{ file.dataset }}" target="_blank">dataset</a>
+  {% endif %}
+
+  {% if file.demos and file.deoms != "" %}
+    {% assign item_count = item_count | plus: 1 %}
+    {% if item_count > 1 %}
+      - 
+    {% endif %}
+    <a href="{{ file.deoms }}" target="_blank">demos</a>
+  {% endif %}
+
+  {% if file.commentary and file.commentary != "" %}
+    {% assign item_count = item_count | plus: 1 %}
+    {% if item_count > 1 %}
+      - 
+    {% endif %}
+    <a href="{{ file.commentary }}" target="_blank">commentary</a>
+  {% endif %}
+  {% if file.precis and file.precis != "" %}
+    {% assign item_count = item_count | plus: 1 %}
+    {% if item_count > 1 %}
+      - 
+    {% endif %}
+    <a href="{{ file.precis }}" target="_blank">precis</a>
+  {% endif %}
+                </p>
+              </div>
+            </li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</body>

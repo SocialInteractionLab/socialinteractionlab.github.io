@@ -8,6 +8,6 @@ publicationdate: '2016' #this is the one that shows up on the site
 journal: 'PLoS ONE.'
 paperurl: 'http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0151670'
 openmaterials: 'https://github.com/hawkrobe/socialConventions'
-image:'/images/papers/RTsocialconventions.png'
+image: '/images/papers/RTsocialconventions.png'
 authors: 'RD Hawkins, RL Goldstone.'
 ---

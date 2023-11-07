@@ -5,7 +5,7 @@ journal: 'ICCV.'
 paperurl: 'https://arxiv.org/pdf/1905.02925.pdf'
 openmaterials: 'https://github.com/optas/shapeglot' 
 demos: 'https://ai.stanford.edu/~optas/shapeglot/index.html#'
-dataset: ' '
+dataset: ''
 image: '/images/papers/chairs.png'
 authors: 'P Achlioptas, JE Fan, RD Hawkins, ND Goodman, L Guibas.'
 

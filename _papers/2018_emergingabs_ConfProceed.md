@@ -9,6 +9,6 @@ journal: 'Proceedings of the 40th Annual Conference of the Cognitive Science Soc
 paperurl: 'https://cocolab.stanford.edu/papers/HawkinsEtAl2018-Cogsci.pdf'
 openmaterials: 'https://github.com/hawkrobe/conventionalizing_hierarchies' 
 dataset: 'https://cocolab.stanford.edu/datasets/colors.html'
-image:'/images/papers/emergingabs.png'
+image: '/images/papers/emergingabs.png'
 authors: 'RD Hawkins, M Franke, K Smith, ND Goodman.'
 ---

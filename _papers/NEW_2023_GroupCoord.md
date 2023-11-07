@@ -1,10 +1,10 @@
 ---
 title: "Group coordination catalyzes individual and cultural intelligence."
-publicationdate: '2023'
-journal: 'TBA'
+publicationdate: 'Preprint'
+journal: ''
 paperurl: 'https://psyarxiv.com/gscy6'
 openmaterials: ''
-dataset: ' '
+dataset: ''
 image: '/images/papers/GroupCoord.png'
 authors: "CM Wu, R Dale, RD Hawkins."
 

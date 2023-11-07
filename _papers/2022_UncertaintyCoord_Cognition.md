@@ -4,7 +4,7 @@ publicationdate: '2022'
 journal: "Cognition."
 paperurl: 'http://arxiv.org/abs/2105.06546'
 openmaterials: 'https://github.com/hawkrobe/color-ref'
-dataset: ' '
+dataset: ''
 image: '/images/papers/uncertainty.png'
 authors: "S Murthy, TL Griffiths, RD Hawkins."
 

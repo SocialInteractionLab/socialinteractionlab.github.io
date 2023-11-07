@@ -8,6 +8,6 @@ publicationdate: '2016' #this is the one that shows up on the site
 journal: 'Journal of Mathematical Psychology.'
 paperurl: 'https://rxdhawkins.files.wordpress.com/2013/11/silberthawkins16_grttutorial.pdf'
 openmaterials: 'https://cran.r-project.org/web/packages/mdsdt/index.html'
-image:'/images/papers/recog_theory.png'
+image: '/images/papers/recog_theory.png'
 authors: 'NH Silbert, RD Hawkins.'
 ---

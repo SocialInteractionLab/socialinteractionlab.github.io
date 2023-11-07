@@ -4,8 +4,8 @@ publicationdate: "2021"
 journal: "EMNLP."
 paperurl: 'https://arxiv.org/pdf/2110.09779.pdf'
 openmaterials: 'https://github.com/juliaiwhite/clarification-question-generation'
-dataset: ' '
-image: ' '
+dataset: ''
+image: ''
 authors: "J White, G Poesia, RD Hawkins, D Sadigh, N Goodman."
 
 
