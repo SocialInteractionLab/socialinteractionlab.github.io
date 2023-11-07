@@ -72,6 +72,12 @@ featured_image: /images/monstera3.jpg
       margin: 0 auto;
       float: center; 
     }
+ .sticky-container {
+  position: sticky;
+  top: 0; 
+  z-index: 1;
+  background-color: #fff; 
+}
 
 }
   </style>
@@ -90,23 +96,33 @@ featured_image: /images/monstera3.jpg
     </div>
   </section>
 
-  <section class="portfolio">
+<section class="portfolio">
     <div class="wrap">
-      <ul class="file-list">
-        {% for file in site.people %}
-        <li class="file-list__item">
-          <div class="image-container">
-            <div class="file-list__image">
-            <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" /> </div>
-            <div class="file-list__role-title">
-                <h2>{{ file.role }}</h2>
-              <p class="file-list__title"><a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a></p></div>
-            <div class="file-list__bio">
-            <p>{{ file.content | markdownify }}</p> </div>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
+      {% assign people_by_role = site.people | group_by: "role" %}
+
+      {% for group in people_by_role %}
+        <h2>{{ group.name }}</h2>
+        <ul class="file-list">
+          {% for file in group.items %}
+            <li class="file-list__item">
+              <div class="image-container">
+                <div class="file-list__image">
+                  <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
+                </div>
+                <div class="file-list__role-title">
+                  <h2>{{ file.role }}</h2>
+                  <p class="file-list__title">
+                    <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
+                  </p>
+                </div>
+                <div class="file-list__bio">
+                  <p>{{ file.content | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
     </div>
   </section>
 </body>
