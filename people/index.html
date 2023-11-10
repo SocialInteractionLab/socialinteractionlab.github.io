@@ -8,7 +8,7 @@ featured_image: /images/monstera3.jpg
 
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
 
     .file-list {
@@ -25,7 +25,7 @@ featured_image: /images/monstera3.jpg
         margin-bottom: 20px;
     } /*group image styling*/
 
-    .wrap{}
+  
 
     .groupname{text-align: center
     } /*moves the group name to the middle*/
@@ -101,10 +101,13 @@ featured_image: /images/monstera3.jpg
   }
 } /*mobile view : one image at a time */
 
+.spacer {margin-top: 60px; 
+      padding: 20px;}
 
   </style>
 </head>
 <body>
+<section class=intro>
     <div class="group-image">
       <img src="/images/group.jpg">
     </div>
@@ -112,7 +115,8 @@ featured_image: /images/monstera3.jpg
       <h1>{{ page.title }}</h1>
       <p>{{ page.subtitle }}</p>
     </div>
-
+</section>
+<div class=spacer></div>
   <section class="portfolio">
     <div class="wrap">
       {% assign people_by_role = site.people | group_by: "role" %}
@@ -167,4 +171,19 @@ featured_image: /images/monstera3.jpg
       {% endfor %}
     </div>
   </section>
+   <script>
+    let prevScrollPos = window.pageYOffset;
+
+    window.onscroll = function() {
+      const currentScrollPos = window.pageYOffset;
+
+      if (prevScrollPos > currentScrollPos) {
+        document.getElementById("spacer").style.top = "0";
+      } else {
+        document.getElementById("spacer").style.top = "-60px"; // Adjust this value to hide the header
+      }
+
+      prevScrollPos = currentScrollPos;
+    };
+  </script>
 </body>
