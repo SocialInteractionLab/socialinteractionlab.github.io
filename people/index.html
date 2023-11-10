@@ -16,58 +16,49 @@ featured_image: /images/monstera3.jpg
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
-    .groupname{text-align: center}
+    } /* removes the list dots */
+
+    .groupname{text-align: center} /*moves the group name to the middle*/
+
     .file-list__item {
       margin-bottom: 20px;
       width: calc(33.33% - 10px);
       position: relative;
       margin-left: auto;
   margin-right: auto;
-    }
+    }  /*positions the images 3 per row*/
 
     .image-container {
       width: 100%;
       max-width: 300px;
       margin: 0 auto;
-      text-align: center; /* Center the content */
-    }
-
-    .image {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-    }
+      text-align: center;
+    } /*limits image size and centers text under the image*/
 
     .file-list__role-title {
       text-align: center;
-      margin-top: 10px; /* Add margin to separate name from the bio */
-    }
-
-    .file-list__title {
-      font-size: 20px !important;
-      display: block; /* Display the title */
-    }
+      margin-top: 10px; 
+    }  /*title styling*/
 
     .group-image {
       margin-bottom: 20px;
-    }
+    } /*group image styling*/
 
 
 @media (max-width: 768px) {
   .file-list__item {
       margin-bottom: 20px;
       width: calc(100% - 20px);
-      position: center;
+      float: center;
     margin-left: auto;
     margin-right: auto;}
 
   .file-list__image,.file-list__role-title, .file-list__bio{
     margin-bottom: 5px;
     margin-left: 10px;
-    width: calc(50% - 10px);
+    
     float: center; 
-  }
+  } /*mobile view : one image at a time */
 
   
  .file-list__bio {
@@ -75,13 +66,16 @@ featured_image: /images/monstera3.jpg
       max-width: 300px;
       margin: 0 auto;
       float: center; 
-    }
- .sticky-container {
-  position: sticky;
-  top: 0; 
-  z-index: 1;
-  background-color: #fff; 
-}
+    } /* bio text styling */
+
+ .file-list__bio1 {
+      width: 100%;
+      margin: 0 auto;
+      float: center !important;  
+    } /* bio text styling groups of one*/
+    
+
+
 
 }
   </style>
@@ -90,9 +84,6 @@ featured_image: /images/monstera3.jpg
   <section class="intro">
     <div class="group-image">
       <img src="/images/group.jpg">
-      <!--<div class="groupimage2">
-        <img src="/images/group2.jpg">
-      </div>-->
     </div>
     <div class="wrap">
       <h1>{{ page.title }}</h1>
@@ -100,34 +91,59 @@ featured_image: /images/monstera3.jpg
     </div>
   </section>
 
-<section class="portfolio">
+  <section class="portfolio">
     <div class="wrap">
       {% assign people_by_role = site.people | group_by: "role" %}
 
       {% for group in people_by_role %}
-        <h2 class="groupname">{{ group.name }}</h2>
-        <ul class="file-list">
-          {% for file in group.items %}
-            <li class="file-list__item">
-              <div class="image-container">
-                <div class="file-list__image">
-                  <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
+        {% if group.items.size == 1 %}
+          <ul class="file-list">
+            {% for file in group.items %}
+              <li class="file-list__item">
+                <div class="image-container">
+                  <div class="file-list__image">
+                    <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
+                  </div>
+                  <div class="file-list__role-title">
+                    <h2>{{ file.role }}</h2>
+                    <p class="file-list__title">
+                      <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
+                    </p>
+                  </div>
+                  
                 </div>
-                <div class="file-list__role-title">
-                  <h2>{{ file.role }}</h2>
-                  <p class="file-list__title">
-                    <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
-                  </p>
+ 
+              </li>
+              <div class="file-list__bio1">
+                    <p>{{ file.content | markdownify }}</p>
+                  </div>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <h2 class="groupname">{{ group.name }}</h2>
+          <ul class="file-list">
+            {% for file in group.items %}
+              <li class="file-list__item">
+                <div class="image-container">
+                  <div class="file-list__image">
+                    <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
+                  </div>
+                  <div class="file-list__role-title">
+              
+                    <p class="file-list__title">
+                      <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
+                    </p>
+                  </div>
+                  <div class="file-list__bio">
+                    <p>{{ file.content | markdownify }}</p>
+                  </div>
                 </div>
-                <div class="file-list__bio">
-                  <p>{{ file.content | markdownify }}</p>
-                </div>
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
+
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       {% endfor %}
     </div>
   </section>
 </body>
-</html>
