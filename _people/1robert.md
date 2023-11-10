@@ -8,4 +8,4 @@ venue: ''
 giturl: 'https://hawkrobe.github.io'
 image: '/images/people/1robert.jpg'
 ---
-
+Robert is interested in the cognitive mechanisms that allow people to flexibly communicate, collaborate, and coordinate with one another in social interactions.

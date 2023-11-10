@@ -10,6 +10,7 @@ featured_image: /images/monstera3.jpg
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+
     .file-list {
       list-style: none;
       padding: 0;
@@ -18,7 +19,42 @@ featured_image: /images/monstera3.jpg
       justify-content: space-between;
     } /* removes the list dots */
 
+   .group-image {
+      margin-bottom: 20px;
+    } /*group image styling*/
+
     .groupname{text-align: center} /*moves the group name to the middle*/
+
+ 
+
+   .file-list__item1 {
+      margin-bottom: 20px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }  /*images for groups of one*/
+
+    .image-container1 {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      float:left;
+    } /*limits image size and centers text under the image for groups of one*/
+
+    .file-list__bio1 {
+      width: calc(100% - 325px);
+      margin: 10 auto;
+      float: right;  
+      text-align: center;
+     } /* bio text styling groups of one*/
+
+   .file-list__role-title1 {
+      text-align: center;
+      margin-top: 10px; 
+    }  /*title styling groups of one*/
+
+
+
 
     .file-list__item {
       margin-bottom: 20px;
@@ -40,39 +76,31 @@ featured_image: /images/monstera3.jpg
       margin-top: 10px; 
     }  /*title styling*/
 
-    .group-image {
-      margin-bottom: 20px;
-    } /*group image styling*/
 
+    .file-list__bio {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      float: right; 
+    } /* bio text styling */
 
 @media (max-width: 768px) {
   .file-list__item {
       margin-bottom: 20px;
-      width: calc(100% - 20px);
-      float: center;
-    margin-left: auto;
-    margin-right: auto;}
-
-  .file-list__image,.file-list__role-title, .file-list__bio{
+      width: 100%;}
+  .image-container, .file-list__role-title, .file-list__bio{
     margin-bottom: 5px;
     margin-left: 10px;   
     float: center; 
-  } /*mobile view : one image at a time */
+  }
+  .file-list__item1{ 
+    width:100% !important }
+  .image-container1, .file-list__role-title1, .file-list__bio1 {
+    width:100% !important;
+  }
+} /*mobile view : one image at a time */
 
-  
- .file-list__bio {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-      float: center; 
-    } /* bio text styling */
 
- .file-list__bio1 {
-      width: 100%;
-      margin: 0 auto;
-      float: center !important;  
- } /* bio text styling groups of one*/
-} 
   </style>
 </head>
 <body>
@@ -94,24 +122,23 @@ featured_image: /images/monstera3.jpg
         {% if group.items.size == 1 %}
           <ul class="file-list">
             {% for file in group.items %}
-              <li class="file-list__item">
-                <div class="image-container">
+              <li class="file-list__item1">
+                <div class="image-container1">
                   <div class="file-list__image">
-                    <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
-                  </div>
-                  <div class="file-list__role-title">
+                    <a href="{{file.giturl}}">  <img src="{% if file.image %}{{ file.image }}{% else %}/images/no_image.png{% endif %}" class="image" /> </a>
+                  </div>                  
+                </div>
+                <div class="file-list__role-title1">
                     <h2>{{ file.role }}</h2>
                     <p class="file-list__title">
                       <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
                     </p>
                   </div>
-                  
-                </div>
- 
-              </li>
-              <div class="file-list__bio1">
+                  <div class="file-list__bio1">
                     <p>{{ file.content | markdownify }}</p>
                   </div>
+              </li>
+              
             {% endfor %}
           </ul>
         {% else %}
