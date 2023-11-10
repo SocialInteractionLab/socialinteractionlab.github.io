@@ -5,7 +5,7 @@ collection: people
 permalink: 
 date: '1900-01-01' #jekyll requires this or the site will not build. not sure what it does yet. order?
 venue: ''
-giturl: 'hawkrobe.github.io'
+giturl: 'https://hawkrobe.github.io'
 image: '/images/people/1robert.jpg'
 ---
 
