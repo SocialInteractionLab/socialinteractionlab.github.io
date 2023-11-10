@@ -1,5 +1,5 @@
 ---
-title: "Misha"
+title: "Misha O’Keeffe"
 role: "Undergraduate Research Assistants"
 collection: people
 permalink: 
