@@ -72,7 +72,7 @@ featured_image: /images/monstera3.jpg
       width: 100%;
       max-width: 300px;
       margin: 0 auto;
-      text-align: center;
+      /*text-align: center; */
     } /*limits image size and centers text under the image*/
 
     .file-list__role-title {
@@ -84,8 +84,8 @@ featured_image: /images/monstera3.jpg
       width: 100%;
       max-width: 500px;
       margin: 0 auto;
-      float: right; 
-      text-align: left;
+    /*  float: right; 
+      text-align: left; */
     } /* bio text styling */
 
 @media (max-width: 768px) {
@@ -154,7 +154,9 @@ featured_image: /images/monstera3.jpg
                   <div class="file-list__image">
                     <img src="{% if file.image %}{{ file.image }}{% else %}/images/no image 2.png{% endif %}" class="image" />
                   </div>
-                  <div class="file-list__role-title">
+                  
+                </div>
+<div class="file-list__role-title">
               
                     <p class="file-list__title">
                       <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
@@ -163,8 +165,6 @@ featured_image: /images/monstera3.jpg
                   <div class="file-list__bio">
                     <p>{{ file.content | markdownify }}</p>
                   </div>
-                </div>
-
               </li>
             {% endfor %}
           </ul>
