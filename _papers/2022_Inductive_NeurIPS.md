@@ -3,10 +3,10 @@ title: "Using natural language and program abstractions to instill human inducti
 publicationdate: '2022'
 journal: "NeurIPS."
 paperurl: 'https://arxiv.org/abs/2205.11558'
-openmaterials: ''
-context: "winner of NeurIPS outstanding paper award"
+openmaterials: 'https://github.com/sreejank/language_and_programs'
+context: "winner of outstanding paper award"
 image: '/images/papers/inductiveBias.png'
-authors: ' '
+authors: 'S Kumar, C Correa, I Dasgupta, R Marjieh, M Hu, RD Hawkins, J Cohen, N Daw, KR Narasimhan, TL Griffiths'
 
 
 collection: publications

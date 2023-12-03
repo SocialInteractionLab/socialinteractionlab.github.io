@@ -3,7 +3,7 @@ title: "Reconciling truthfulness and relevance as epistemic and decision-theoret
 publicationdate: "2023"
 journal: "Psychological Review."
 paperurl: 'https://psyarxiv.com/e9m3j/'
-openmaterials: ''
+openmaterials: 'https://github.com/tsumers/relevance'
 context: "an earlier iteration of this paper appeared in the Proceedings of the 43rd Annual Conference of the Cognitive Science Society."
 image: '/images/papers/truthrel.png'
 authors: "TR Sumers, MK Ho, TL Griffiths, RD Hawkins."

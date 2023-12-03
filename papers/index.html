@@ -19,23 +19,48 @@ featured_image: /images/monstera3.jpg
   }
 
   .file-list__image {
-    margin-right: 15px !important;
-    width: 200px;
-    height: 150px;
+    display: flex;
+    margin-left: 40px !important;
+    flex: 1 0;
+    width: 150px;
   }
 
-  .file-list__title {
+  .file-list__journal {
+    font-style: italic;
     font-size: 20px !important;
   }
 
+  .file-list__title {
+    font-size: 24px !important;
+  }
+
+  .file-list__authors {
+      font-size: 20px !important;
+  }
+
   .file-list__content {
-    flex: 1;
+    flex: 2;
     padding-left: 20px;
   }
 
+  .button {
+      font-size:16px;
+  }
+  .file-list__description {
+      padding-left:50px;
+      padding-right:50px;
+    font-size: 16px !important;
+    font-color: 
+  }
+
   .another_image_container {
-    width: 200px;
-    height: 150px;
+    align-items: center;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 
 
@@ -58,31 +83,35 @@ featured_image: /images/monstera3.jpg
         {% for date_group in papersByDate  %}
           <!-- Make the date "sticky" here -->
           <div class="sticky-date">
-            <h2>{{ date_group.name }}</h2>
+            <h1>{{ date_group.name }}</h1>
           </div>
           {% for file in date_group.items %}
             <li class="file-list__item" >
-              {% if file.image and file.image != "" %}
-              <div class="file-list__image">
-                <img class="another_image_container" src="{{ file.image }}" />
-              </div>
-              {% endif %}
-              <div class="file-list__content" > 
-                <div class="file-list__title"> <a href="{{ file.paperurl }}" >{{ file.title }}</a> </div>
+              <div class="file-list__content" >
+                <div class="file-list__title">
+                    <a href="{{ file.paperurl }}" >{{ file.title }}</a>
+                </div>
                 <p class="file-list__authors">{{ file.authors }}</p>
                 <p class="file-list__journal">{{ file.journal }}</p>
-                <div class="file-list__description">
-                  {{ file.context }}
-                </div>
-{% assign item_count = 0 %}
+
+                {% assign item_count = 0 %}
 
 <p> <!-- yes this is overdone no I don't want to change it. if statements to include a dash each time there's more than one item -->
+
+  {% if file.paperurl and file.paperurl != "" %}
+    {% assign item_count = item_count | plus: 1 %}
+    {% if item_count > 1 %}
+      -
+    {% endif %}
+    <button class="button"><a href="{{ file.paperurl }}" target="_blank">pdf</a></button>
+  {% endif %}
+
   {% if file.openmaterials and file.openmaterials != "" %}
     {% assign item_count = item_count | plus: 1 %}
     {% if item_count > 1 %}
-      - 
+      -
     {% endif %}
-    <a href="{{ file.openmaterials }}" target="_blank">open materials</a>
+    <button class="button"><a href="{{ file.openmaterials }}" target="_blank">open materials</a></button>
   {% endif %}
   
   {% if file.talk and file.talk != "" %}
@@ -90,7 +119,7 @@ featured_image: /images/monstera3.jpg
     {% if item_count > 1 %}
       - 
     {% endif %}
-    <a href="{{ file.talk }}" target="_blank">talk</a>
+    <button class="button"><a href="{{ file.talk }}" target="_blank">talk</a></button>
   {% endif %}
 
   {% if file.dataset and file.dataset != "" %}
@@ -98,15 +127,15 @@ featured_image: /images/monstera3.jpg
     {% if item_count > 1 %}
       - 
     {% endif %}
-    <a href="{{ file.dataset }}" target="_blank">dataset</a>
+    <button class="button"><a href="{{ file.dataset }}" target="_blank">dataset</a></button>
   {% endif %}
 
-  {% if file.demos and file.deoms != "" %}
+  {% if file.demo and file.demo != "" %}
     {% assign item_count = item_count | plus: 1 %}
     {% if item_count > 1 %}
       - 
     {% endif %}
-    <a href="{{ file.deoms }}" target="_blank">demos</a>
+    <button class="button"><a href="{{ file.demo }}" target="_blank">demo</a></button>
   {% endif %}
 
   {% if file.commentary and file.commentary != "" %}
@@ -114,17 +143,29 @@ featured_image: /images/monstera3.jpg
     {% if item_count > 1 %}
       - 
     {% endif %}
-    <a href="{{ file.commentary }}" target="_blank">commentary</a>
+    <button class="button">
+      <a href="{{ file.commentary }}" target="_blank">commentary</a>
+    </button>
   {% endif %}
   {% if file.precis and file.precis != "" %}
     {% assign item_count = item_count | plus: 1 %}
     {% if item_count > 1 %}
       - 
     {% endif %}
-    <a href="{{ file.precis }}" target="_blank">precis</a>
+    <button class="button"><a href="{{ file.precis }}" target="_blank">precis</a></button>
   {% endif %}
                 </p>
+               <p class="file-list__description">
+                 {{ file.context }}
+                </p>
+
               </div>
+              {% if file.image and file.image != "" %}
+              <div class="file-list__image">
+                <img class="another_image_container" src="{{ file.image }}" />
+              </div>
+              {% endif %}
+
             </li>
           {% endfor %}
         {% endfor %}

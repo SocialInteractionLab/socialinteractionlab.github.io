@@ -4,7 +4,6 @@ publicationdate: "2023"
 journal: "Cognition."
 paperurl: 'https://rxdhawkins.files.wordpress.com/2023/04/1-s2.0-s0010027722003158-main.pdf'
 openmaterials: 'https://github.com/tsumers/show-or-tell'
-dataset: ' '
 image: '/images/papers/showortell.png'
 authors: "T Sumers, M Ho, RD Hawkins, TL Griffiths."
 

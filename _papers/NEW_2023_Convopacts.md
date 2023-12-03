@@ -1,6 +1,6 @@
 ---
 title: "Parents scaffold the formation of conversational pacts with their children."
-publicationdate: 'Preprint'
+publicationdate: 'Preprints'
 journal: ''
 paperurl: 'https://psyarxiv.com/4fpr3'
 openmaterials: 'https://github.com/ashleychuikay/tangramgame'

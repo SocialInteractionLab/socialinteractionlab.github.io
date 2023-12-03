@@ -5,7 +5,7 @@ journal: "AAAI."
 paperurl: 'https://arxiv.org/abs/2009.14715'
 openmaterials: 'https://github.com/tsumers/rewards'
 dataset: ''
-image: ''
+image: '/images/papers/AAAI.png'
 authors: "T Sumers, M Ho, RD Hawkins, K Narasimhan, TL Griffiths."
 
 

@@ -1,11 +1,11 @@
 ---
 title: "Learning to teach, teaching to learn."
-publicationdate: 'Preprint'
+publicationdate: 'Preprints'
 journal: ''
 paperurl: 'https://psyarxiv.com/4u5g6'
 openmaterials: ''
 dataset: ''
-image: ''
+image: '/images/papers/turtles.png'
 authors: "AM Chen, A Palacci, N Vélez, RD Hawkins*, SJ Gershman*."
 
 
