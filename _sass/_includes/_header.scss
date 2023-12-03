@@ -23,7 +23,7 @@
 		top: 0;
 		left: 0;
 		bottom: 0;
-		width: 23%;
+		width: 25%;
 		padding: 0;
 	}
 
@@ -38,6 +38,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
+	background: $overlay-background-color;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -47,7 +48,7 @@
 	@include mq(tabletl) {
 		position: fixed;
 		right: auto;
-		width: 23%;
+		width: 25%;
 	}
 
 	@include mq(desktop) {
