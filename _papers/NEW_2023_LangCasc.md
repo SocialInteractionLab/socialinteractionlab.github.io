@@ -4,7 +4,7 @@ collection: publications
 permalink: 
 
 date: '1900-01-01' #jekyll requires this or the site will not build.
-publicationdate: 'Preprint'
+publicationdate: 'Preprints'
 journal: ''
 paperurl: 'https://www.biorxiv.org/content/10.1101/2022.06.08.495348v1.full.pdf'
 openmaterials: 'https://github.com/tsumers/bert-brains'

@@ -6,7 +6,7 @@ paperurl: 'http://arxiv.org/abs/2202.12226'
 openmaterials: 'https://github.com/taka-yamakoshi/TelephoneGame' 
 demo: 'https://huggingface.co/spaces/taka-yamakoshi/bert-priors-demo'
 image: '/images/papers/food.png'
-authors: 'T Yamakoshi, TL Griffiths, RD Hawkins (2022).'
+authors: 'T Yamakoshi, TL Griffiths, RD Hawkins.'
 
 
 collection: publications

@@ -10,13 +10,13 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Papers'
-      url: '/papers'
     - title: 'People'
       url: '/people/'
-    - title: 'Lab News'
+    - title: 'Papers'
+      url: '/papers'
+    - title: 'News'
       url: '/news/'
-    - title: 'Joining the Lab'
+    - title: 'Join us'
       url: '/joining/'
     #- title: 'Contact'
      # url: '/contact'

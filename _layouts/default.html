@@ -62,7 +62,7 @@
 	<!-- Extra Header JS Code -->
 	{{ site.data.settings.advanced_settings.header_js }}
 	{% endif %}
-	
+
 </head>
 
 
@@ -80,10 +80,9 @@
 	<div class="page">
 
 		<div class="page__content" data-page-title="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}" data-image="{{ page.featured_image | relative_url }}">
-{% if page.url == '/' %}
-  <img src="/images/diagram4.png">
-{% endif %}
-
+			{% if page.url == '/' %}
+			<img style="position: absolute; height: 100%" src="/images/splash_nologo.png">
+			{% endif %}
 			{{ content }}
 
 		</div>

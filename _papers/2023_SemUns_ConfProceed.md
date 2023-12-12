@@ -2,10 +2,9 @@
 title: "Semantic uncertainty guides the extension of conventions to new referents."
 publicationdate: "2023"
 journal: "Proceedings of the 45th Annual Conference of the Cognitive Science Society."
-paperurl: 'https://arxiv.org/abs/2306.03882'
+paperurl: 'https://arxiv.org/pdf/2305.06539.pdf'
 openmaterials: 'https://github.com/taka-yamakoshi/situation-models'
-demo: 'https://huggingface.co/spaces/taka-yamakoshi/causal-intervention-demo'
-image: ''
+image: '/images/papers/semantic_uncertainty.png'
 authors: "R Eliav, A Ji, Y Artzi, RD Hawkins."
 
 

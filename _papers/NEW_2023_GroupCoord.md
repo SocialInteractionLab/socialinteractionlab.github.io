@@ -1,6 +1,6 @@
 ---
 title: "Group coordination catalyzes individual and cultural intelligence."
-publicationdate: 'Preprint'
+publicationdate: 'Preprints'
 journal: ''
 paperurl: 'https://psyarxiv.com/gscy6'
 openmaterials: ''
