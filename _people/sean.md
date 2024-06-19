@@ -1,5 +1,5 @@
 ---
-title: "Sean"
+title: "Sean Yun-Shiuan Chuang"
 role: "Lab Affilate"
 collection: people
 permalink: 
