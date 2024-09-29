@@ -1,7 +1,7 @@
 ---
-title: "Learning to teach, teaching to learn."
-publicationdate: 'Preprints'
-journal: ''
+title: "A hierarchical Bayesian model of adaptive teaching"
+publicationdate: '2024'
+journal: 'Cognitive Science'
 paperurl: 'https://psyarxiv.com/4u5g6'
 openmaterials: ''
 dataset: ''
