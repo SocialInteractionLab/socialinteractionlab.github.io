@@ -116,32 +116,37 @@ featured_image: /images/monstera3.jpg
     </div>
 </section>
 
-  <section class="portfolio">
-    <div class="wrap">
-      {% assign people_by_role = site.people | group_by: "role" %}
-      {% for group in people_by_role %}
+<section class="portfolio">
+  <div class="wrap">
+    {% assign roles_priority = "Principal Investigator,Post-Doctoral Scholar,Lab Manager,Graduate Student,Lab Affiliate,Research Assistant" | split: "," %}
+    {% assign people_by_role = site.people | sort: "role" %}
+    {% for role in roles_priority %}
       <ul class="file-list">
-        {% for file in group.items %}
-        <li class="file-list__item1">
-          <div class="image-container1">
-            <div class="file-list__image">
-              <a href="{{file.giturl}}">  <img src="{% if file.image %}{{ file.image }}{% else %}/images/no_image.png{% endif %}" class="image" /> </a>
-            </div>
-          </div>
-          <div class="file-list__role-title1">
-            <h2>{{ file.role }}</h2>
-            <p class="file-list__title">
-              <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
-            </p>
-          </div>
-          <div class="file-list__bio1">
-            <p>{{ file.content | markdownify }}</p>
-          </div>
-        </li>
-
+        {% for file in people_by_role %}
+          {% if file.role == role %}
+            <li class="file-list__item1">
+              <div class="image-container1">
+                <div class="file-list__image">
+                  <a href="{{ file.giturl }}">
+                    <img src="{% if file.image %}{{ file.image }}{% else %}/images/no_image.png{% endif %}" class="image" />
+                  </a>
+                </div>
+              </div>
+              <div class="file-list__role-title1">
+                <h2>{{ file.role }}</h2>
+                <p class="file-list__title">
+                  <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
+                </p>
+              </div>
+              <div class="file-list__bio1">
+                <p>{{ file.content | markdownify }}</p>
+              </div>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
-      {% endfor %}
-    </div>
-  </section>
+    {% endfor %}
+  </div>
+</section>
+
 </body>
