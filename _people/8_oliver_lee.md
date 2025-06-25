@@ -1,12 +1,12 @@
 ---
-title: "Oliver Lee"
+title: "Van Tran"
 role: "Research Assistant"
 collection: people
 permalink: 
 date: '1900-01-01'
 venue: ''
 giturl: ''
-image: '/images/people/oliver_lee.png'
+image: '/images/people/van_tran.png'
 ---
 
-Oliver is a senior majoring in Symbolic Systems and German Studies, and beginning a co-term in Linguistics. His main research interests are acquisition, computational linguistics, and the syntax-semantics interface. In his free time, he likes running, going on hikes, and learning languages.
+Van is a rising Sophomore at Stanford. While undeclared, she plans to minor in Translation Studies and is interested in the intersection of language and technology. Outside of research, she enjoys reading, arts and crafts, trying new restaurants, and traveling.
