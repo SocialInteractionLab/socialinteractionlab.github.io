@@ -134,13 +134,13 @@ featured_image: /images/monstera3.jpg
               {% if group.items.size == 1 %}
                 <li class="file-list__item1">
                   <div class="image-container1">
-                    <a href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer">
+                    <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">
                       <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
                     </a>
                   </div>
                   <div class="file-list__bio1">
                     <p class="file-list__title">
-                      <a class="file-list__link" href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer"><strong>{{ person.title }}</strong></a>
+                      <a class="file-list__link" href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;"><strong>{{ person.title }}</strong></a>
                     </p>
                     {{ person.content | markdownify }}
                   </div>
@@ -148,12 +148,12 @@ featured_image: /images/monstera3.jpg
               {% else %}
                 <li class="file-list__item">
                   <div class="image-container">
-                    <a href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer">
+                    <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">
                       <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
                     </a>
                   </div>
                   <p class="file-list__role-title">
-                    <a class="file-list__link" href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer">{{ person.title }}</a>
+                    <a class="file-list__link" href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.title }}</a>
                   </p>
                   <div class="file-list__bio">
                     {{ person.content | markdownify }}
