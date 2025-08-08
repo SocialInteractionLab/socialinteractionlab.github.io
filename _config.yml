@@ -11,7 +11,7 @@ collections:
   
 
   people:
-    output: true
+    output: false
     permalink: /people/:slug
   
 

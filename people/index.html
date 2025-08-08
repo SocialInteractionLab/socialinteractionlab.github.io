@@ -118,34 +118,56 @@ featured_image: /images/monstera3.jpg
 
 <section class="portfolio">
   <div class="wrap">
+    
     {% assign roles_priority = "Principal Investigator,Post-Doctoral Scholar,Lab Manager,Graduate Student,Research Assistant,Lab Affilate,Lab Alum" | split: "," %}
-    {% assign people_by_role = site.people | sort: "role" %}
-    {% for role in roles_priority %}
-      <ul class="file-list">
-        {% for file in people_by_role %}
-          {% if file.role == role %}
-            <li class="file-list__item1">
-              <div class="image-container1">
-                <div class="file-list__image">
-                  <a href="{{ file.giturl }}">
-                    <img src="{% if file.image %}{{ file.image }}{% else %}/images/no_image.png{% endif %}" class="image" />
-                  </a>
-                </div>
-              </div>
-              <div class="file-list__role-title1">
-                <h2>{{ file.role }}</h2>
-                <p class="file-list__title">
-                  <a class="file-list__link" href="{{ file.giturl }}" target="_blank">{{ file.title }}</a>
-                </p>
-              </div>
-              <div class="file-list__bio1">
-                <p>{{ file.content | markdownify }}</p>
-              </div>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+    {% assign people_grouped_by_role = site.people | group_by: "role" %}
+
+    {% for role_name in roles_priority %}
+      {% for group in people_grouped_by_role %}
+        {% if group.name == role_name %}
+          
+          <h2 class="groupname">{{ group.name }}</h2>
+          
+          <ul class="file-list">
+            {% for person in group.items %}
+              
+              {% if group.items.size == 1 %}
+                <li class="file-list__item1">
+                  <div class="image-container1">
+                    <a href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer">
+                      <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
+                    </a>
+                  </div>
+                  <div class="file-list__bio1">
+                    <p class="file-list__title">
+                      <a class="file-list__link" href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer"><strong>{{ person.title }}</strong></a>
+                    </p>
+                    {{ person.content | markdownify }}
+                  </div>
+                </li>
+              {% else %}
+                <li class="file-list__item">
+                  <div class="image-container">
+                    <a href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer">
+                      <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
+                    </a>
+                  </div>
+                  <p class="file-list__role-title">
+                    <a class="file-list__link" href="{{ person.giturl }}" target="_blank" rel="noopener noreferrer">{{ person.title }}</a>
+                  </p>
+                  <div class="file-list__bio">
+                    {{ person.content | markdownify }}
+                  </div>
+                </li>
+              {% endif %}
+
+            {% endfor %}
+          </ul>
+
+        {% endif %}
+      {% endfor %}
     {% endfor %}
+    
   </div>
 </section>
 
