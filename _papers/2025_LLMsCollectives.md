@@ -6,6 +6,8 @@ date: 2025-01-01
 venue: 'Nature Computational Science'
 paperurl: 'https://arxiv.org/abs/2506.00052'
 citation: 'Sucholutsky, I., Collins, K. M., Jacoby, N., Thompson, B. D., &amp; Hawkins, R. D. (2025). &quot;Using LLMs to advance the cognitive science of collectives.&quot; <i>Nature Computational Science</i>.'
+authors: "Sucholutsky, I., Collins, K. M., Jacoby, N., Thompson, B. D., &amp; Hawkins, R. D."
+image: '/images/papers/LLMsCollectives.png'
 ---
 
 <a href='https://arxiv.org/abs/2506.00052'>Download paper here</a>
