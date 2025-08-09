@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # # Publications markdown generator for academicpages
@@ -21,8 +20,6 @@
 # 
 # We are using the very handy pandas library for dataframes.
 
-# In[2]:
-
 import pandas as pd
 
 
@@ -32,17 +29,12 @@ import pandas as pd
 # 
 # I found it important to put this data in a tab-separated values format, because there are a lot of commas in this kind of data and comma-separated values can get messed up. However, you can modify the import statement, as pandas also has read_excel(), read_json(), and others.
 
-# In[3]:
-
 publications = pd.read_csv("publications.tsv", sep="\t", header=0)
-publications
 
 
 # ## Escape special characters
 # 
 # YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands) with their HTML encoded equivilents. This makes them look not so readable in raw format, but they are parsed and rendered nicely.
-
-# In[4]:
 
 html_escape_table = {
     "&": "&amp;",
@@ -52,30 +44,29 @@ html_escape_table = {
 
 def html_escape(text):
     """Produce entities within text."""
-    return "".join(html_escape_table.get(c,c) for c in text)
+    # Check if the text is a string before processing
+    if isinstance(text, str):
+        return "".join(html_escape_table.get(c,c) for c in text)
+    else:
+        return text
 
 
 # ## Creating the markdown files
-# 
-# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page. If you don't want something to appear (like the "Recommended citation")
-
-# In[5]:
 
 import os
 for row, item in publications.iterrows():
     
-    md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
-    html_filename = str(item.pub_date) + "-" + item.url_slug
-    year = item.pub_date[:4]
-    
     ## YAML variables
     
-    md = "---\ntitle: \""   + item.title + '"\n'
+    md = "---\ntitle: \""   + html_escape(item.title) + '"\n'
     
     md += """collection: publications"""
     
+    # Create the permalink from the date and url_slug
+    html_filename = str(item.pub_date) + "-" + item.url_slug
     md += """\npermalink: /publication/""" + html_filename
     
+    # Add excerpt if it exists
     if len(str(item.excerpt)) > 5:
         md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
     
@@ -83,6 +74,7 @@ for row, item in publications.iterrows():
     
     md += "\nvenue: '" + html_escape(item.venue) + "'"
     
+    # Add paper_url if it exists
     if len(str(item.paper_url)) > 5:
         md += "\npaperurl: '" + item.paper_url + "'"
     
@@ -100,9 +92,11 @@ for row, item in publications.iterrows():
         
     md += "\nRecommended citation: " + item.citation
     
-    md_filename = os.path.basename(md_filename)
+    # Create the markdown filename from the date and url_slug
+    md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
        
-    with open("../_publications/" + md_filename, 'w') as f:
+    # Write the file to the correct _papers directory
+    with open("../_papers/" + md_filename, 'w') as f:
         f.write(md)
 
-
+print("Markdown files generated successfully in the _papers folder.")
