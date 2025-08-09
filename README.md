@@ -6,10 +6,10 @@ source for our lab website: **https://socialinteractionlab.github.io/**
 
 ## 🚀 setup
 
-1. **first make sure you have/get Ruby & Jekyll**
+1. **first make sure you have/get ruby & jekyll**
    - https://jekyllrb.com/docs/installation/macos/
 
-2. ** also Bbndler and gems**
+2. ** also bundler and gems**
    ```bash
    gem install bundler:2.4.20
    bundle install
@@ -31,7 +31,7 @@ Then open http://localhost:4000
 
 ## 📝 publications workflow
 
-**Never edit files in `_papers/` by hand.** They’re generated from `markdown_generator/publications.tsv`
+** don't edit files in `_papers/` by hand.** They’re generated from `markdown_generator/publications.tsv`
 
 1. edit `markdown_generator/publications.tsv`  
    required columns (tab-separated):  
