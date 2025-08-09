@@ -2,7 +2,7 @@
 title: "When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation"
 collection: publications
 permalink: /publication/2025-01-01-2025-more-words-less
-date: 2025-01-01
+publicationdate: '2025' 
 venue: 'arXiv preprint'
 citation: 'Kapur, R., Hawkins, R. D., &amp; Kreiss, E. (2025). &quot;When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation.&quot; <i>arXiv preprint</i>.'
 authors: "Kapur, R., Hawkins, R. D., &amp; Kreiss, E."

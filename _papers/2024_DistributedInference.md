@@ -2,7 +2,7 @@
 title: "Distributed statistical inference in social interaction networks"
 collection: publications
 permalink: /publication/2024-01-01-2024-distributed-inference
-date: 2024-01-01
+publicationdate: '2024'
 venue: 'Proceedings of the 46th Annual Conference of the Cognitive Science Society'
 paperurl: 'https://escholarship.org/uc/item/8km974x4'
 citation: 'Zubak, Y., Dronavalli, P., Chuang, Y. S., &amp; Hawkins, R. D. (2024). &quot;Distributed statistical inference in social interaction networks.&quot; <i>Proceedings of the 46th Annual Conference of the Cognitive Science Society</i>.'

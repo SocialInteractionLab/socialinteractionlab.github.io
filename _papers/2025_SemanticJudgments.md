@@ -2,7 +2,7 @@
 title: "Two paths to variation in semantic judgments: How ambiguity and conceptual diversity drive individual differences in meaning"
 collection: publications
 permalink: /publication/2025-01-01-2025-semantic-judgments
-date: 2025-01-01
+publicationdate: '2025' 
 venue: 'Proceedings of the 47th Annual Meeting of the Cognitive Science Society'
 paperurl: 'https://escholarship.org/uc/item/9mt887ck'
 citation: 'Liu, D., Marjieh, R., Jacoby, N., &amp; Hawkins, R. D. (2025). &quot;Two paths to variation in semantic judgments.&quot; <i>Proceedings of the 47th Annual Meeting of the Cognitive Science Society</i>.'
