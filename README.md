@@ -89,6 +89,6 @@ git push
 ```
 
 (should rebuild pretty quickly)
-ps -- if you see **403** or auth errors, set up a Personal Access Token (PAT) or SSH (below)
+ps -- if you see **403** or auth errors, set up a Personal Access Token (PAT) or SSH
 
 ---
