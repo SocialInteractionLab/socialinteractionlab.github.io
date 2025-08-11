@@ -29,28 +29,38 @@ Then open http://localhost:4000
 
 ---
 
+
 ## 📝 publications workflow
 
 ** don't edit files in `_papers/` by hand.** They’re generated from `markdown_generator/publications.tsv`
 
-1. edit `markdown_generator/publications.tsv`  
-   required columns (tab-separated):  
-   `pub_date	title	venue	excerpt	citation	url_slug	paper_url`
+.  **Edit the Spreadsheet**
+    Open `markdown_generator/publications.tsv`. **Heads up:** it's way easier to use Google Sheets or Excel (or numbers if you're like me) for this! Add a new row and fill in the columns.
+    -   **Required:** `pub_date`, `title`, `venue`, `citation`, `url_slug`, `paper_url`
+    -   **Optional:** `openmaterials_url`, `talk_url`, etc.
 
-2. generate pages:
-   ```bash
-   cd markdown_generator
-   python publications.py
-   cd ..
-   ```
+2.  **Generate the New Files**
+    The generator is a Jupyter Notebook.
+    -   In your terminal, go to the generator folder:
+        ```bash
+        cd markdown_generator
+        ```
+    -   Start the notebook server:
+        ```bash
+        jupyter notebook
+        ```
+    -   Your browser will open. Click on `publications.ipynb`, then in the top menu, click **Cell → Run All**. This will create the new files in `_papers`.
 
-3. stage only related changes (!) :
-   ```bash
-   git add _papers/*.md markdown_generator/publications.tsv markdown_generator/publications.py
-   git commit -m "Add/update publications"
-   ```
+3.  **Commit Your Changes**
+    Once you're happy with how the new papers look on your local site, commit! If you're not happy, you can go into the individual .md folders and add/remove sections (ie images, talk links, openmaterials links, etc etc)
+    ```bash
+    git add .
+    git commit -m "Add new papers"
+    git push
+    ```
 
 ---
+
 
 ## 👥 how to Add a new lab member
 
