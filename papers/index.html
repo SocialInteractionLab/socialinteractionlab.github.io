@@ -98,6 +98,7 @@ featured_image: /images/monstera3.jpg
 
 <p> <!-- yes this is overdone no I don't want to change it. if statements to include a dash each time there's more than one item -->
 
+  {% comment %}
   {% if file.paperurl and file.paperurl != "" %}
     {% assign item_count = item_count | plus: 1 %}
     {% if item_count > 1 %}
@@ -105,6 +106,7 @@ featured_image: /images/monstera3.jpg
     {% endif %}
     <button class="button"><a href="{{ file.paperurl }}" onclick="window.open(this.href, '_blank'); return false;">link</a></button>
   {% endif %}
+  {% endcomment %}
 
   {% if file.openmaterials and file.openmaterials != "" %}
     {% assign item_count = item_count | plus: 1 %}
