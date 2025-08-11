@@ -14,10 +14,11 @@ featured_image: /images/monstera3.jpg
     .file-list {
       list-style: none;
       padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    } /* removes the list dots */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 20px;
+      align-items: start;
+    }
 
    .group-image {
       margin-top: 20px;
@@ -58,12 +59,8 @@ featured_image: /images/monstera3.jpg
     }  /*title styling groups of one*/
    
     .file-list__item {
-      margin-bottom: 20px;
-      width: calc(50% - 10px);
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-    }  /*positions the images 3 per row*/
+      margin-bottom: 20px; 
+    }
 
     .image-container {
       width: 100%;
@@ -119,7 +116,7 @@ featured_image: /images/monstera3.jpg
 <section class="portfolio">
   <div class="wrap">
     
-    {% assign roles_priority = "Principal Investigator,Post-Doctoral Scholar,Lab Manager,Graduate Student,Research Assistant,Lab Affilate,Lab Alum" | split: "," %}
+    {% assign roles_priority = "Principal Investigator,Post-Doctoral Scholar,Lab Manager,Graduate Students,Research Assistants,Lab Affilate,Lab Alum" | split: "," %}
     {% assign people_grouped_by_role = site.people | group_by: "role" %}
 
     {% for role_name in roles_priority %}
