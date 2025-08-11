@@ -3,7 +3,7 @@ title: "Dynamics of topic exploration in conversation"
 collection: publications
 permalink: /publication/2025-01-01-2025-topic-dynamics
 publicationdate: '2025' 
-venue: 'Proceedings of the 47th Annual Conference of the Cognitive Science Society'
+journal: 'Proceedings of the 47th Annual Conference of the Cognitive Science Society'
 paperurl: 'https://escholarship.org/uc/item/15d3808f'
 citation: 'Schmidt, H., Bergey, C. A., Zhou, C., Helion, C., &amp; Hawkins, R. D. (2025). &quot;Dynamics of topic exploration in conversation.&quot; <i>Proceedings of the 47th Annual Conference of the Cognitive Science Society</i>.'
 authors: "Schmidt, H., Bergey, C. A., Zhou, C., Helion, C., &amp; Hawkins, R. D."

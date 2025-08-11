@@ -3,7 +3,7 @@ title: "Integrating neural and symbolic components in a model of pragmatic quest
 collection: publications
 permalink: /publication/2025-01-01-2025-neural-symbolic
 publicationdate: '2025' 
-venue: 'SCiL'
+journal: 'SCiL'
 paperurl: 'https://arxiv.org/abs/2506.01474'
 citation: 'Tsvilodub, P., Hawkins, R. D., &amp; Franke, M. (2025). &quot;Integrating neural and symbolic components in a model of pragmatic question-answering.&quot; <i>SCiL</i>.'
 authors: "Tsvilodub, P., Hawkins, R. D., &amp; Franke, M."
