@@ -1,6 +1,6 @@
 ---
 title: "Oliver Lee"
-role: "Research Assistant"
+role: "Research Assistants"
 collection: people
 permalink: 
 date: '1900-01-01'

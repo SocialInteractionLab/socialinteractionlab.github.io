@@ -1,6 +1,6 @@
 ---
 title: "Ashrita Patil"
-role: "Research Assistant"
+role: "Research Assistants"
 collection: people
 permalink: 
 date: '1900-01-01' #jekyll requires this or the site will not build. not sure what it does yet. order?
