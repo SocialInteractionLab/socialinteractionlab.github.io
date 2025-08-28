@@ -134,71 +134,66 @@ featured_image: /images/monstera3.jpg
     {% assign people_grouped_by_role = site.people | group_by: "role" %}
 
     {% for role_name in roles_priority %}
-  {% for group in people_grouped_by_role %}
-    {% if group.name == role_name %}
-      
-      <h2 class="groupname">{{ group.name }}</h2>
+      {% for group in people_grouped_by_role %}
+        {% if group.name == role_name %}
+          
+          <h2 class="groupname">{{ group.name }}</h2>
 
-      {% comment %}{% endcomment %}
-      {% if group.name == 'Lab Alum' %}
-        
-        <ul class="alum-list">
-          {% for person in group.items %}
-            <li>
-              <strong>
-                {% if person.giturl and person.giturl != "" %}
-                  <a href="{{ person.giturl }}" target="_blank">{{ person.title }}</a>
+          {% comment %}{% endcomment %}
+          {% if group.name == 'Lab Alum' %}
+            
+            <ul class="alum-list">
+              {% for person in group.items %}
+                <li>
+                  <strong>
+                    {% if person.giturl and person.giturl != "" %}
+                      <a href="{{ person.giturl }}" target="_blank">{{ person.title }}</a>
+                    {% else %}
+                      {{ person.title }}
+                    {% endif %}
+                  </strong>
+                  {{ person.content | strip_html | prepend: ' - ' }}
+                </li>
+              {% endfor %}
+            </ul>
+            
+          {% else %}
+            
+            <ul class="file-list">
+              {% for person in group.items %}
+                {% if group.items.size == 1 %}
+                  <li class="file-list__item1">
+                    <div class="image-container1">
+                      <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">
+                        <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
+                      </a>
+                    </div>
+                    <div class="file-list__bio1">
+                      <p class="file-list__title">
+                        <a class="file-list__link" href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;"><strong>{{ person.title }}</strong></a>
+                      </p>
+                      {{ person.content | markdownify }}
+                    </div>
+                  </li>
                 {% else %}
-                  {{ person.title }}
+                  <li class="file-list__item">
+                    <div class="image-container">
+                      <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">
+                        <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
+                      </a>
+                    </div>
+                    <p class="file-list__role-title">
+                      <a class="file-list__link" href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.title }}</a>
+                    </p>
+                    <div class="file-list__bio">
+                      {{ person.content | markdownify }}
+                    </div>
+                  </li>
                 {% endif %}
-              </strong>
-              {{ person.content | strip_html | prepend: ' - ' }}
-            </li>
-          {% endfor %}
-        </ul>
-        
-      {% else %}
-        
-        <ul class="file-list">
-          {% for person in group.items %}
-            {% if group.items.size == 1 %}
-              <li class="file-list__item1">
-                <div class="image-container1">
-                  <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">
-                    <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
-                  </a>
-                </div>
-                <div class="file-list__bio1">
-                  <p class="file-list__title">
-                    <a class="file-list__link" href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;"><strong>{{ person.title }}</strong></a>
-                  </p>
-                  {{ person.content | markdownify }}
-                </div>
-              </li>
-            {% else %}
-              <li class="file-list__item">
-                <div class="image-container">
-                  <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">
-                    <img src="{{ person.image | relative_url }}" class="image" alt="Photo of {{ person.title }}" />
-                  </a>
-                </div>
-                <p class="file-list__role-title">
-                  <a class="file-list__link" href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.title }}</a>
-                </p>
-                <div class="file-list__bio">
-                  {{ person.content | markdownify }}
-                </div>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-        
-      {% endif %}
-
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-          </ul>
+              {% endfor %}
+            </ul>
+            
+          {% endif %}
 
         {% endif %}
       {% endfor %}
