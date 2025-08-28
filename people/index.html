@@ -146,7 +146,7 @@ featured_image: /images/monstera3.jpg
               {% for person in group.items %}
                 <li>
                   {% if person.giturl and person.giturl != "" %}
-                    <a href="{{ person.giturl }}" target="_blank">{{ person.content | strip_html }}</a>
+                    <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
                   {% else %}
                     {{ person.content | strip_html }}
                   {% endif %}
