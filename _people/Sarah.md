@@ -1,7 +1,7 @@
 ---
 title: "Sarah Li"
-role: "Lab Alum"
+role: "Lab Alumni"
 image: '/images/people/Sarah.jpg'
-giturl: ''
+giturl: 'https://www.linkedin.com/in/sarah-biying-li'
 ---
-Sarah Li (Was: Undergraduate Research Assistant, 2025)
+Sarah Li (Undergraduate Research Assistant, 2023-2024)
