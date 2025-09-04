@@ -141,18 +141,22 @@ featured_image: /images/monstera3.jpg
 
           {% comment %}{% endcomment %}
           {% if group.name == 'Lab Alumni' %}
-  
-            <ul class="alum-list">
-              {% for person in group.items | sort: 'end_year' | reverse %}
-                <li>
-                  {% if person.giturl and person.giturl != "" %}
-                    <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
-                  {% else %}
-                    {{ person.content | strip_html }}
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
+          {% comment %} First, create a new list that only includes alumni with an end_year. {% endcomment %}
+          {% assign alumni_with_year = group.items | where_exp: "item", "item.end_year" %}
+          {% comment %} Then, sort that new, clean list. {% endcomment %}
+          {% assign sorted_alumni = alumni_with_year | sort: 'end_year' | reverse %}
+          
+          <ul class="alum-list">
+            {% for person in sorted_alumni %}
+              <li>
+                {% if person.giturl and person.giturl != "" %}
+                  <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
+                {% else %}
+                  {{ person.content | strip_html }}
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
             
           {% else %}
             
