@@ -139,32 +139,34 @@ featured_image: /images/monstera3.jpg
           
           <h2 class="groupname">{{ group.name }}</h2>
 
-          {% comment %}{% endcomment %}
+          {% comment %} Check if the current group is the Lab Alumni {% endcomment %}
           {% if group.name == 'Lab Alumni' %}
-          {% comment %} 1. Group all alumni by their end_year. {% endcomment %}
-          {% assign alumni_grouped_by_year = group.items | group_by: "end_year" %}
-          {% comment %} 2. Sort these year-based groups in descending order (2025, 2024, etc.). {% endcomment %}
-          {% assign sorted_year_groups = alumni_grouped_by_year | sort: "name" | reverse %}
 
-          <ul class="alum-list">
-            {% for year_group in sorted_year_groups %}
-              {% comment %} 3. Within each year, sort the people by their role_priority (1, 2, 3, etc.). {% endcomment %}
-              {% assign people_in_year = year_group.items | sort: "role_priority" %}
-              {% for person in people_in_year %}
-                <li>
-                  {% if person.giturl and person.giturl != "" %}
-                    <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
-                  {% else %}
-                    {{ person.content | strip_html }}
-                  {% endif %}
-                </li>
+            {% comment %} 1. Group all alumni by their end_year. {% endcomment %}
+            {% assign alumni_grouped_by_year = group.items | group_by: "end_year" %}
+
+            {% comment %} 2. Sort these year-based groups in descending order (2025, 2024, etc.). {% endcomment %}
+            {% assign sorted_year_groups = alumni_grouped_by_year | sort: "name" | reverse %}
+
+            <ul class="alum-list">
+              {% for year_group in sorted_year_groups %}
+                {% comment %} 3. Within each year, sort the people by their role_priority (1, 2, 3, etc.). {% endcomment %}
+                {% assign people_in_year = year_group.items | sort: "role_priority" %}
+                {% for person in people_in_year %}
+                  <li>
+                    {% if person.giturl and person.giturl != "" %}
+                      <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
+                    {% else %}
+                      {{ person.content | strip_html }}
+                    {% endif %}
+                  </li>
+                {% endfor %}
               {% endfor %}
-            {% endfor %}
-          </ul>
+            </ul>
 
-          {% endif %}
           {% else %}
             
+            {% comment %} This is the code for all OTHER roles (PI, Post-Docs, etc.) {% endcomment %}
             <ul class="file-list">
               {% for person in group.items %}
                 {% if group.items.size == 1 %}
