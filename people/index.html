@@ -141,9 +141,9 @@ featured_image: /images/monstera3.jpg
 
           {% comment %}{% endcomment %}
           {% if group.name == 'Lab Alumni' %}
-            
+  
             <ul class="alum-list">
-              {% for person in group.items %}
+              {% for person in group.items | sort: 'end_year' | reverse %}
                 <li>
                   {% if person.giturl and person.giturl != "" %}
                     <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
