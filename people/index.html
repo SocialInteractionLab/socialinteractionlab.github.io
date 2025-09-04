@@ -141,22 +141,28 @@ featured_image: /images/monstera3.jpg
 
           {% comment %}{% endcomment %}
           {% if group.name == 'Lab Alumni' %}
-          {% comment %} First, create a new list that only includes alumni with an end_year. {% endcomment %}
-          {% assign alumni_with_year = group.items | where_exp: "item", "item.end_year" %}
-          {% comment %} Then, sort that new, clean list. {% endcomment %}
-          {% assign sorted_alumni = alumni_with_year | sort: 'end_year' | reverse %}
-          
+          {% comment %} 1. Group all alumni by their end_year. {% endcomment %}
+          {% assign alumni_grouped_by_year = group.items | group_by: "end_year" %}
+          {% comment %} 2. Sort these year-based groups in descending order (2025, 2024, etc.). {% endcomment %}
+          {% assign sorted_year_groups = alumni_grouped_by_year | sort: "name" | reverse %}
+
           <ul class="alum-list">
-            {% for person in sorted_alumni %}
-              <li>
-                {% if person.giturl and person.giturl != "" %}
-                  <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
-                {% else %}
-                  {{ person.content | strip_html }}
-                {% endif %}
-              </li>
+            {% for year_group in sorted_year_groups %}
+              {% comment %} 3. Within each year, sort the people by their role_priority (1, 2, 3, etc.). {% endcomment %}
+              {% assign people_in_year = year_group.items | sort: "role_priority" %}
+              {% for person in people_in_year %}
+                <li>
+                  {% if person.giturl and person.giturl != "" %}
+                    <a href="{{ person.giturl }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.content | strip_html }}</a>
+                  {% else %}
+                    {{ person.content | strip_html }}
+                  {% endif %}
+                </li>
+              {% endfor %}
             {% endfor %}
           </ul>
+
+{% endif %}
             
           {% else %}
             
