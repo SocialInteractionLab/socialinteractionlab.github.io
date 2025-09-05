@@ -27,12 +27,11 @@ featured_image: /images/monstera3.jpg
 
     /* New rule to control and center the group photo */
     .group-image img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-height: 50vh; /* Adjust this value to make it taller or shorter */
-        max-width: 80%;   /* Prevents the image from being too wide */
-    }
+      width: 100%;       /* Make image fill the .wrap container */
+      height: auto;      /* Maintain aspect ratio */
+      max-height: 60vh;  /* You can still use this to control tallness */
+      display: block;
+  }
 
   .intro{
     height: auto; /* Changed from 100vh to make the section fit the content */
@@ -126,12 +125,12 @@ featured_image: /images/monstera3.jpg
 
 <body>
 <section class=intro>
-    <div class="group-image">
-      <img src="/images/group.jpg">
-    </div>
     <div class = "wrap">
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.subtitle }}</p>
+        <div class="group-image">
+            <img src="/images/group.jpg">
+        </div>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.subtitle }}</p>
     </div>
 </section>
 
