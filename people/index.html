@@ -20,11 +20,13 @@ featured_image: /images/monstera3.jpg
       align-items: start;
     }
 
-   .group-image {
-      margin-top: 20px;
-       margin-right: 20px;
-        margin-bottom: 40px;
-    } /*group image styling*/
+   .group-photo {
+      max-width: 70%;
+      max-height: 40vh;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
   .intro{
     height: 100vh;
@@ -134,8 +136,7 @@ featured_image: /images/monstera3.jpg
 <body>
 <section class=intro>
     <div class="group-image">
-      <img src="/images/group.jpg">
-    </div>
+      <img src="/images/group.jpg" class="group-photo"> </div>
     <div class = "wrap">
       <h1>{{ page.title }}</h1>
       <p>{{ page.subtitle }}</p>
