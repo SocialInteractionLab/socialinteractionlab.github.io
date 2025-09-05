@@ -24,19 +24,10 @@ featured_image: /images/monstera3.jpg
       margin-top: 20px;
        margin-right: 20px;
         margin-bottom: 20px;
-    }
+    } /*group image styling*/
 
   .intro{
     height: 100vh;
-  }
-
-  /* This style will now be applied to the group.jpg image */
-  .group-photo {
-    max-width: 70%; /* Adjust this percentage to make the image smaller or larger */
-    max-height: 40vh; /* Optional: limits its height relative to viewport height */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
     .groupname{text-align: center
@@ -54,14 +45,13 @@ featured_image: /images/monstera3.jpg
 
     .image-container1 {
       width: 100%;
-      max-width: 310px;
-      height: 310px; /* Added for consistency */
+      max-width: 305px;
+      height: 305px; /* Added for consistency */
       float:left;
-      margin-right: 25px;
     } /*limits image size and centers text under the image for groups of one*/
 
     .file-list__bio1 {
-      width: calc(100% - 360px);
+      width: calc(100% - 325px);
       float: right;  
       text-align: left;
      } /* bio text styling groups of one*/
@@ -76,8 +66,8 @@ featured_image: /images/monstera3.jpg
 
     .image-container {
       width: 100%;
-      max-width: 300px; /* This controls the width of individual people's images */
-      height: 300px; /* This controls the height of individual people's images */
+      max-width: 305px;
+      height: 305px; /* Sets a fixed height for all image containers */
       margin: 0 auto;
     } /*limits image size and centers text under the image*/
 
@@ -108,6 +98,7 @@ featured_image: /images/monstera3.jpg
   .image-container, .file-list__role-title, .file-list__bio{
     margin-bottom: 5px;
     margin-left: 10px;   
+    float: center; 
   }
   .file-list__item1{ 
     width:100% !important }
@@ -136,7 +127,8 @@ featured_image: /images/monstera3.jpg
 <body>
 <section class=intro>
     <div class="group-image">
-      <img src="/images/group.jpg" class="group-photo"> </div>
+      <img src="/images/group.jpg">
+    </div>
     <div class = "wrap">
       <h1>{{ page.title }}</h1>
       <p>{{ page.subtitle }}</p>
@@ -227,4 +219,3 @@ featured_image: /images/monstera3.jpg
 </section>
 
 </body>
-</html>
