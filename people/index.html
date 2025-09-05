@@ -46,6 +46,7 @@ featured_image: /images/monstera3.jpg
     .image-container1 {
       width: 100%;
       max-width: 300px;
+      height: 300px; /* Added for consistency */
       float:left;
     } /*limits image size and centers text under the image for groups of one*/
 
@@ -66,9 +67,16 @@ featured_image: /images/monstera3.jpg
     .image-container {
       width: 100%;
       max-width: 300px;
+      height: 300px; /* Sets a fixed height for all image containers */
       margin: 0 auto;
-      /*text-align: center; */
     } /*limits image size and centers text under the image*/
+
+    /* This new rule ensures the images fill their containers without stretching */
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     .file-list__role-title {
       text-align: center;
@@ -79,7 +87,7 @@ featured_image: /images/monstera3.jpg
       width: 100%;
       max-width: 500px;
       margin: 0 auto;
-    /*  float: right; 
+    /* float: right; 
       text-align: left; */
     } /* bio text styling */
 
