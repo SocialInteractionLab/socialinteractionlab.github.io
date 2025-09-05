@@ -22,18 +22,26 @@ featured_image: /images/monstera3.jpg
 
    .group-image {
       margin-top: 20px;
-       margin-right: 20px;
-        margin-bottom: 20px;
-    } /*group image styling*/
+      margin-bottom: 20px;
+    } 
+
+    /* New rule to control and center the group photo */
+    .group-image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 50vh; /* Adjust this value to make it taller or shorter */
+        max-width: 80%;   /* Prevents the image from being too wide */
+    }
 
   .intro{
-    height: 100vh;
+    height: auto; /* Changed from 100vh to make the section fit the content */
   }
 
     .groupname{text-align: center
     } /*moves the group name to the middle*/
 
- 
+
 
    .file-list__item1 {
       grid-column: 1 / -1;
@@ -45,8 +53,7 @@ featured_image: /images/monstera3.jpg
 
     .image-container1 {
       width: 100%;
-      max-width: 305px;
-      height: 305px; /* Added for consistency */
+      max-width: 300px;
       float:left;
     } /*limits image size and centers text under the image for groups of one*/
 
@@ -66,17 +73,10 @@ featured_image: /images/monstera3.jpg
 
     .image-container {
       width: 100%;
-      max-width: 305px;
-      height: 305px; /* Sets a fixed height for all image containers */
+      max-width: 300px;
       margin: 0 auto;
+      /*text-align: center; */
     } /*limits image size and centers text under the image*/
-
-    /* This new rule ensures the images fill their containers without stretching */
-    .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
 
     .file-list__role-title {
       text-align: center;
