@@ -1,16 +1,10 @@
 ---
 title: "When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation"
-collection: publications
-permalink: /publication/2025-01-01-2025-more-words-less
-publicationdate: '2025' 
-journal: 'arXiv preprint'
-citation: 'Kapur, R., Hawkins, R. D., &amp; Kreiss, E. (2025). &quot;When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation.&quot; <i>arXiv preprint</i>.'
-authors: "Kapur, R., Hawkins, R. D., &amp; Kreiss, E."
-pdf: 'https://cs191w.stanford.edu/projects/Spring2025/Rhea___Kapur_.pdf'
+publicationdate: '2026'
+journal: 'Proceedings of the Association for Computational Linguistics (ACL)'
+authors: "Kapur, R., Hawkins, R. D., & Kreiss, E."
+paperurl: 'https://arxiv.org/abs/2601.04609'
 image: '/images/papers/MoreWordsLess.png'
-
+collection: publications
+date: '1900-01-01'
 ---
-
-<a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7EPsnxEAAAAJ&sortby=pubdate&citation_for_view=7EPsnxEAAAAJ:5awf1xo2G04C'>Download paper here</a>
-
-Recommended citation: Kapur, R., Hawkins, R. D., & Kreiss, E. (2025). "When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation." <i>arXiv preprint</i>.
