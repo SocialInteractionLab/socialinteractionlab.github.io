@@ -3,6 +3,9 @@
 .file-list {
   list-style: none;
   padding: 0;
+}
+
+.people-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px 20px;
