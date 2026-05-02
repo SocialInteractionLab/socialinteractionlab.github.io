@@ -1,0 +1,147 @@
+---
+layout: lab-page
+title: Papers
+permalink: /papers/
+subtitle: Recent lab publications & preprints
+description: 
+featured_image: /images/monstera3.jpg
+---
+
+<style>
+  .file-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .file-list__item {
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .file-list__image {
+    display: flex;
+    margin-left: 30px !important;
+    flex: .8 0;
+    width: 50px;
+  }
+
+  .file-list__journal {
+    font-style: italic;
+    font-size: 16px !important;
+  }
+
+  .file-list__title {
+    font-size: 20px !important;
+    color: #2A2F36;
+  }
+
+  .file-list__authors {
+      font-size: 16px !important;
+  }
+
+  .file-list__content {
+    flex: 2;
+    padding-left: 12px;
+  }
+
+  .button {
+      font-size:12px;
+  }
+  .file-list__description {
+      padding-left:50px;
+      padding-right:50px;
+    font-size: 10px !important;
+    font-color: 
+  }
+
+  .another_image_container {
+    align-items: center;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+
+  .sticky-date {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; 
+    z-index: 1; 
+    padding: 10px; 
+  }
+
+</style>
+
+<body>
+
+  <section class="portfolio">
+    <div class="wrap">
+      <ul class="file-list">
+        {% assign papersByDate = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+        {% for date_group in papersByDate %}
+          <div class="sticky-date">
+            <h1>{{ date_group.name }}</h1>
+          </div>
+          {% for file in date_group.items %}
+            <li class="file-list__item">
+              <div class="file-list__content">
+                <div class="file-list__title">
+                  {% if file.url and file.url != "" %}
+                    <a href="{{ file.url }}" onclick="window.open(this.href, '_blank'); return false;">{{ file.title }}</a>
+                  {% else %}
+                    {{ file.title }}
+                  {% endif %}
+                </div>
+                <p class="file-list__authors">{{ file.authors }}</p>
+                <p class="file-list__journal">{{ file.journal }}</p>
+                <p>
+                  {% assign item_count = 0 %}
+                  {% if file.materials and file.materials != "" %}
+                    {% assign item_count = item_count | plus: 1 %}
+                    {% if item_count > 1 %}-{% endif %}
+                    <button class="button"><a href="{{ file.materials }}" target="_blank">open materials</a></button>
+                  {% endif %}
+                  {% if file.talk and file.talk != "" %}
+                    {% assign item_count = item_count | plus: 1 %}
+                    {% if item_count > 1 %}-{% endif %}
+                    <button class="button"><a href="{{ file.talk }}" target="_blank">talk</a></button>
+                  {% endif %}
+                  {% if file.dataset and file.dataset != "" %}
+                    {% assign item_count = item_count | plus: 1 %}
+                    {% if item_count > 1 %}-{% endif %}
+                    <button class="button"><a href="{{ file.dataset }}" target="_blank">dataset</a></button>
+                  {% endif %}
+                  {% if file.demo and file.demo != "" %}
+                    {% assign item_count = item_count | plus: 1 %}
+                    {% if item_count > 1 %}-{% endif %}
+                    <button class="button"><a href="{{ file.demo }}" target="_blank">demo</a></button>
+                  {% endif %}
+                  {% if file.commentary and file.commentary != "" %}
+                    {% assign item_count = item_count | plus: 1 %}
+                    {% if item_count > 1 %}-{% endif %}
+                    <button class="button"><a href="{{ file.commentary }}" target="_blank">commentary</a></button>
+                  {% endif %}
+                  {% if file.precis and file.precis != "" %}
+                    {% assign item_count = item_count | plus: 1 %}
+                    {% if item_count > 1 %}-{% endif %}
+                    <button class="button"><a href="{{ file.precis }}" target="_blank">precis</a></button>
+                  {% endif %}
+                </p>
+                <p class="file-list__description">{{ file.context }}</p>
+              </div>
+              {% if file.image and file.image != "" %}
+              <div class="file-list__image">
+                <img class="another_image_container" src="{{ file.image }}" />
+              </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</body>
