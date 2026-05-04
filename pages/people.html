@@ -10,24 +10,27 @@ featured_image: /images/monstera3.jpg
 <section class=intro>
     <div class = "wrap">
         <div class="group-image photo-album">
+          <input class="photo-radio" type="radio" name="photo-year" id="yr-2023">
+          <input class="photo-radio" type="radio" name="photo-year" id="yr-2024">
+          <input class="photo-radio" type="radio" name="photo-year" id="yr-2025" checked>
           <div class="photo-main">
-            <img id="photo-2025" src="/images/group_2025_2026.jpg" alt="Lab 2025–26" class="visible">
-            <img id="photo-2024" src="/images/group_2024_2025.jpg" alt="Lab 2024–25">
-            <img id="photo-2023" src="/images/group_2023_2024.jpg"           alt="Lab 2023–24">
+            <img src="/images/group_2023_2024.jpg" alt="Lab 2023–24" class="yr-img yr-img--2023">
+            <img src="/images/group_2024_2025.jpg" alt="Lab 2024–25" class="yr-img yr-img--2024">
+            <img src="/images/group_2025_2026.jpg" alt="Lab 2025–26" class="yr-img yr-img--2025">
           </div>
           <div class="photo-thumbnails">
-            <div class="photo-thumb" data-year="2023">
+            <label for="yr-2023" class="photo-thumb">
               <img src="/images/group_2023_2024.jpg" alt="2023–24">
               <span>2023–24</span>
-            </div>
-            <div class="photo-thumb" data-year="2024">
+            </label>
+            <label for="yr-2024" class="photo-thumb">
               <img src="/images/group_2024_2025.jpg" alt="2024–25">
               <span>2024–25</span>
-            </div>
-            <div class="photo-thumb active" data-year="2025">
+            </label>
+            <label for="yr-2025" class="photo-thumb">
               <img src="/images/group_2025_2026.jpg" alt="2025–26">
               <span>2025–26</span>
-            </div>
+            </label>
           </div>
         </div>
         <h1>{{ page.title }}</h1>

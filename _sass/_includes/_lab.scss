@@ -18,6 +18,14 @@
   margin-bottom: 20px;
 }
 
+.photo-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .photo-album {
   position: relative;
 }
@@ -31,7 +39,7 @@
   background: #e8e8e8;
 }
 
-.photo-main img {
+.yr-img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -42,7 +50,15 @@
   transition: opacity 0.5s ease;
 }
 
-.photo-main img.visible {
+// CSS-only tab switching via radio + sibling selectors
+#yr-2023:checked ~ .photo-main .yr-img--2023,
+#yr-2024:checked ~ .photo-main .yr-img--2024,
+#yr-2025:checked ~ .photo-main .yr-img--2025 { opacity: 1; }
+
+#yr-2023:checked ~ .photo-thumbnails label[for="yr-2023"],
+#yr-2024:checked ~ .photo-thumbnails label[for="yr-2024"],
+#yr-2025:checked ~ .photo-thumbnails label[for="yr-2025"] {
+  border-color: #2A2F36;
   opacity: 1;
 }
 
@@ -82,17 +98,8 @@
   padding: 5px 0 4px;
 }
 
-.photo-thumb.active {
-  border-color: #2A2F36;
-  opacity: 1;
-}
-
 .photo-thumb:hover {
   opacity: 0.8;
-}
-
-.photo-thumb.active:hover {
-  opacity: 1;
 }
 
 .intro {
