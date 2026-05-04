@@ -36,8 +36,19 @@ window.__PV2_THEMES = {{ site.data.themes | jsonify }};
 
 <script>
 (function () {
+  console.log('[papers] script running');
+  console.log('[papers] __PV2_PAPERS:', window.__PV2_PAPERS ? window.__PV2_PAPERS.length + ' papers' : 'MISSING');
+  console.log('[papers] __PV2_THEMES:', window.__PV2_THEMES ? window.__PV2_THEMES.length + ' themes' : 'MISSING');
+  console.log('[papers] #pv2-list:', document.getElementById('pv2-list'));
+  console.log('[papers] #pv2-chips:', document.getElementById('pv2-chips'));
+
   var papers = window.__PV2_PAPERS;
   var themes = window.__PV2_THEMES;
+
+  if (!papers || !themes) {
+    console.error('[papers] data missing — aborting render');
+    return;
+  }
 
   var currentQuery = '';
   var currentTheme = null;
