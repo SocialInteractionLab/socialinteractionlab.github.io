@@ -17,17 +17,75 @@ featured_image: /images/monstera3.jpg
   <div class="pv2-controls">
     <div class="pv2-search">
       <span class="pv2-search-ico">&#9906;</span>
-      <input id="pv2-search-input" type="search" placeholder="Search title, author, or venue&hellip;" autocomplete="off">
+      <input id="pv2-search-input" type="search" placeholder="Search title, author, or venue" autocomplete="off">
       <span id="pv2-count" class="pv2-count" style="display:none"></span>
     </div>
-    <div class="pv2-chips" id="pv2-chips"></div>
+    <div class="pv2-chips" id="pv2-chips">
+      <span class="pv2-chip on" data-theme="">All <span class="pv2-chip-c">{{ site.data.papers | size }}</span></span>
+      {% for theme in site.data.themes %}
+        {% assign tcount = 0 %}
+        {% for p in site.data.papers %}
+          {% if p.themes contains theme.id %}
+            {% assign tcount = tcount | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {% if tcount > 0 %}
+      <span class="pv2-chip" data-theme="{{ theme.id | escape }}">{{ theme.label | escape }} <span class="pv2-chip-c">{{ tcount }}</span></span>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 
   <div class="pv2-list" id="pv2-list">
-    <div class="pv2-loading">Loading&hellip;</div>
+    {% assign year_groups = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+    {% for yg in year_groups %}
+    <div class="pv2-year-row">
+      <div class="pv2-yr">{{ yg.name }}</div>
+      <div class="pv2-papers">
+        {% for p in yg.items %}
+          {% assign theme_labels = "" %}
+          {% for tid in p.themes %}
+            {% assign th = site.data.themes | where: "id", tid | first %}
+            {% if th %}{% assign theme_labels = theme_labels | append: " " | append: th.label %}{% endif %}
+          {% endfor %}
+          {% assign search_blob = p.title | append: " " | append: p.authors | append: " " | append: p.journal | append: theme_labels | downcase | escape %}
+          {% assign theme_ids = p.themes | join: " " %}
+        <div class="pv2-paper-row{% unless p.image %} pv2-no-image{% endunless %}"
+             data-search-blob="{{ search_blob }}"
+             data-themes="{{ theme_ids | escape }}">
+          {% if p.image %}
+          <div class="pv2-thumb" style="background-image:url('{{ p.image | escape }}')"></div>
+          {% endif %}
+          <div class="pv2-paper-body">
+            {% if p.url %}
+            <a class="pv2-ptitle" href="{{ p.url | escape }}" target="_blank" rel="noopener">{{ p.title | escape }}</a>
+            {% else %}
+            <div class="pv2-ptitle">{{ p.title | escape }}</div>
+            {% endif %}
+            <div class="pv2-pauth">{{ p.authors | escape }}</div>
+            {% if p.themes %}
+            <div class="pv2-pthemes">
+              {% for tid in p.themes %}
+                {% assign th = site.data.themes | where: "id", tid | first %}
+                {% if th %}<span class="pv2-pth">{{ th.label | escape }}</span>{% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% if p.materials or p.talk or p.dataset or p.demo %}
+            <div class="pv2-links">
+              {% if p.materials %}<a class="pv2-link" href="{{ p.materials | escape }}" target="_blank" rel="noopener">materials</a>{% endif %}
+              {% if p.talk %}<a class="pv2-link" href="{{ p.talk | escape }}" target="_blank" rel="noopener">talk</a>{% endif %}
+              {% if p.dataset %}<a class="pv2-link" href="{{ p.dataset | escape }}" target="_blank" rel="noopener">dataset</a>{% endif %}
+              {% if p.demo %}<a class="pv2-link" href="{{ p.demo | escape }}" target="_blank" rel="noopener">demo</a>{% endif %}
+            </div>
+            {% endif %}
+          </div>
+          <div class="pv2-pvenue">{{ p.journal | escape }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
   </div>
 
 </div>
-
-<textarea id="pv2-papers-data" hidden>{{ site.data.papers | jsonify }}</textarea>
-<textarea id="pv2-themes-data" hidden>{{ site.data.themes | jsonify }}</textarea>

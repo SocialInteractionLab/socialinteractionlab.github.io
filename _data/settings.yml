@@ -14,6 +14,7 @@ menu_settings:
       url: '/people/'
     - title: 'Papers'
       url: '/papers'
+      no_ajax: true
     - title: 'News'
       url: '/news/'
     - title: 'Join us'
