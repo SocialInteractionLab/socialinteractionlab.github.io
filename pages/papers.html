@@ -29,17 +29,15 @@ featured_image: /images/monstera3.jpg
 
 </div>
 
-<script id="pv2-papers-data" type="application/json">
-{{ site.data.papers | jsonify }}
-</script>
-<script id="pv2-themes-data" type="application/json">
-{{ site.data.themes | jsonify }}
+<script>
+window.__PV2_PAPERS = {{ site.data.papers | jsonify }};
+window.__PV2_THEMES = {{ site.data.themes | jsonify }};
 </script>
 
 <script>
 (function () {
-  var papers = JSON.parse(document.getElementById('pv2-papers-data').textContent);
-  var themes = JSON.parse(document.getElementById('pv2-themes-data').textContent);
+  var papers = window.__PV2_PAPERS;
+  var themes = window.__PV2_THEMES;
 
   var currentQuery = '';
   var currentTheme = null;
