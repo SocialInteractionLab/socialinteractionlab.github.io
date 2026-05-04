@@ -83,6 +83,7 @@
   journal: "Proceedings of the Association for Computational Linguistics (ACL)"
   authors: "Cheng, M., Hawkins, R. D., & Jurafsky, D."
   url: "https://arxiv.org/abs/2601.04435"
+  image: "/images/papers/AccommodationEpistemicVigilance.png"
 
 - title: "A utility-based account of the choice of constituent question polarity"
   year: "2026"
@@ -144,6 +145,7 @@
   journal: "SCiL"
   authors: "Tsvilodub, P., Hawkins, R. D., &amp; Franke, M."
   url: "https://arxiv.org/abs/2506.01474"
+  image: "/images/papers/IntegratingNeuralSymbolic.png"
 
 - title: "How do we get to know someone? Diagnostic questions for inferring personal traits"
   year: "2025"
@@ -290,6 +292,7 @@
   journal: "Proceedings of the 46th Annual Conference of the Cognitive Science Society."
   authors: "C Bergey, M O’Keeffe, RD Hawkins"
   url: "https://escholarship.org/uc/item/85t9s85w"
+  image: "/images/papers/LongitudinalCommunicativeActs.png"
 
 - title: "A hierarchical Bayesian model of adaptive teaching"
   year: "2024"
