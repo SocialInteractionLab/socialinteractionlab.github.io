@@ -1,0 +1,23 @@
+- id: pragmatics
+  label: "Pragmatics & meaning"
+
+- id: convention
+  label: "Convention & coordination"
+
+- id: ai
+  label: "Human–AI interaction"
+
+- id: development
+  label: "Language development"
+
+- id: social
+  label: "Social cognition"
+
+- id: law
+  label: "Language & law"
+
+- id: methods
+  label: "Methods & open science"
+
+- id: conversation
+  label: "Conversation dynamics"

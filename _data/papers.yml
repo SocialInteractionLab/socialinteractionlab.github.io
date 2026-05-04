@@ -2,6 +2,7 @@
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Mankewitz, J., Zettersten, M., Jacobs, C., & Hawkins, R. D."
+  themes: [pragmatics]
 
 - title: "When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation"
   year: "2026"
@@ -9,41 +10,49 @@
   authors: "Kapur, R., Hawkins, R. D., & Kreiss, E."
   url: "https://arxiv.org/abs/2601.04609"
   image: "/images/papers/MoreWordsLess.png"
+  themes: [ai, pragmatics]
 
 - title: "The socio-pragmatic function of linguistic complexity in the domain of law"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Brooks, T., & Hawkins, R. D."
+  themes: [pragmatics, law]
 
 - title: "The content of common ground shapes coordination"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Machino, Y., & Hawkins, R. D."
+  themes: [convention]
 
 - title: "Selective truths: How speakers mislead and listeners miss it?"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Fang, K., Guan, R., Wu, C., Franke, M., & Hawkins, R. D."
+  themes: [pragmatics]
 
 - title: "Predicting projection variation"
   year: "2026"
   journal: "36th Meeting of Semantics and Linguistic Theory (SALT)"
   authors: "Tonhauser, J., Hawkins, R. D., & Scontras, G."
+  themes: [pragmatics]
 
 - title: "Pragmatic explanation of causal inference from correlational statements"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Zur, A., Goodwin, E., Shain, C., & Hawkins, R. D."
+  themes: [pragmatics]
 
 - title: "Making room for new words"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Bergey, C. A., Altenhof, A. M., Burnham, C. V., Lee, O., & Hawkins, R. D."
+  themes: [convention]
 
 - title: "Inferring joint commitment from observed coordination"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Kuang, J., Brockbank, E., Bicchieri, C., & Hawkins, R. D."
+  themes: [convention]
 
 - title: "Gesturing toward abstraction: Multimodal convention formation in collaborative physical tasks"
   year: "2026"
@@ -52,31 +61,37 @@
   url: "https://arxiv.org/abs/2602.08914"
   materials: "https://multimodal-conventions.github.io/"
   image: "/images/papers/GesturingAbstraction.png"
+  themes: [convention, conversation]
 
 - title: "From idiosyncratic narratives to social scripts: Mapping the semantic space of self-descriptions in children and adults"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Perez, K., Bergey, C. A., Hawkins, R. D., & Gweon, H."
+  themes: [development, social]
 
 - title: "Cognitive offloading and the speedup illusion in human-AI interaction"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Yu, S., Cheng, M., Jabbar, A., Sucholutsky, I., Collins, K. M., Jurafsky, D., & Hawkins, R. D."
+  themes: [ai]
 
 - title: "Balancing competing goals when coordinating over rule construction"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Mankewitz, J., Collins, K. M., Tenenbaum, J. T., Griffiths, T., & Hawkins, R. D."
+  themes: [convention]
 
 - title: "Asking the right questions? What people learn about strangers in conversation"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Brockbank, E., Dee, N. R., O'Keeffe, M., Mahaphanit, W., Gerstenberg, T., Fan, J. E., & Hawkins, R. D."
+  themes: [pragmatics, social, conversation]
 
 - title: "Act or clarify? Modeling sensitivity to uncertainty and cost in communication"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Tsvilodub, P., Mulligan, K., Snider, T., Hawkins, R. D., & Franke, M."
+  themes: [pragmatics]
 
 - title: "Accommodation and epistemic vigilance: A pragmatic account of why LLMs fail to challenge harmful beliefs"
   year: "2026"
@@ -84,52 +99,60 @@
   authors: "Cheng, M., Hawkins, R. D., & Jurafsky, D."
   url: "https://arxiv.org/abs/2601.04435"
   image: "/images/papers/AccommodationEpistemicVigilance.png"
+  themes: [pragmatics, ai]
 
 - title: "A utility-based account of the choice of constituent question polarity"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Lee, S-Y., & Hawkins, R. D."
+  themes: [pragmatics]
 
 - title: "Using LLMs to advance the cognitive science of collectives"
   year: "2025"
   journal: "Nature Computational Science"
-  authors: "Sucholutsky, I., Collins, K. M., Jacoby, N., Thompson, B. D., &amp; Hawkins, R. D."
+  authors: "Sucholutsky, I., Collins, K. M., Jacoby, N., Thompson, B. D., & Hawkins, R. D."
   url: "https://arxiv.org/abs/2506.00052"
   image: "/images/papers/LLMsCollectives.png"
+  themes: [ai, social]
 
 - title: "Two paths to variation in semantic judgments: How ambiguity and conceptual diversity drive individual differences in meaning"
   year: "2025"
   journal: "Proceedings of the 47th Annual Meeting of the Cognitive Science Society"
-  authors: "Liu, D., Marjieh, R., Jacoby, N., &amp; Hawkins, R. D."
+  authors: "Liu, D., Marjieh, R., Jacoby, N., & Hawkins, R. D."
   url: "https://escholarship.org/uc/item/9mt887ck"
   materials: "https://github.com/AuroraLiuDi/TwoIndividualDiff.git"
   image: "/images/papers/SemanticJudgments.png"
+  themes: [pragmatics]
 
 - title: "Testing the roles of passive isolation and active social motivation in lexical variation using experimental microsocieties"
   year: "2025"
   journal: "Submitted"
   authors: "Chen, A. M., Saxe, R., & Hawkins, R. D."
+  themes: [convention, social]
 
 - title: "Signaling social identity in referential communication"
   year: "2025"
   journal: "Under review"
   authors: "Chen, A. M., Hawkins, R. D., & Saxe, R."
+  themes: [social, convention]
 
 - title: "Relevant answers to polar questions"
   year: "2025"
   journal: "Philosophical Transactions of the Royal Society B"
-  authors: "Hawkins, R. D., Tsvilodub, P., Bergey, C. A., Goodman, N. D., &amp; Franke, M."
+  authors: "Hawkins, R. D., Tsvilodub, P., Bergey, C. A., Goodman, N. D., & Franke, M."
   url: "https://arxiv.org/abs/2305.07151"
   materials: "https://tinyurl.com/42krksx7"
   image: "/images/papers/PolarQuestions.png"
+  themes: [pragmatics]
 
 - title: "Minding the politeness gap in cross-cultural communication"
   year: "2025"
   journal: "Proceedings of the 47th Annual Conference of the Cognitive Science Society"
-  authors: "Machino, Y., Hofer, M., Siegel, M., Tenenbaum, J. B., &amp; Hawkins, R. D."
+  authors: "Machino, Y., Hofer, M., Siegel, M., Tenenbaum, J. B., & Hawkins, R. D."
   url: "https://arxiv.org/abs/2506.15623"
   materials: "https://github.com/yukam997/PolitenessAcrossCultures"
   image: "/images/papers/PolitenessGap.png"
+  themes: [pragmatics, social]
 
 - title: "Lexical search and social reasoning jointly explain communication in associative reference games"
   year: "2025"
@@ -139,35 +162,40 @@
   materials: "https://github.com/hawkrobe/lexical-search-and-pragmatics"
   image: "/images/papers/contextflex.png"
   context: "Selected as Editor's Choice. Vol. 154(9), 2361–2385. An earlier iteration of this work appeared in the Proceedings of the 43rd Annual Conference of the Cognitive Science Society."
+  themes: [convention, social]
 
 - title: "Integrating neural and symbolic components in a model of pragmatic question-answering"
   year: "2025"
   journal: "SCiL"
-  authors: "Tsvilodub, P., Hawkins, R. D., &amp; Franke, M."
+  authors: "Tsvilodub, P., Hawkins, R. D., & Franke, M."
   url: "https://arxiv.org/abs/2506.01474"
   image: "/images/papers/IntegratingNeuralSymbolic.png"
+  themes: [ai, pragmatics]
 
 - title: "How do we get to know someone? Diagnostic questions for inferring personal traits"
   year: "2025"
   journal: "Proceedings of the 47th Annual Conference of the Cognitive Science Society"
-  authors: "Brockbank, E., Gerstenberg, T., Fan, J. E., &amp; Hawkins, R. D."
+  authors: "Brockbank, E., Gerstenberg, T., Fan, J. E., & Hawkins, R. D."
   url: "https://escholarship.org/uc/item/4bt8h8s2"
   materials: "https://github.com/erik-brockbank/deep_conversations_cogsci2025"
   image: "/images/papers/GettoKnow.png"
+  themes: [social, pragmatics]
 
 - title: "Function shapes form: Compositionality emerges from communicative needs, not environmental structure alone"
   year: "2025"
   journal: "Proceedings of the 47th Annual Meeting of the Cognitive Science Society"
-  authors: "Mankewitz, J., &amp; Hawkins, R. D."
+  authors: "Mankewitz, J., & Hawkins, R. D."
   url: "https://escholarship.org/uc/item/4tw1c3gn"
   materials: "https://osf.io/3t7fm/"
   image: "/images/papers/FunctionShapesForm.png"
+  themes: [convention]
 
 - title: "Experimentology: An open science approach to experimental psychology methods"
   year: "2025"
   journal: "MIT Press"
   authors: "Frank, M. C., Braginsky, M., Cachia, J., Coles, N., Hardwicke, T. E., Hawkins, R. D., et al."
   url: "https://books.google.com/books?hl=en&lr=&id=gyUmEQAAQBAJ&oi=fnd&pg=PA5&ots=2JWRSwKMEc&sig=VQ7xP3MXs_3Mr1vlkRQm7mdmp7I#v=onepage&q&f=false"
+  themes: [methods]
 
 - title: "Evaluating distillation methods for data-efficient syntax learning"
   year: "2025"
@@ -175,14 +203,16 @@
   authors: "Yamakoshi, T., Griffiths, T. L., McCoy, R. T., & Hawkins, R. D."
   url: "https://aclanthology.org/2025.findings-emnlp.801/"
   image: "/images/papers/EvaluatingDistillation.png"
+  themes: [ai, methods]
 
 - title: "Dynamics of topic exploration in conversation"
   year: "2025"
   journal: "Proceedings of the 47th Annual Conference of the Cognitive Science Society"
-  authors: "Schmidt, H., Bergey, C. A., Zhou, C., Helion, C., &amp; Hawkins, R. D."
+  authors: "Schmidt, H., Bergey, C. A., Zhou, C., Helion, C., & Hawkins, R. D."
   url: "https://escholarship.org/uc/item/15d3808f"
   materials: "https://github.com/SocialInteractionLab/Candor"
   image: "/images/papers/TopicDynamics.png"
+  themes: [conversation]
 
 - title: "Core Knowledge Deficits in Multi-Modal Language Models"
   year: "2025"
@@ -190,6 +220,7 @@
   authors: "Li, Y., Gao, Q., Zhao, T., Wang, B., Sun, H., Lyu, H., Hawkins, R. D., Vasconcelos, N., et al."
   url: "https://arxiv.org/abs/2410.10855"
   image: "/images/papers/CoreKnowledge.png"
+  themes: [ai]
 
 - title: "Comparing human and LLM politeness strategies in free production"
   year: "2025"
@@ -198,11 +229,13 @@
   url: "https://aclanthology.org/2025.emnlp-main.820/"
   materials: "https://github.com/haoranzhao419/politeness-speech-production"
   image: "/images/papers/LLMPoliteness.png"
+  themes: [ai, pragmatics]
 
 - title: "Collective inference depends on the communication channel"
   year: "2025"
   journal: "Under review"
   authors: "Zubak, Y., & Hawkins, R. D."
+  themes: [social]
 
 - title: "Ad hoc conventions generalize to new referents"
   year: "2025"
@@ -210,6 +243,7 @@
   authors: "Ji, A., Bergey, C. A., Eliav, R., Artzi, Y., & Hawkins, R. D."
   url: "https://arxiv.org/abs/2509.05566"
   image: "/images/papers/AdHocConventions.png"
+  themes: [convention]
 
 - title: "When and why does shared reality generalize?"
   year: "2024"
@@ -217,6 +251,7 @@
   authors: "W Mahaphanit, C Welker, H Schmidt, L Chang, RD Hawkins"
   url: "https://escholarship.org/uc/item/6t6195s5"
   image: "/images/papers/sharedreality.png"
+  themes: [social]
 
 - title: "Toddlers Actively Sample from Reliable and Unreliable Speakers"
   year: "2024"
@@ -225,12 +260,14 @@
   url: "https://escholarship.org/uc/item/7pk2j6qb"
   materials: "https://osf.io/4nw57/"
   image: "/images/papers/toddler_reliability_sampling.png"
+  themes: [development]
 
 - title: "The wisdom of partisan crowds: Comparing collective intelligence in humans and LLM-based agents"
   year: "2024"
   journal: "Proceedings of the 46th Annual Conference of the Cognitive Science Society."
   authors: "YS Chuang, S Suresh, N Harlalka, A Goyal, R Hawkins, S Yang, D Shah, J Hu, T Rogers"
   url: "https://arxiv.org/abs/2311.09665"
+  themes: [ai, social]
 
 - title: "Simulating opinion dynamics with networks of LLM-based agents"
   year: "2024"
@@ -239,6 +276,7 @@
   url: "https://aclanthology.org/2024.findings-naacl.211/"
   materials: "https://github.com/yunshiuan/llm-agent-opinion-dynamics"
   image: "/images/papers/LLM_agents.png"
+  themes: [ai, social]
 
 - title: "Shared functional specialization in transformer-based language models and the human brain"
   year: "2024"
@@ -247,6 +285,7 @@
   url: "https://www.nature.com/articles/s41467-024-49173-5"
   materials: "https://github.com/tsumers/bert-brains"
   image: "/images/papers/lang.png"
+  themes: [ai]
 
 - title: "Parents scaffold the formation of conversational pacts with their children"
   year: "2024"
@@ -257,6 +296,7 @@
   talk: "https://www.youtube.com/watch?v=pyGWuBbYMMk"
   image: "/images/papers/convopacts.png"
   context: "an earlier iteration of this paper appeared in the Proceedings of the 42nd Annual Conference of the Cognitive Science Society."
+  themes: [convention, development]
 
 - title: "Interaction structure constrains the emergence of conventions in group communication"
   year: "2024"
@@ -266,6 +306,7 @@
   materials: "https://github.com/vboyce/FYP"
   image: "/images/papers/interactionstructure.png"
   context: "an earlier iteration of this paper appeared in the Proceedings of the 44th Annual Conference of the Cognitive Science Society."
+  themes: [convention]
 
 - title: "Group coordination catalyzes individual and cultural intelligence"
   year: "2024"
@@ -273,6 +314,7 @@
   authors: "CM Wu, R Dale, RD Hawkins."
   url: "https://psyarxiv.com/gscy6"
   image: "/images/papers/GroupCoord.png"
+  themes: [convention, social]
 
 - title: "Distributed statistical inference in social interaction networks"
   year: "2024"
@@ -280,19 +322,15 @@
   authors: "Y Zubak, P Dronavalli, YS Chuang, RD Hawkins."
   url: "https://escholarship.org/uc/item/8km974x4"
   image: "/images/papers/distributed_statistical_info.png"
-
-- title: "Distributed statistical inference in social interaction networks"
-  year: "2024"
-  journal: "Proceedings of the 46th Annual Conference of the Cognitive Science Society."
-  authors: "Y Zubak, P Dronavalli, Y Chuang, RD Hawkins"
-  url: "https://escholarship.org/uc/item/8km974x4"
+  themes: [social]
 
 - title: "A longitudinal analysis of individual differences in the development of communicative acts"
   year: "2024"
   journal: "Proceedings of the 46th Annual Conference of the Cognitive Science Society."
-  authors: "C Bergey, M O’Keeffe, RD Hawkins"
+  authors: "C Bergey, M O'Keeffe, RD Hawkins"
   url: "https://escholarship.org/uc/item/85t9s85w"
   image: "/images/papers/LongitudinalCommunicativeActs.png"
+  themes: [development]
 
 - title: "A hierarchical Bayesian model of adaptive teaching"
   year: "2024"
@@ -300,6 +338,7 @@
   authors: "AM Chen, A Palacci, N Vélez, RD Hawkins*, SJ Gershman*."
   url: "https://psyarxiv.com/4u5g6"
   image: "/images/papers/turtles.png"
+  themes: [social]
 
 - title: "Visual resemblance and interaction history jointly constrain pictorial meaning"
   year: "2023"
@@ -309,6 +348,7 @@
   materials: "https://github.com/hawkrobe/graphical_conventions"
   image: "/images/papers/visualmeaning.png"
   context: "an earlier iteration of this paper appeared in the Proceedings of the 41st Annual Conference of the Cognitive Science Society."
+  themes: [convention, pragmatics]
 
 - title: "The emergence of specialized roles within groups"
   year: "2023"
@@ -316,6 +356,7 @@
   authors: "RL Goldstone, E Andrade-Lotero, RD Hawkins, ME Roberts."
   url: "https://rxdhawkins.files.wordpress.com/2023/06/topics-in-cognitive-science-2023-goldstone-the-emergence-of-specialized-roles-within-groups.pdf"
   image: "/images/papers/grouproles.png"
+  themes: [convention, social]
 
 - title: "Show or tell? Teaching with language outperforms demonstration but only when context is shared"
   year: "2023"
@@ -324,6 +365,7 @@
   url: "https://rxdhawkins.files.wordpress.com/2023/04/1-s2.0-s0010027722003158-main.pdf"
   materials: "https://github.com/tsumers/show-or-tell"
   image: "/images/papers/showortell.png"
+  themes: [pragmatics, social]
 
 - title: "Semantic uncertainty guides the extension of conventions to new referents"
   year: "2023"
@@ -332,6 +374,7 @@
   url: "https://arxiv.org/pdf/2305.06539.pdf"
   materials: "https://github.com/taka-yamakoshi/situation-models"
   image: "/images/papers/semantic_uncertainty.png"
+  themes: [convention, pragmatics]
 
 - title: "Reconciling truthfulness and relevance as epistemic and decision-theoretic utility"
   year: "2023"
@@ -341,6 +384,7 @@
   materials: "https://github.com/tsumers/relevance"
   image: "/images/papers/truthrel.png"
   context: "an earlier iteration of this paper appeared in the Proceedings of the 43rd Annual Conference of the Cognitive Science Society."
+  themes: [pragmatics]
 
 - title: "Overinformative question answering by humans and machines"
   year: "2023"
@@ -349,6 +393,7 @@
   url: "https://arxiv.org/abs/2305.07151"
   materials: "https://github.com/magpie-ea/magpie3-qa-overinfo-free-production"
   image: "/images/papers/Q_and_A.png"
+  themes: [pragmatics, ai]
 
 - title: "Flexible social inference facilitates targeted social learning when rewards are not observable"
   year: "2023"
@@ -357,7 +402,8 @@
   url: "https://doi.org/10.48550/arXiv.2212.00869"
   materials: "https://github.com/hawkrobe/emergent_sensing"
   image: "/images/papers/flexRewards.png"
-  context: "an earlier iteration of this paper won the prize for Computational Modeling in Applied Cognition when it appeared in the Proceedings of the 37th Annual Conference of the Cognitive Science Society."
+  context: "an earlier iteration of this work won the prize for Computational Modeling in Applied Cognition when it appeared in the Proceedings of the 37th Annual Conference of the Cognitive Science Society."
+  themes: [social]
 
 - title: "Causal interventions expose implicit situation models for commonsense language understanding"
   year: "2023"
@@ -367,6 +413,7 @@
   materials: "https://github.com/taka-yamakoshi/situation-models"
   demo: "https://huggingface.co/spaces/taka-yamakoshi/causal-intervention-demo"
   image: "/images/papers/SemUns.png"
+  themes: [ai]
 
 - title: "Using natural language and program abstractions to instill human inductive biases in machines"
   year: "2022"
@@ -376,6 +423,7 @@
   materials: "https://github.com/sreejank/language_and_programs"
   image: "/images/papers/inductiveBias.png"
   context: "winner of outstanding paper award"
+  themes: [ai]
 
 - title: "Shades of confusion: Lexical uncertainty modulates ad hoc coordination in an interactive communication task"
   year: "2022"
@@ -384,6 +432,7 @@
   url: "http://arxiv.org/abs/2105.06546"
   materials: "https://github.com/hawkrobe/color-ref"
   image: "/images/papers/uncertainty.png"
+  themes: [convention, pragmatics]
 
 - title: "Semantic relatedness retroactively boosts memory and promotes memory interdependence across episodes"
   year: "2022"
@@ -392,8 +441,9 @@
   url: "https://elifesciences.org/articles/72519"
   commentary: "https://elifesciences.org/articles/80030"
   image: "/images/papers/semantic.png"
+  themes: [pragmatics]
 
-- title: "Probing BERT’s priors with serial reproduction chains"
+- title: "Probing BERT's priors with serial reproduction chains"
   year: "2022"
   journal: "Findings of ACL."
   authors: "T Yamakoshi, TL Griffiths, RD Hawkins."
@@ -401,6 +451,7 @@
   materials: "https://github.com/taka-yamakoshi/TelephoneGame"
   demo: "https://huggingface.co/spaces/taka-yamakoshi/bert-priors-demo"
   image: "/images/papers/food.png"
+  themes: [ai]
 
 - title: "Mixed-effects transformers for hierarchical adaptation"
   year: "2022"
@@ -408,6 +459,7 @@
   authors: "J White, ND Goodman, RD Hawkins."
   url: "https://arxiv.org/pdf/2205.01749.pdf"
   image: "/images/papers/Transformer.png"
+  themes: [ai]
 
 - title: "Identifying concept libraries from language about object structure"
   year: "2022"
@@ -415,6 +467,7 @@
   authors: "C Wong, W McCarthy, G Grand, Y Friedman, J Tenenbaum, J Andreas, RD Hawkins, JE Fan."
   url: "https://arxiv.org/pdf/2205.05666.pdf"
   materials: "https://github.com/cogtoolslab/lax-cogsci22"
+  themes: [convention, ai]
 
 - title: "How to talk so your robot will learn: Instructions, descriptions, and pragmatics"
   year: "2022"
@@ -424,6 +477,7 @@
   materials: "https://github.com/tsumers/how-to-talk"
   image: "/images/papers/robot.png"
   context: "winner of best paper prize at 2022 NeurIPS Workshop on Language and Reinforcement Learning (LaReL)"
+  themes: [ai, pragmatics]
 
 - title: "From partners to populations: A hierarchical Bayesian account of coordination and convention"
   year: "2022"
@@ -434,6 +488,7 @@
   talk: "https://www.youtube.com/watch?v=bgM9Ee697Mw"
   image: "/images/papers/parttopop.png"
   context: "This paper is partially based on earlier work that appeared in the Proceedings of the 39th Annual Conference of the Cognitive Science Society and the Proceedings of the 42nd Annual Conference of the Cognitive Science Society, where it received the prize for computational modeling in language."
+  themes: [convention]
 
 - title: "Abstract visual reasoning with tangram shapes"
   year: "2022"
@@ -444,6 +499,7 @@
   dataset: "https://tangram-dashboard.vercel.app/"
   image: "/images/papers/dogabs.png"
   context: "winner of best long paper award"
+  themes: [ai, convention]
 
 - title: "A pragmatic account of the weak evidence effect"
   year: "2022"
@@ -452,6 +508,7 @@
   url: "https://direct.mit.edu/opmi/article/doi/10.1162/opmi_a_00061/112696/A-Pragmatic-Account-of-the-Weak-Evidence-Effect"
   materials: "https://github.com/s-a-barnett/bayesian-persuasion"
   image: "/images/papers/judgment.png"
+  themes: [pragmatics]
 
 - title: "The division of labor in communication: Speakers help listeners account for asymmetries in visual perspective"
   year: "2021"
@@ -462,6 +519,7 @@
   talk: "https://www.youtube.com/watch?v=P6KpJOg4iic"
   image: "/images/papers/laborDiv.png"
   context: "This paper is partially based on earlier work that appeared in the Proceedings of the 38th Annual Conference of the Cognitive Science Society."
+  themes: [pragmatics]
 
 - title: "Respect the code: Speakers expect novel conventions to generalize within but not across social group boundaries"
   year: "2021"
@@ -470,6 +528,7 @@
   url: "https://escholarship.org/content/qt6xz612cb/qt6xz612cb.pdf"
   materials: "https://github.com/hawkrobe/code_switching"
   image: "/images/papers/code.png"
+  themes: [convention, social]
 
 - title: "Learning to communicate about shared procedural abstractions"
   year: "2021"
@@ -479,6 +538,7 @@
   materials: "https://github.com/cogtoolslab/compositional-abstractions"
   talk: "https://www.youtube.com/watch?v=ZaAxG1-sKG0"
   image: "/images/papers/shared.png"
+  themes: [convention]
 
 - title: "Learning rewards from linguistic feedback"
   year: "2021"
@@ -487,6 +547,7 @@
   url: "https://arxiv.org/abs/2009.14715"
   materials: "https://github.com/tsumers/rewards"
   image: "/images/papers/AAAI.png"
+  themes: [ai]
 
 - title: "Generating informative, open-domain clarification questions without question examples"
   year: "2021"
@@ -494,6 +555,7 @@
   authors: "J White, G Poesia, RD Hawkins, D Sadigh, N Goodman."
   url: "https://arxiv.org/pdf/2110.09779.pdf"
   materials: "https://github.com/juliaiwhite/clarification-question-generation"
+  themes: [ai, pragmatics]
 
 - title: "When redundancy is useful: A Bayesian approach to 'overinformative' referring expressions"
   year: "2020"
@@ -502,6 +564,7 @@
   url: "https://rxdhawkins.files.wordpress.com/2023/07/2020-22960-001-1.pdf"
   materials: "https://github.com/thegricean/RE_production"
   image: "/images/papers/bayesredund.png"
+  themes: [pragmatics]
 
 - title: "Pragmatic inference and visual abstraction enable contextual flexibility during visual communication"
   year: "2020"
@@ -510,6 +573,7 @@
   url: "https://rdcu.be/bQqxr"
   materials: "https://github.com/judithfan/visual_communication_in_context"
   image: "/images/papers/pragmatic.png"
+  themes: [pragmatics]
 
 - title: "Investigating representations of verb bias in neural language models"
   year: "2020"
@@ -519,6 +583,7 @@
   materials: "https://github.com/taka-yamakoshi/neural_constructions"
   talk: "https://slideslive.com/38939281/investigating-representations-of-verb-bias-in-neural-language-models"
   image: "/images/papers/verbLLM.png"
+  themes: [ai]
 
 - title: "Continual adaptation for efficient machine communication"
   year: "2020"
@@ -529,6 +594,7 @@
   talk: "https://slideslive.com/38939495/continual-adaptation-for-efficient-machine-communication"
   image: "/images/papers/ConAdapt.png"
   context: "winner of best paper prize at 2019 ICML Workshop on Adaptive & Multitask Learning: Algorithms & Systems (AMTL)"
+  themes: [ai, convention]
 
 - title: "Characterizing the dynamics of learning in repeated reference games"
   year: "2020"
@@ -537,6 +603,7 @@
   url: "https://rxdhawkins.files.wordpress.com/2021/10/tangrams_paper.pdf"
   materials: "https://github.com/hawkrobe/tangrams"
   image: "/images/papers/tanagrams.png"
+  themes: [convention]
 
 - title: "The emergence of social norms and conventions"
   year: "2019"
@@ -544,6 +611,7 @@
   authors: "RD Hawkins, ND Goodman, RL Goldstone."
   url: "https://pcl.sitehost.iu.edu/papers/normEmergence.pdf"
   image: "/images/papers/norms.png"
+  themes: [convention, social]
 
 - title: "ShapeGlot: Learning language for shape differentiation"
   year: "2019"
@@ -553,6 +621,7 @@
   materials: "https://github.com/optas/shapeglot"
   demo: "https://ai.stanford.edu/~optas/shapeglot/index.html#"
   image: "/images/papers/chairs.png"
+  themes: [ai]
 
 - title: "Coordinating on meaning in communication"
   year: "2019"
@@ -560,6 +629,7 @@
   authors: "RD Hawkins."
   url: "https://stacks.stanford.edu/file/druid:yk028zn8777/dissertation-augmented.pdf"
   precis: "https://github.com/hawkrobe/dissertation/raw/master/precis/precis.pdf"
+  themes: [convention, pragmatics]
 
 - title: "Communicating semantic part information in drawings"
   year: "2019"
@@ -567,6 +637,7 @@
   authors: "K Mukherjee, RD Hawkins, JE Fan"
   url: "https://cogtoolslab.github.io//pdf/mukherjee_cogsci_2019.pdf"
   materials: "https://github.com/cogtoolslab/semantic_parts"
+  themes: [pragmatics]
 
 - title: "Improving the replicability of psychological science through pedagogy"
   year: "2018"
@@ -575,6 +646,7 @@
   url: "https://psyarxiv.com/p73he"
   materials: "https://osf.io/98ta4/"
   image: "/images/papers/pedagogyrep.png"
+  themes: [methods]
 
 - title: "Emerging abstractions: Lexical conventions are shaped by communicative context"
   year: "2018"
@@ -584,6 +656,7 @@
   materials: "https://github.com/hawkrobe/conventionalizing_hierarchies"
   dataset: "https://cocolab.stanford.edu/datasets/colors.html"
   image: "/images/papers/emergingabs.png"
+  themes: [convention]
 
 - title: "Path ensembles and a tradeoff between communication efficiency and resilience in the human connectome"
   year: "2017"
@@ -591,6 +664,7 @@
   authors: "A Avena-Koenigsberger, B Misic, RD Hawkins, A Griffa, P Hagmann, J Goñi, O Sporns."
   url: "https://rxdhawkins.files.wordpress.com/2013/11/avenakoenigsbergeretal16_pathensembles.pdf"
   image: "/images/papers/pathconnectome.png"
+  themes: [social]
 
 - title: "Colors in context: A pragmatic neural model for grounded language understanding"
   year: "2017"
@@ -600,6 +674,7 @@
   materials: "https://github.com/futurulus/coop-nets"
   dataset: "https://cocolab.stanford.edu/datasets/colors.html"
   image: "/images/papers/colors.png"
+  themes: [pragmatics, ai]
 
 - title: "The formation of social conventions in real-time environments"
   year: "2016"
@@ -608,6 +683,7 @@
   url: "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0151670"
   materials: "https://github.com/hawkrobe/socialConventions"
   image: "/images/papers/RTsocialconventions.png"
+  themes: [convention, social]
 
 - title: "Can two dots form a Gestalt? Measuring emergent features with the capacity coefficient"
   year: "2016"
@@ -616,6 +692,7 @@
   url: "https://rxdhawkins.files.wordpress.com/2015/06/hawkinshoupteidelstownsend2015_dots.pdf"
   materials: "https://github.com/hawkrobe/dots-gestalt"
   image: "/images/papers/GestaltDots.png"
+  themes: [methods]
 
 - title: "A tutorial on general recognition theory"
   year: "2016"
@@ -624,6 +701,7 @@
   url: "https://rxdhawkins.files.wordpress.com/2013/11/silberthawkins16_grttutorial.pdf"
   materials: "https://cran.r-project.org/web/packages/mdsdt/index.html"
   image: "/images/papers/recog_theory.png"
+  themes: [methods]
 
 - title: "Why do you ask? Good questions provoke informative answers"
   year: "2015"
@@ -632,12 +710,14 @@
   url: "https://psyarxiv.com/j2cp6"
   materials: "https://github.com/hawkrobe/Q_and_A"
   image: "/images/papers/why.png"
+  themes: [pragmatics]
 
 - title: "Features of response times: Identification of cognitive mechanisms through mathematical modeling"
   year: "2015"
   journal: "The Oxford Handbook of Computational and Mathematical Psychology"
   authors: "D Algom, A Eidels, RD Hawkins, B Jefferson, JT Townsend."
   url: "https://psymodel.sitehost.iu.edu/papers/FeaturesofResponseTimes1.pdf"
+  themes: [methods]
 
 - title: "Conducting real-time multiplayer experiments on the web"
   year: "2015"
@@ -646,12 +726,14 @@
   url: "https://rxdhawkins.files.wordpress.com/2014/10/hawkins14_realtimewebexperiments.pdf"
   materials: "https://github.com/hawkrobe/MWERT"
   image: "/images/papers/multiplayer.png"
+  themes: [methods]
 
 - title: "Coarse-to-fine sequential Monte Carlo for probabilistic programs"
   year: "2015"
   journal: "ArXiv Technical Report"
   authors: "A Stuhlmüller, RD Hawkins, N Siddharth, ND Goodman."
   url: "https://arxiv.org/abs/1509.02962"
+  themes: [methods]
 
 - title: "Bootstrap methods for the empirical study of decision-making and information flows in social systems"
   year: "2013"
@@ -660,4 +742,4 @@
   url: "http://www.mdpi.com/1099-4300/15/6/2246"
   materials: "http://tuvalu.santafe.edu/~simon/page7/page7.html"
   image: "/images/papers/entropy.png"
-
+  themes: [methods, social]
