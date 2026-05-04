@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // strip them during .load() injection (unlike <script> tags).
 
 function initPapersPage() {
+  console.log('[papers] initPapersPage called');
   var papersEl = document.getElementById('pv2-papers-data');
   var themesEl = document.getElementById('pv2-themes-data');
   var listEl   = document.getElementById('pv2-list');
@@ -27,9 +28,13 @@ function initPapersPage() {
   var searchInput = document.getElementById('pv2-search-input');
   var countEl  = document.getElementById('pv2-count');
 
+  console.log('[papers] pv2-papers-data:', papersEl ? 'found' : 'MISSING');
+  console.log('[papers] pv2-list:', listEl ? 'found' : 'MISSING');
+
   if (!papersEl || !themesEl || !listEl) return; // not on papers page
-  if (listEl.getAttribute('data-pv2-init')) return; // already running
+  if (listEl.getAttribute('data-pv2-init')) { console.log('[papers] already initialized, skipping'); return; }
   listEl.setAttribute('data-pv2-init', '1');
+  console.log('[papers] initializing...');
 
   var papers = JSON.parse(papersEl.value);
   var themes = JSON.parse(themesEl.value);
@@ -183,12 +188,17 @@ function initPapersPage() {
 }
 
 // Direct page load (lab.js runs at end of <body>, DOM is ready)
+console.log('[papers] lab.js loaded, calling initPapersPage on direct load');
 initPapersPage();
 
 // After AJAX navigation — journal.js uses jQuery .load(), so ajaxComplete
 // fires when the new page content has been injected into the DOM.
 if (typeof jQuery !== 'undefined') {
+  console.log('[papers] registering ajaxComplete handler');
   jQuery(document).ajaxComplete(function () {
+    console.log('[papers] ajaxComplete fired');
     initPapersPage();
   });
+} else {
+  console.warn('[papers] jQuery not found — ajaxComplete not registered');
 }
