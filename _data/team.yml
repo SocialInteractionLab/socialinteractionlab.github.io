@@ -13,6 +13,14 @@ current:
     image: "/images/people/claire.jpg"
     bio: "Claire is a postdoctoral researcher in the lab. She researches how the constraints of communication shape the way people learn and use language. Some recent projects have focused on how children expand their repertoires of conversational moves, and how we use language to selectively remark on atypical things in the world. Her work uses naturalistic corpus studies, lab experiments, and computational modeling to characterize the development of communicative competence."
 
+- name: "Yajun Liu"
+    role: "Post-Doctoral Scholar"
+    order: 2
+    website: "https://yliu820.github.io/liuyajun/"
+    image: "/images/people/yajun_liu.jpg"
+    bio: "Yajun is interested in how speakers and listeners share the work of communication in real time. Her current research examines the cognitive and neural mechanisms that support this division of labor, and how diverse language experience may modulate these processes. Before joining the lab at Stanford, Yajun completed her PhD in Developmental Linguistics at the University of Edinburgh, where she studied how bilingual experience reshapes the way in which speakers use their native language, focusing on anaphoric reference and lexical ambiguity in spoken Mandarin."
+
+
   - name: "Misha O’Keeffe"
     role: "Lab Manager"
     order: 4
