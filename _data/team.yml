@@ -13,7 +13,7 @@ current:
     image: "/images/people/claire.jpg"
     bio: "Claire is a postdoctoral researcher in the lab. She researches how the constraints of communication shape the way people learn and use language. Some recent projects have focused on how children expand their repertoires of conversational moves, and how we use language to selectively remark on atypical things in the world. Her work uses naturalistic corpus studies, lab experiments, and computational modeling to characterize the development of communicative competence."
 
-- name: "Yajun Liu"
+  - name: "Yajun Liu"
     role: "Post-Doctoral Scholar"
     order: 2
     website: "https://yliu820.github.io/liuyajun/"
