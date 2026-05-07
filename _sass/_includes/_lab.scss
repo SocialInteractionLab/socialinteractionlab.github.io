@@ -523,21 +523,37 @@
 .pv2-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 8px;
+  gap: 5px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--pv2-rule);
 }
 
 .pv2-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-family: var(--pv2-mono);
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--pv2-accent-ink);
   text-decoration: none;
-  border-bottom: 1px solid var(--pv2-mint);
-  padding-bottom: 1px;
+  padding: 3px 9px;
+  border-radius: 999px;
 
-  &:hover { color: var(--pv2-forest); }
+  svg {
+    width: 10px;
+    height: 10px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    flex-shrink: 0;
+  }
+
+  &.pv2-link--mat  { background: oklch(0.90 0.04 260); color: oklch(0.32 0.10 260); &:hover { background: oklch(0.84 0.06 260); } }
+  &.pv2-link--talk { background: oklch(0.90 0.045 30);  color: oklch(0.35 0.10 30);  &:hover { background: oklch(0.84 0.07 30);  } }
+  &.pv2-link--data { background: oklch(0.90 0.04 140);  color: oklch(0.32 0.09 140); &:hover { background: oklch(0.84 0.06 140); } }
+  &.pv2-link--demo { background: oklch(0.90 0.04 300);  color: oklch(0.34 0.09 300); &:hover { background: oklch(0.84 0.06 300); } }
 }
 
 .pv2-pvenue {

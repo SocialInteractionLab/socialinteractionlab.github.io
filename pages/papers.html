@@ -73,10 +73,10 @@ featured_image: /images/monstera3.jpg
             {% endif %}
             {% if p.materials or p.talk or p.dataset or p.demo %}
             <div class="pv2-links">
-              {% if p.materials %}<a class="pv2-link" href="{{ p.materials | escape }}" target="_blank" rel="noopener">materials</a>{% endif %}
-              {% if p.talk %}<a class="pv2-link" href="{{ p.talk | escape }}" target="_blank" rel="noopener">talk</a>{% endif %}
-              {% if p.dataset %}<a class="pv2-link" href="{{ p.dataset | escape }}" target="_blank" rel="noopener">dataset</a>{% endif %}
-              {% if p.demo %}<a class="pv2-link" href="{{ p.demo | escape }}" target="_blank" rel="noopener">demo</a>{% endif %}
+              {% if p.materials %}<a class="pv2-link pv2-link--mat" href="{{ p.materials | escape }}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>materials</a>{% endif %}
+              {% if p.talk %}<a class="pv2-link pv2-link--talk" href="{{ p.talk | escape }}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>talk</a>{% endif %}
+              {% if p.dataset %}<a class="pv2-link pv2-link--data" href="{{ p.dataset | escape }}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>dataset</a>{% endif %}
+              {% if p.demo %}<a class="pv2-link pv2-link--demo" href="{{ p.demo | escape }}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>demo</a>{% endif %}
             </div>
             {% endif %}
           </div>
