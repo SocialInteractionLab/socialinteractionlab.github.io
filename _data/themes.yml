@@ -5,19 +5,22 @@
   label: "Convention & coordination"
 
 - id: ai
-  label: "Human–AI interaction"
-
-- id: development
-  label: "Language development"
+  label: "Minds & machines"
 
 - id: social
   label: "Social cognition"
 
-- id: law
-  label: "Language & law"
+- id: development
+  label: "Language development"
+
+- id: conversation
+  label: "Conversation dynamics"
 
 - id: methods
   label: "Methods & open science"
 
-- id: conversation
-  label: "Conversation dynamics"
+- id: visual
+  label: "Visual & multimodal"
+
+- id: learning
+  label: "Social learning & teaching"

@@ -16,7 +16,7 @@
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Brooks, T., & Hawkins, R. D."
-  themes: [pragmatics, law]
+  themes: [pragmatics]
 
 - title: "The content of common ground shapes coordination"
   year: "2026"
@@ -61,7 +61,7 @@
   url: "https://arxiv.org/abs/2602.08914"
   materials: "https://multimodal-conventions.github.io/"
   image: "/images/papers/GesturingAbstraction.png"
-  themes: [convention, conversation]
+  themes: [convention, conversation, visual]
 
 - title: "From idiosyncratic narratives to social scripts: Mapping the semantic space of self-descriptions in children and adults"
   year: "2026"
@@ -338,7 +338,7 @@
   authors: "AM Chen, A Palacci, N Vélez, RD Hawkins*, SJ Gershman*."
   url: "https://psyarxiv.com/4u5g6"
   image: "/images/papers/turtles.png"
-  themes: [social]
+  themes: [social, learning]
 
 - title: "Visual resemblance and interaction history jointly constrain pictorial meaning"
   year: "2023"
@@ -348,7 +348,7 @@
   materials: "https://github.com/hawkrobe/graphical_conventions"
   image: "/images/papers/visualmeaning.png"
   context: "an earlier iteration of this paper appeared in the Proceedings of the 41st Annual Conference of the Cognitive Science Society."
-  themes: [convention, pragmatics]
+  themes: [convention, pragmatics, visual]
 
 - title: "The emergence of specialized roles within groups"
   year: "2023"
@@ -365,7 +365,7 @@
   url: "https://rxdhawkins.files.wordpress.com/2023/04/1-s2.0-s0010027722003158-main.pdf"
   materials: "https://github.com/tsumers/show-or-tell"
   image: "/images/papers/showortell.png"
-  themes: [pragmatics, social]
+  themes: [pragmatics, social, learning]
 
 - title: "Semantic uncertainty guides the extension of conventions to new referents"
   year: "2023"
@@ -403,7 +403,7 @@
   materials: "https://github.com/hawkrobe/emergent_sensing"
   image: "/images/papers/flexRewards.png"
   context: "an earlier iteration of this work won the prize for Computational Modeling in Applied Cognition when it appeared in the Proceedings of the 37th Annual Conference of the Cognitive Science Society."
-  themes: [social]
+  themes: [social, learning]
 
 - title: "Causal interventions expose implicit situation models for commonsense language understanding"
   year: "2023"
@@ -423,7 +423,7 @@
   materials: "https://github.com/sreejank/language_and_programs"
   image: "/images/papers/inductiveBias.png"
   context: "winner of outstanding paper award"
-  themes: [ai]
+  themes: [ai, learning]
 
 - title: "Shades of confusion: Lexical uncertainty modulates ad hoc coordination in an interactive communication task"
   year: "2022"
@@ -467,7 +467,7 @@
   authors: "C Wong, W McCarthy, G Grand, Y Friedman, J Tenenbaum, J Andreas, RD Hawkins, JE Fan."
   url: "https://arxiv.org/pdf/2205.05666.pdf"
   materials: "https://github.com/cogtoolslab/lax-cogsci22"
-  themes: [convention, ai]
+  themes: [convention, ai, visual]
 
 - title: "How to talk so your robot will learn: Instructions, descriptions, and pragmatics"
   year: "2022"
@@ -477,7 +477,7 @@
   materials: "https://github.com/tsumers/how-to-talk"
   image: "/images/papers/robot.png"
   context: "winner of best paper prize at 2022 NeurIPS Workshop on Language and Reinforcement Learning (LaReL)"
-  themes: [ai, pragmatics]
+  themes: [ai, pragmatics, learning]
 
 - title: "From partners to populations: A hierarchical Bayesian account of coordination and convention"
   year: "2022"
@@ -499,7 +499,7 @@
   dataset: "https://tangram-dashboard.vercel.app/"
   image: "/images/papers/dogabs.png"
   context: "winner of best long paper award"
-  themes: [ai, convention]
+  themes: [ai, convention, visual]
 
 - title: "A pragmatic account of the weak evidence effect"
   year: "2022"
@@ -538,7 +538,7 @@
   materials: "https://github.com/cogtoolslab/compositional-abstractions"
   talk: "https://www.youtube.com/watch?v=ZaAxG1-sKG0"
   image: "/images/papers/shared.png"
-  themes: [convention]
+  themes: [convention, visual]
 
 - title: "Learning rewards from linguistic feedback"
   year: "2021"
@@ -547,7 +547,7 @@
   url: "https://arxiv.org/abs/2009.14715"
   materials: "https://github.com/tsumers/rewards"
   image: "/images/papers/AAAI.png"
-  themes: [ai]
+  themes: [ai, learning]
 
 - title: "Generating informative, open-domain clarification questions without question examples"
   year: "2021"
@@ -573,7 +573,7 @@
   url: "https://rdcu.be/bQqxr"
   materials: "https://github.com/judithfan/visual_communication_in_context"
   image: "/images/papers/pragmatic.png"
-  themes: [pragmatics]
+  themes: [pragmatics, visual]
 
 - title: "Investigating representations of verb bias in neural language models"
   year: "2020"
@@ -621,7 +621,7 @@
   materials: "https://github.com/optas/shapeglot"
   demo: "https://ai.stanford.edu/~optas/shapeglot/index.html#"
   image: "/images/papers/chairs.png"
-  themes: [ai]
+  themes: [ai, visual]
 
 - title: "Coordinating on meaning in communication"
   year: "2019"
@@ -637,7 +637,7 @@
   authors: "K Mukherjee, RD Hawkins, JE Fan"
   url: "https://cogtoolslab.github.io//pdf/mukherjee_cogsci_2019.pdf"
   materials: "https://github.com/cogtoolslab/semantic_parts"
-  themes: [pragmatics]
+  themes: [pragmatics, visual]
 
 - title: "Improving the replicability of psychological science through pedagogy"
   year: "2018"

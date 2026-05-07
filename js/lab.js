@@ -2,8 +2,8 @@
 (function ($) {
 
   // ---- state ----
-  var pv2Query = '';
-  var pv2Theme = null;
+  var pv2Query  = '';
+  var pv2Themes = [];  // multi-select: array of active theme ids
 
   // header overlays are decorative
   $('.header-image, .header-overlay').css('pointer-events', 'none');
@@ -25,7 +25,8 @@
         var $row    = $(this);
         var themes  = ($row.attr('data-themes') || '').split(/\s+/);
         var blob    = $row.attr('data-search-blob') || '';
-        var themeMatch  = !pv2Theme || themes.indexOf(pv2Theme) > -1;
+        // AND logic: every selected theme must be present on the paper
+        var themeMatch  = !pv2Themes.length || pv2Themes.every(function (t) { return themes.indexOf(t) > -1; });
         var searchMatch = !tokens.length || tokens.every(function (tok) { return blob.indexOf(tok) > -1; });
         var visible = themeMatch && searchMatch;
         $row.toggle(visible);
@@ -35,14 +36,20 @@
       $yearRow.toggle(yearVisible);
     });
 
-    if (pv2Query || pv2Theme) {
+    if (pv2Query || pv2Themes.length) {
       $count.text(visibleCount + (visibleCount === 1 ? ' result' : ' results')).show();
     } else {
       $count.hide();
     }
 
+    // update chip highlight states
     $chips.find('.pv2-chip').each(function () {
-      $(this).toggleClass('on', $(this).attr('data-theme') === (pv2Theme || ''));
+      var tid = $(this).attr('data-theme');
+      if (tid === '') {
+        $(this).toggleClass('on', pv2Themes.length === 0);
+      } else {
+        $(this).toggleClass('on', pv2Themes.indexOf(tid) > -1);
+      }
     });
   }
 
@@ -58,20 +65,25 @@
     var $chip = $(e.target).closest('.pv2-chip');
     if (!$chip.length || $chip.attr('data-theme') === undefined) return;
     var tid = $chip.attr('data-theme');
-    pv2Theme = (tid === '' || tid === pv2Theme) ? null : tid;
+    if (tid === '') {
+      pv2Themes = [];
+    } else {
+      var idx = pv2Themes.indexOf(tid);
+      if (idx > -1) {
+        pv2Themes.splice(idx, 1);
+      } else {
+        pv2Themes.push(tid);
+      }
+    }
     pv2Render();
   });
 
   // ---- fix body.loading after AJAX nav ----
-  // journal.js appends new .page__content to .page after its 400ms swap.
-  // body.loading .page { visibility:hidden } blocks all pointer events until
-  // body.loading is removed. Watch .page for the append and clear it.
   var _page = document.querySelector('.page');
   if (_page) {
     new MutationObserver(function () {
-      pv2Query = '';
-      pv2Theme = '';
-      // give journal.js a moment to finish, then clear loading
+      pv2Query  = '';
+      pv2Themes = [];
       setTimeout(function () {
         $('body').removeClass('loading');
       }, 50);
