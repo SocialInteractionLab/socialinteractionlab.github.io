@@ -467,6 +467,7 @@
   authors: "C Wong, W McCarthy, G Grand, Y Friedman, J Tenenbaum, J Andreas, RD Hawkins, JE Fan."
   url: "https://arxiv.org/pdf/2205.05666.pdf"
   materials: "https://github.com/cogtoolslab/lax-cogsci22"
+  image: "/images/papers/identifying_concept_libraries.png"
   themes: [convention, ai, visual]
 
 - title: "How to talk so your robot will learn: Instructions, descriptions, and pragmatics"
@@ -555,6 +556,7 @@
   authors: "J White, G Poesia, RD Hawkins, D Sadigh, N Goodman."
   url: "https://arxiv.org/pdf/2110.09779.pdf"
   materials: "https://github.com/juliaiwhite/clarification-question-generation"
+  image: "/images/papers/open_domain_clarification.png"
   themes: [ai, pragmatics]
 
 - title: "When redundancy is useful: A Bayesian approach to 'overinformative' referring expressions"
