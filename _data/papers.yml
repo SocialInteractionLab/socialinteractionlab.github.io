@@ -1,3 +1,12 @@
+- title: "Generalized shared reality arises in brief interactions from structured social inferences about commonality"
+  year: "2026"
+  journal: "PsyArXiv Preprint"
+  authors: "Mahaphanit, W., Welker, C., Schmidt, H., Houlihan, S. D., Chang, L. J., & Hawkins, R. D."
+  url: "https://osf.io/preprints/psyarxiv/3xzpe_v2"
+  materials: "https://github.com/SocialInteractionLab/shared-reality"
+  image: "/images/papers/generalized_shared_reality.png"
+  themes: [social, conversation]
+
 - title: "When precision pays: Costs, benefits, and constraints in good-enough production"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
@@ -85,6 +94,9 @@
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Brockbank, E., Dee, N. R., O'Keeffe, M., Mahaphanit, W., Gerstenberg, T., Fan, J. E., & Hawkins, R. D."
+  url: "https://osf.io/preprints/psyarxiv/rxq5u_v1"
+  materials: "https://github.com/erik-brockbank/traits_from_conversation_cogsci_2026"
+  image: "/images/papers/traits_from_conversation.png"
   themes: [pragmatics, social, conversation]
 
 - title: "Act or clarify? Modeling sensitivity to uncertainty and cost in communication"

@@ -7,14 +7,14 @@ current:
     bio: "Robert is interested in the cognitive mechanisms that allow people to flexibly communicate, collaborate, and coordinate with one another in social interactions. He received his PhD in Psychology from Stanford University in 2019 and was a C.V. Starr Fellow at the Princeton Neuroscience Institute prior to starting as an Assistant Professor of Linguistics at Stanford in 2024."
 
   - name: "Claire Augusta Bergey"
-    role: "Post-Doctoral Scholar"
+    role: "Post-Doctoral Scholars"
     order: 2
     website: "https://clairebergey.net/"
     image: "/images/people/claire.jpg"
     bio: "Claire is a postdoctoral researcher in the lab. She researches how the constraints of communication shape the way people learn and use language. Some recent projects have focused on how children expand their repertoires of conversational moves, and how we use language to selectively remark on atypical things in the world. Her work uses naturalistic corpus studies, lab experiments, and computational modeling to characterize the development of communicative competence."
 
   - name: "Yajun Liu"
-    role: "Post-Doctoral Scholar"
+    role: "Post-Doctoral Scholars"
     order: 2
     website: "https://yliu820.github.io/liuyajun/"
     image: "/images/people/yajun_liu.jpg"
@@ -29,59 +29,66 @@ current:
     bio: "As a recent graduate from UW-Madison (2024) with a background in physics, economics, and psychology, I'm really interested in how we think about other minds and pretty much everything that goes into this sort of reasoning. More recently, I've been interested in how we can model these sorts of things across development. Outside of the lab, I love being outdoors, reading, and spending time with friends. Feel free to connect with me via email (Mokeeffe@stanford.edu)!"
 
   - name: "Bran Papineau"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     website: "https://branpap.com/"
     image: "/images/people/bran.jpg"
     bio: "I am a 6th year PhD candidate in the linguistics department at Stanford. My research focuses on the ways in which cognitive and social processes interact in language processing and production, with a special emphasis on gender and political ideology. When not dissertating, I can be found collaborating with friends on topics such as morphosyntactic variation, sociophonetic variation, and improving experimental methods. Outside of work, I enjoy reading (horror, especially), playing video games (tragically bad Zenyatta/Lifeweaver main), or hanging out with my dog (Dionysus)."
 
   - name: "Emily Goodwin"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     website: "https://emilygoodwin.github.io"
     image: "/images/people/emilygoodwin.jpg"
     bio: "I am a fourth-year PhD student in the Stanford linguistics department, advised by [Robert Hawkins](https://rdhawkins.com/), [Cory Shain](https://climblab.org/members/cory_shain), and [Beth Levin](https://web.stanford.edu/~bclevin/). I am broadly interested in meaning, with a focus on verbs, event semantics, and syntactic alternations."
 
   - name: "Jess Mankewitz"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     website: "https://jmankewitz.com/"
     image: "/images/people/jess.jpg"
     bio: "Jess is interested in the way humans learn to communicate and interact with one another. They approach these questions using computational models, developmental experiments, and publicly available datasets. They are also affiliated with the [Infant Learning Lab](https://infantlearning.waisman.wisc.edu/). They graduated from UC Berkeley in 2020 with a B.A. in Cognitive Science and were the the Lab Manager for the Language and Cognition Lab at Stanford University prior to starting graduate school."
 
   - name: "Ke Fang"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     website: "https://kefangpsych.github.io/"
     image: "/images/people/ke2.jpg"
     bio: "Ke is a PhD student (2024 admit) in Stanford's Psychology Department. He is interested in applying computational approaches to understand how distributed individual minds support emergent collective-level behaviors and patterns such as cooperation, social norms, and polarization. Prior to Stanford, he completed his master's at New York University and his undergraduate degree at Lanzhou University, China. Outside of research, Kay enjoys pour-over coffee, visiting museums, and drawing."
 
   - name: "Selena She"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     website: "https://selenashe.github.io/"
     image: "/images/people/selena.png"
     bio: "Selena is a first-year PhD student in Stanford’s Computer Science department. She is interested in how humans (and machines) understand and communicate with one another in goal-oriented settings. To study this, she combines tools from artificial intelligence and cognitive (neuro)science. Before Stanford, she graduated from Haverford College studying Math and Cognitive Science, then spent two years as a research assistant with Ev Fedorenko at MIT."
 
   - name: "Taka Yamakoshi"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     website: "https://taka-yamakoshi.github.io/"
     image: "/images/people/taka.JPG"
     bio: "Taka is a first-year PhD student in the Computer Science Department at Stanford. His research goal is to understand the step-by-step computations that support language comprehension and production. To this end, he aims to develop computational models that are aligned to humans at both behavioral and algorithmic levels, using insights from cognitive science, linguistics, and neuroscience. Before coming to Stanford, he completed a medical degree from the University of Tokyo in 2025."
 
   - name: "Tilly Brooks"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     website: "https://www.linkedin.com/in/tilly-brooks-6ab246186/"
     image: "/images/people/tilly_brooks.jpeg"
     bio: "From New Haven, CT, Tilly Brooks is a PhD student in the Stanford Department of Linguistics and JD candidate at Yale Law School.  She is interested in deontic modality, performative utterances, and the interface of law and linguistics.  Focusing both on the effects of law and policy decisions on marginalized linguistic communities and the application of linguistic theories, research methods, and tools to interpretive legal processes, Tilly researches what she calls “the law of language and the language of law.” In the long term, she aims to draw communities of legal scholars, linguists, and legal practitioners together with the common goals of advancing linguistic justice in the practice of law, refining the use of linguistic evidence and tools for law and policy purposes, and using the study of legal language to advance linguistic theory."
 
   - name: "Yuka Machino"
-    role: "Graduate Students"
+    role: "PhD Students"
     order: 5
     image: "/images/people/yuka_machino.jpg"
     bio: "I am interested in how social factors shape communication. Using behavioral experiments and computational modeling, I am especially interested in understanding how cultural differences in values, common sense and ways of life, lead to differences in everyday interactions. Prior to starting grad school at Stanford in 2025, I completed my undergrad and master’s degrees at MIT. Outside of research I enjoy swimming, travelling, and doing math."
+
+  - name: "Hannah Guan"
+    role: "Master's Students"
+    order: 99
+    website: "https://hannahguan.github.io"
+    image: "/images/people/hannah_guan.jpg"
+    bio: "Hannah is a first-year master's student in Symbolic Systems program at Stanford. She is interested in how people communicate, collaborate, and make decisions alongside intelligent systems. Prior to Stanford, she graduated from University of Michigan, Ann Arbor, studying Computer Science and Cognitive Science. Outside of research, she likes hiking, playing pickleball, traveling, and reading."
 
   - name: "Charlotte Burnham"
     role: "Research Assistants"
@@ -114,6 +121,10 @@ current:
     order: 99
     image: "/images/people/ben.jpg"
     bio: "Ben is a sophomore at UW-Madison studying neurobiology and psychology. He is interested in the emergence of social networks and how their features can inform our perspective on other information networks, from the brain to fungi. He plans to pursue a M.D., Ph.D., or a program mixing the two. In his free time, Ben enjoys running, listening to audiobooks, and taking photographs of wildlife."
+
+  - name: "Erik Brockbank"
+    role: "Lab Affilates"
+    order: 99
 
   - name: "Clementine Zimnicki"
     role: "Lab Affilates"

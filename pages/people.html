@@ -41,7 +41,7 @@ featured_image: /images/monstera3.jpg
 <section class="portfolio">
   <div class="wrap">
     
-    {% assign roles_priority = "Principal Investigator,Post-Doctoral Scholar,Lab Manager,Graduate Students,Research Assistants,Lab Affilates" | split: "," %}
+    {% assign roles_priority = "Principal Investigator,Post-Doctoral Scholars,Lab Manager,PhD Students,Master's Students,Research Assistants,Lab Affilates" | split: "," %}
     {% assign people_grouped_by_role = site.data.team.current | group_by: "role" %}
 
     {% for role_name in roles_priority %}
