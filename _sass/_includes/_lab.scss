@@ -103,7 +103,7 @@
 }
 
 .intro {
-  height: 100vh;
+  height: auto;
 }
 
 .groupname {
@@ -154,6 +154,7 @@
 
 .file-list__role-title {
   text-align: center;
+  color: $text-dark-color;
 }
 
 .file-list__bio {
@@ -192,6 +193,8 @@
   margin-bottom: 12px;
   font-size: 1.1rem;
   line-height: 1.5;
+  color: $text-dark-color;
+  font-weight: $bold-weight;
 }
 
 // ============================================================

@@ -30,14 +30,14 @@ current:
 
   - name: "Bran Papineau"
     role: "PhD Students"
-    order: 5
+    order: 6
     website: "https://branpap.com/"
     image: "/images/people/bran.jpg"
     bio: "I am a 6th year PhD candidate in the linguistics department at Stanford. My research focuses on the ways in which cognitive and social processes interact in language processing and production, with a special emphasis on gender and political ideology. When not dissertating, I can be found collaborating with friends on topics such as morphosyntactic variation, sociophonetic variation, and improving experimental methods. Outside of work, I enjoy reading (horror, especially), playing video games (tragically bad Zenyatta/Lifeweaver main), or hanging out with my dog (Dionysus)."
 
   - name: "Emily Goodwin"
     role: "PhD Students"
-    order: 5
+    order: 3
     website: "https://emilygoodwin.github.io"
     image: "/images/people/emilygoodwin.jpg"
     bio: "I am a fourth-year PhD student in the Stanford linguistics department, advised by [Robert Hawkins](https://rdhawkins.com/), [Cory Shain](https://climblab.org/members/cory_shain), and [Beth Levin](https://web.stanford.edu/~bclevin/). I am broadly interested in meaning, with a focus on verbs, event semantics, and syntactic alternations."
@@ -51,35 +51,35 @@ current:
 
   - name: "Ke Fang"
     role: "PhD Students"
-    order: 5
+    order: 2
     website: "https://kefangpsych.github.io/"
     image: "/images/people/ke2.jpg"
     bio: "Ke is a PhD student (2024 admit) in Stanford's Psychology Department. He is interested in applying computational approaches to understand how distributed individual minds support emergent collective-level behaviors and patterns such as cooperation, social norms, and polarization. Prior to Stanford, he completed his master's at New York University and his undergraduate degree at Lanzhou University, China. Outside of research, Kay enjoys pour-over coffee, visiting museums, and drawing."
 
   - name: "Selena She"
     role: "PhD Students"
-    order: 5
+    order: 7
     website: "https://selenashe.github.io/"
     image: "/images/people/selena.png"
     bio: "Selena is a first-year PhD student in Stanford’s Computer Science department. She is interested in how humans (and machines) understand and communicate with one another in goal-oriented settings. To study this, she combines tools from artificial intelligence and cognitive (neuro)science. Before Stanford, she graduated from Haverford College studying Math and Cognitive Science, then spent two years as a research assistant with Ev Fedorenko at MIT."
 
   - name: "Taka Yamakoshi"
     role: "PhD Students"
-    order: 5
+    order: 8
     website: "https://taka-yamakoshi.github.io/"
     image: "/images/people/taka.JPG"
     bio: "Taka is a first-year PhD student in the Computer Science Department at Stanford. His research goal is to understand the step-by-step computations that support language comprehension and production. To this end, he aims to develop computational models that are aligned to humans at both behavioral and algorithmic levels, using insights from cognitive science, linguistics, and neuroscience. Before coming to Stanford, he completed a medical degree from the University of Tokyo in 2025."
 
   - name: "Tilly Brooks"
     role: "PhD Students"
-    order: 5
+    order: 1
     website: "https://www.linkedin.com/in/tilly-brooks-6ab246186/"
     image: "/images/people/tilly_brooks.jpeg"
     bio: "From New Haven, CT, Tilly Brooks is a PhD student in the Stanford Department of Linguistics and JD candidate at Yale Law School.  She is interested in deontic modality, performative utterances, and the interface of law and linguistics.  Focusing both on the effects of law and policy decisions on marginalized linguistic communities and the application of linguistic theories, research methods, and tools to interpretive legal processes, Tilly researches what she calls “the law of language and the language of law.” In the long term, she aims to draw communities of legal scholars, linguists, and legal practitioners together with the common goals of advancing linguistic justice in the practice of law, refining the use of linguistic evidence and tools for law and policy purposes, and using the study of legal language to advance linguistic theory."
 
   - name: "Yuka Machino"
     role: "PhD Students"
-    order: 5
+    order: 4
     image: "/images/people/yuka_machino.jpg"
     bio: "I am interested in how social factors shape communication. Using behavioral experiments and computational modeling, I am especially interested in understanding how cultural differences in values, common sense and ways of life, lead to differences in everyday interactions. Prior to starting grad school at Stanford in 2025, I completed my undergrad and master’s degrees at MIT. Outside of research I enjoy swimming, travelling, and doing math."
 
@@ -92,95 +92,93 @@ current:
 
   - name: "Charlotte Burnham"
     role: "Research Assistants"
-    order: 7
+    order: 1
     image: "/images/people/charlotte_burnham.jpeg"
     bio: "Charlotte is a rising senior majoring in Linguistics and minoring in East Asian studies! She is interested in language acquisition, bilingualism, and how children use language. Apart from her studies, she is also a member of Stanford’s lightweight rowing team!"
 
-  - name: "Van Tran"
-    role: "Research Assistants"
-    order: 8
-    image: "/images/people/van_tran.png"
-    bio: "Van is a rising Sophomore at Stanford. While undeclared, she plans to minor in Translation Studies and is interested in the intersection of language and technology. Outside of research, she enjoys reading, arts and crafts, trying new restaurants, and traveling."
-
   - name: "Oliver Lee"
     role: "Research Assistants"
-    order: 9
+    order: 2
     image: "/images/people/oliver_lee.png"
     bio: "Oliver is a senior majoring in Symbolic Systems and German Studies, and beginning a co-term in Linguistics. His main research interests are acquisition, computational linguistics, and the syntax-semantics interface. In his free time, he likes running, going on hikes, and learning languages."
 
   - name: "Ashrita Patil"
     role: "Research Assistants"
-    order: 99
+    order: 3
     image: "/images/people/Ashrita.jpg"
     bio: |
       Ashrita is a rising sophomore majoring in Computer Science at UW-Madison, with a keen interest in the intersection between psychology and computer science, particularly in the realm of Human-Computer Interaction (HCI).
       She loves traveling, discovering new places and cuisines, and enjoys watching movies.
 
-  - name: "Ben Plum"
-    role: "Research Assistants"
-    order: 99
-    image: "/images/people/ben.jpg"
-    bio: "Ben is a sophomore at UW-Madison studying neurobiology and psychology. He is interested in the emergence of social networks and how their features can inform our perspective on other information networks, from the brain to fungi. He plans to pursue a M.D., Ph.D., or a program mixing the two. In his free time, Ben enjoys running, listening to audiobooks, and taking photographs of wildlife."
-
   - name: "Erik Brockbank"
     role: "Lab Affilates"
-    order: 99
-
-  - name: "Clementine Zimnicki"
-    role: "Lab Affilates"
-    order: 99
-    website: "https://clementinezimnicki.github.io/"
-    image: "/images/people/clem.png"
-    bio: "Clementine works in the [Visual Reasoning Lab](https://schlosslab.discovery.wisc.edu/), where she is interested in how people interpret data visualizations, with the goal of understanding how to make visualizations more accessible to broader audiences. Ultimately, this work can be used to make visualization tools, increasing public scientific literacy. Before graduate school, she completed her BS in Psychology at the University of Illinois at Urbana-Champaign."
-
-  - name: "Isaiah Zhou"
-    role: "Research Assistants"
-    order: 99
-    image: "/images/people/Isaiah.jpg"
-    bio: "Isaiah is a senior at UW-Madison majoring in Computer Science and Psychology with a Game Design certificate. He is interested in exploring the interdisciplinary fields between computer science and psychology. In his free time, Isaiah enjoys playing video games and basketball."
+    order: 1
+    website: "http://www.erikbrockbank.com/"
+    image: "/images/people/erik_brockbank.jpg"
+    bio: "Erik is broadly interested in the cognitive processes that support interpersonal relationships: how people learn what others are like and use that knowledge to explain and make sense of their behavior. At Soil, his work focuses on the ways people use language and conversation to get to know other people. How do they choose which questions to ask and what do they learn from the answers? His work combines large-scale online behavioral experiments with computational modeling and tools from artificial intelligence to understand how people navigate a rich and complex social world."
 
   - name: "Jinyi Kuang"
     role: "Lab Affilates"
-    order: 99
+    order: 2
     website: "https://www.jinyikuang.com/"
     image: "/images/people/jinyi.jpg"
     bio: "Jinyi a Ph.D. student in Psychology at the University of Pennsylvania. She is interested in the the cognitive mechanisms underlying social norm perceptions and inferences. Her recent research focuses on how individual mental model can explain population-level descriptive to injunctive norm shift and how people effectively communicate social norms using online experiments and computational modeling."
 
   - name: "Kushin Mukherjee"
     role: "Lab Affilates"
-    order: 99
+    order: 4
     website: "https://kushinm.com/"
     image: "/images/people/kushin.jpg"
     bio: "I am a fifth year Psychology PhD student. My primary interest is in the nature of visual concepts. How are they learned? How are they structured? Can machines be taught these concepts? I believe the act of communication can shed much light on the answers to these questions, and so I study how we use drawings and information visualizations to convey our knowledge of the world to each other."
 
-  - name: "Sean Yun-Shiuan Chuang"
-    role: "Lab Affilates"
-    order: 99
-    website: "https://yunshiuan.github.io/"
-    image: "/images/people/sean.jpg"
-    bio: "Sean is a M.S. Computer Science and Ph.D. Cognitive Science student at UW-Madison. His research focuses on using machine learning to improve human-machine interactions. Prior to graduate school, he completed his undergraduate studies at National Taiwan University."
-
-  - name: "Senyi Yang"
-    role: "Research Assistants"
-    order: 99
-    image: "/images/people/senyi.jpg"
-    bio: "Senyi is an incoming junior studying Psychology and Data Science. He is most excited for the opportunity to explore the nuances of the language skills in the development of children. Originally from San Francisco, California, you can find always him exploring the outdoors whether it’s hiking and camping, fishing, or skiing. In his free time, he enjoys photography, playing water polo, and driving his car."
-
-  - name: "Siddharth Suresh"
-    role: "Lab Affilates"
-    order: 99
-    website: "https://www.sidsuresh.com"
-    image: "/images/people/sid.jpg"
-    bio: "Siddharth’s research interests are centered around the differences and similarities in natural and artificial intelligence systems. He seeks to understand and bridge the gaps between learned representations in humans and AI models, with a goal of developing AI models that align more closely with human semantic cognition."
-
   - name: "Wasita Mahaphanit"
     role: "Lab Affilates"
-    order: 99
+    order: 3
     website: "https://wasita.space/"
     image: "/images/people/wasita.jpg"
     bio: "Wasita earned a BS in Cognitive Neuroscience from Brown University. Currently a Ph.D. student at Dartmouth with Luke Chang, she collaborates with Robert Hawkins and Jonathan Phillips. Her research focuses on how people collaboratively make sense of others and their shared experiences. She employs real-time multi-user web experiments, natural language processing, and computational modeling. Outside of research, Wasita enjoys playing video games (currently: Baldur's Gate 3) and practicing aerial hoop/pole."
 
 alumni:
+  - name: "Van Tran"
+    year: 2025
+    order: 4
+    website: "https://www.linkedin.com/in/van-tran-05a1471aa/"
+    note: "Van Tran (Undergraduate Research Assistant, 2024-2025)"
+
+  - name: "Ben Plum"
+    year: 2025
+    order: 4
+    note: "Ben Plum (Undergraduate Research Assistant, 2024-2025)"
+
+  - name: "Isaiah Zhou"
+    year: 2025
+    order: 4
+    note: "Isaiah Zhou (Undergraduate Research Assistant, 2024-2025)"
+
+  - name: "Senyi Yang"
+    year: 2025
+    order: 4
+    website: "https://linkedin.com/in/senyi"
+    note: "Senyi Yang (Undergraduate Research Assistant, 2024-2025)"
+
+  - name: "Clementine Zimnicki"
+    year: 2025
+    order: 4
+    website: "https://clementinezimnicki.github.io/"
+    note: "Clementine Zimnicki (Lab Affiliate, 2023-2025)"
+
+  - name: "Sean Yun-Shiuan Chuang"
+    year: 2025
+    order: 4
+    website: "https://yunshiuan.github.io/"
+    note: "Sean Yun-Shiuan Chuang (Lab Affiliate, 2023-2025)"
+
+  - name: "Siddharth Suresh"
+    year: 2025
+    order: 4
+    website: "https://www.sidsuresh.com"
+    note: "Siddharth Suresh (Lab Affiliate, 2023-2025)"
+
   - name: "Yuliya Zubak"
     year: 2025
     order: 3

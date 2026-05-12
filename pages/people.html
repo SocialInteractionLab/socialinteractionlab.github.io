@@ -54,13 +54,21 @@ featured_image: /images/monstera3.jpg
               {% if sorted_group.size == 1 %}
                 <li class="file-list__item1">
                   <div class="image-container1">
-                    <a href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">
+                    {% if person.website %}
+                      <a href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">
+                        <img src="{{ person.image }}" class="image" alt="Photo of {{ person.name }}" />
+                      </a>
+                    {% else %}
                       <img src="{{ person.image }}" class="image" alt="Photo of {{ person.name }}" />
-                    </a>
+                    {% endif %}
                   </div>
                   <div class="file-list__bio1">
                     <p class="file-list__title">
-                      <a class="file-list__link" href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;"><strong>{{ person.name }}</strong></a>
+                      {% if person.website %}
+                        <a class="file-list__link" href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;"><strong>{{ person.name }}</strong></a>
+                      {% else %}
+                        <strong>{{ person.name }}</strong>
+                      {% endif %}
                     </p>
                     {{ person.bio | markdownify }}
                   </div>
@@ -68,12 +76,20 @@ featured_image: /images/monstera3.jpg
               {% else %}
                 <li class="file-list__item">
                   <div class="image-container">
-                    <a href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">
+                    {% if person.website %}
+                      <a href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">
+                        <img src="{{ person.image }}" class="image" alt="Photo of {{ person.name }}" />
+                      </a>
+                    {% else %}
                       <img src="{{ person.image }}" class="image" alt="Photo of {{ person.name }}" />
-                    </a>
+                    {% endif %}
                   </div>
                   <p class="file-list__role-title">
-                    <a class="file-list__link" href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.name }}</a>
+                    {% if person.website %}
+                      <a class="file-list__link" href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.name }}</a>
+                    {% else %}
+                      {{ person.name }}
+                    {% endif %}
                   </p>
                   <div class="file-list__bio">
                     {{ person.bio | markdownify }}
