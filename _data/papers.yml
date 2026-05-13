@@ -7,19 +7,29 @@
   image: "/images/papers/generalized_shared_reality.png"
   themes: [social, conversation]
 
+- title: "Gesturing toward abstraction: Multimodal convention formation in collaborative physical tasks"
+  year: "2026"
+  journal: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems"
+  authors: "Maeda, K., McCarthy, W. P., Tsai, C-Y., Mu, J., Wang, H., Hawkins, R. D., Fan, J. E., & Abtahi, P."
+  url: "https://arxiv.org/abs/2602.08914"
+  materials: "https://multimodal-conventions.github.io/"
+  image: "/images/papers/GesturingAbstraction.png"
+  themes: [convention, conversation, visual]
+
+- title: "Asking the right questions? What people learn about strangers in conversation"
+  year: "2026"
+  journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
+  authors: "Brockbank, E., Dee, N. R., O'Keeffe, M., Mahaphanit, W., Gerstenberg, T., Fan, J. E., & Hawkins, R. D."
+  url: "https://osf.io/preprints/psyarxiv/rxq5u_v1"
+  materials: "https://github.com/erik-brockbank/traits_from_conversation_cogsci_2026"
+  image: "/images/papers/traits_from_conversation.png"
+  themes: [pragmatics, social, conversation]
+
 - title: "When precision pays: Costs, benefits, and constraints in good-enough production"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Mankewitz, J., Zettersten, M., Jacobs, C., & Hawkins, R. D."
   themes: [pragmatics]
-
-- title: "When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation"
-  year: "2026"
-  journal: "Proceedings of the Association for Computational Linguistics (ACL)"
-  authors: "Kapur, R., Hawkins, R. D., & Kreiss, E."
-  url: "https://arxiv.org/abs/2601.04609"
-  image: "/images/papers/MoreWordsLess.png"
-  themes: [ai, pragmatics]
 
 - title: "The socio-pragmatic function of linguistic complexity in the domain of law"
   year: "2026"
@@ -63,15 +73,6 @@
   authors: "Kuang, J., Brockbank, E., Bicchieri, C., & Hawkins, R. D."
   themes: [convention]
 
-- title: "Gesturing toward abstraction: Multimodal convention formation in collaborative physical tasks"
-  year: "2026"
-  journal: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems"
-  authors: "Maeda, K., McCarthy, W. P., Tsai, C-Y., Mu, J., Wang, H., Hawkins, R. D., Fan, J. E., & Abtahi, P."
-  url: "https://arxiv.org/abs/2602.08914"
-  materials: "https://multimodal-conventions.github.io/"
-  image: "/images/papers/GesturingAbstraction.png"
-  themes: [convention, conversation, visual]
-
 - title: "From idiosyncratic narratives to social scripts: Mapping the semantic space of self-descriptions in children and adults"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
@@ -90,20 +91,25 @@
   authors: "Mankewitz, J., Collins, K. M., Tenenbaum, J. T., Griffiths, T., & Hawkins, R. D."
   themes: [convention]
 
-- title: "Asking the right questions? What people learn about strangers in conversation"
-  year: "2026"
-  journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
-  authors: "Brockbank, E., Dee, N. R., O'Keeffe, M., Mahaphanit, W., Gerstenberg, T., Fan, J. E., & Hawkins, R. D."
-  url: "https://osf.io/preprints/psyarxiv/rxq5u_v1"
-  materials: "https://github.com/erik-brockbank/traits_from_conversation_cogsci_2026"
-  image: "/images/papers/traits_from_conversation.png"
-  themes: [pragmatics, social, conversation]
-
 - title: "Act or clarify? Modeling sensitivity to uncertainty and cost in communication"
   year: "2026"
   journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
   authors: "Tsvilodub, P., Mulligan, K., Snider, T., Hawkins, R. D., & Franke, M."
   themes: [pragmatics]
+
+- title: "A utility-based account of the choice of constituent question polarity"
+  year: "2026"
+  journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
+  authors: "Lee, S-Y., & Hawkins, R. D."
+  themes: [pragmatics]
+
+- title: "When More Words Say Less: Decoupling Length and Informativity in Image Description Evaluation"
+  year: "2026"
+  journal: "Proceedings of the Association for Computational Linguistics (ACL)"
+  authors: "Kapur, R., Hawkins, R. D., & Kreiss, E."
+  url: "https://arxiv.org/abs/2601.04609"
+  image: "/images/papers/MoreWordsLess.png"
+  themes: [ai, pragmatics]
 
 - title: "Accommodation and epistemic vigilance: A pragmatic account of why LLMs fail to challenge harmful beliefs"
   year: "2026"
@@ -113,58 +119,30 @@
   image: "/images/papers/AccommodationEpistemicVigilance.png"
   themes: [pragmatics, ai]
 
-- title: "A utility-based account of the choice of constituent question polarity"
-  year: "2026"
-  journal: "Proceedings of the 48th Annual Conference of the Cognitive Science Society"
-  authors: "Lee, S-Y., & Hawkins, R. D."
-  themes: [pragmatics]
-
-- title: "Using LLMs to advance the cognitive science of collectives"
+- title: "Evaluating distillation methods for data-efficient syntax learning"
   year: "2025"
-  journal: "Nature Computational Science"
-  authors: "Sucholutsky, I., Collins, K. M., Jacoby, N., Thompson, B. D., & Hawkins, R. D."
-  url: "https://arxiv.org/abs/2506.00052"
-  image: "/images/papers/LLMsCollectives.png"
-  themes: [ai, social]
+  journal: "Findings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  authors: "Yamakoshi, T., Griffiths, T. L., McCoy, R. T., & Hawkins, R. D."
+  url: "https://aclanthology.org/2025.findings-emnlp.801/"
+  image: "/images/papers/EvaluatingDistillation.png"
+  themes: [ai, methods]
 
-- title: "Two paths to variation in semantic judgments: How ambiguity and conceptual diversity drive individual differences in meaning"
+- title: "Comparing human and LLM politeness strategies in free production"
   year: "2025"
-  journal: "Proceedings of the 47th Annual Meeting of the Cognitive Science Society"
-  authors: "Liu, D., Marjieh, R., Jacoby, N., & Hawkins, R. D."
-  url: "https://escholarship.org/uc/item/9mt887ck"
-  materials: "https://github.com/AuroraLiuDi/TwoIndividualDiff.git"
-  image: "/images/papers/SemanticJudgments.png"
-  themes: [pragmatics]
+  journal: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  authors: "Zhao, H., & Hawkins, R. D."
+  url: "https://aclanthology.org/2025.emnlp-main.820/"
+  materials: "https://github.com/haoranzhao419/politeness-speech-production"
+  image: "/images/papers/LLMPoliteness.png"
+  themes: [ai, pragmatics]
 
-- title: "Testing the roles of passive isolation and active social motivation in lexical variation using experimental microsocieties"
-  year: "2025"
-  journal: "Submitted"
-  authors: "Chen, A. M., Saxe, R., & Hawkins, R. D."
-  themes: [convention, social]
-
-- title: "Signaling social identity in referential communication"
+- title: "Ad hoc conventions generalize to new referents"
   year: "2025"
   journal: "Under review"
-  authors: "Chen, A. M., Hawkins, R. D., & Saxe, R."
-  themes: [social, convention]
-
-- title: "Relevant answers to polar questions"
-  year: "2025"
-  journal: "Philosophical Transactions of the Royal Society B"
-  authors: "Hawkins, R. D., Tsvilodub, P., Bergey, C. A., Goodman, N. D., & Franke, M."
-  url: "https://arxiv.org/abs/2305.07151"
-  materials: "https://tinyurl.com/42krksx7"
-  image: "/images/papers/PolarQuestions.png"
-  themes: [pragmatics]
-
-- title: "Minding the politeness gap in cross-cultural communication"
-  year: "2025"
-  journal: "Proceedings of the 47th Annual Conference of the Cognitive Science Society"
-  authors: "Machino, Y., Hofer, M., Siegel, M., Tenenbaum, J. B., & Hawkins, R. D."
-  url: "https://arxiv.org/abs/2506.15623"
-  materials: "https://github.com/yukam997/PolitenessAcrossCultures"
-  image: "/images/papers/PolitenessGap.png"
-  themes: [pragmatics, social]
+  authors: "Ji, A., Bergey, C. A., Eliav, R., Artzi, Y., & Hawkins, R. D."
+  url: "https://arxiv.org/abs/2509.05566"
+  image: "/images/papers/AdHocConventions.png"
+  themes: [convention]
 
 - title: "Lexical search and social reasoning jointly explain communication in associative reference games"
   year: "2025"
@@ -176,6 +154,31 @@
   context: "Selected as Editor's Choice. Vol. 154(9), 2361–2385. An earlier iteration of this work appeared in the Proceedings of the 43rd Annual Conference of the Cognitive Science Society."
   themes: [convention, social]
 
+- title: "Core Knowledge Deficits in Multi-Modal Language Models"
+  year: "2025"
+  journal: "ICML"
+  authors: "Li, Y., Gao, Q., Zhao, T., Wang, B., Sun, H., Lyu, H., Hawkins, R. D., Vasconcelos, N., et al."
+  url: "https://arxiv.org/abs/2410.10855"
+  image: "/images/papers/CoreKnowledge.png"
+  themes: [ai]
+
+- title: "Using LLMs to advance the cognitive science of collectives"
+  year: "2025"
+  journal: "Nature Computational Science"
+  authors: "Sucholutsky, I., Collins, K. M., Jacoby, N., Thompson, B. D., & Hawkins, R. D."
+  url: "https://arxiv.org/abs/2506.00052"
+  image: "/images/papers/LLMsCollectives.png"
+  themes: [ai, social]
+
+- title: "Minding the politeness gap in cross-cultural communication"
+  year: "2025"
+  journal: "Proceedings of the 47th Annual Conference of the Cognitive Science Society"
+  authors: "Machino, Y., Hofer, M., Siegel, M., Tenenbaum, J. B., & Hawkins, R. D."
+  url: "https://arxiv.org/abs/2506.15623"
+  materials: "https://github.com/yukam997/PolitenessAcrossCultures"
+  image: "/images/papers/PolitenessGap.png"
+  themes: [pragmatics, social]
+
 - title: "Integrating neural and symbolic components in a model of pragmatic question-answering"
   year: "2025"
   journal: "SCiL"
@@ -183,6 +186,15 @@
   url: "https://arxiv.org/abs/2506.01474"
   image: "/images/papers/IntegratingNeuralSymbolic.png"
   themes: [ai, pragmatics]
+
+- title: "Dynamics of topic exploration in conversation"
+  year: "2025"
+  journal: "Proceedings of the 47th Annual Conference of the Cognitive Science Society"
+  authors: "Schmidt, H., Bergey, C. A., Zhou, C., Helion, C., & Hawkins, R. D."
+  url: "https://escholarship.org/uc/item/15d3808f"
+  materials: "https://github.com/SocialInteractionLab/Candor"
+  image: "/images/papers/TopicDynamics.png"
+  themes: [conversation]
 
 - title: "How do we get to know someone? Diagnostic questions for inferring personal traits"
   year: "2025"
@@ -202,6 +214,24 @@
   image: "/images/papers/FunctionShapesForm.png"
   themes: [convention]
 
+- title: "Two paths to variation in semantic judgments: How ambiguity and conceptual diversity drive individual differences in meaning"
+  year: "2025"
+  journal: "Proceedings of the 47th Annual Meeting of the Cognitive Science Society"
+  authors: "Liu, D., Marjieh, R., Jacoby, N., & Hawkins, R. D."
+  url: "https://escholarship.org/uc/item/9mt887ck"
+  materials: "https://github.com/AuroraLiuDi/TwoIndividualDiff.git"
+  image: "/images/papers/SemanticJudgments.png"
+  themes: [pragmatics]
+
+- title: "Relevant answers to polar questions"
+  year: "2025"
+  journal: "Philosophical Transactions of the Royal Society B"
+  authors: "Hawkins, R. D., Tsvilodub, P., Bergey, C. A., Goodman, N. D., & Franke, M."
+  url: "https://arxiv.org/abs/2305.07151"
+  materials: "https://tinyurl.com/42krksx7"
+  image: "/images/papers/PolarQuestions.png"
+  themes: [pragmatics]
+
 - title: "Experimentology: An open science approach to experimental psychology methods"
   year: "2025"
   journal: "MIT Press"
@@ -209,53 +239,23 @@
   url: "https://books.google.com/books?hl=en&lr=&id=gyUmEQAAQBAJ&oi=fnd&pg=PA5&ots=2JWRSwKMEc&sig=VQ7xP3MXs_3Mr1vlkRQm7mdmp7I#v=onepage&q&f=false"
   themes: [methods]
 
-- title: "Evaluating distillation methods for data-efficient syntax learning"
-  year: "2025"
-  journal: "Findings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
-  authors: "Yamakoshi, T., Griffiths, T. L., McCoy, R. T., & Hawkins, R. D."
-  url: "https://aclanthology.org/2025.findings-emnlp.801/"
-  image: "/images/papers/EvaluatingDistillation.png"
-  themes: [ai, methods]
-
-- title: "Dynamics of topic exploration in conversation"
-  year: "2025"
-  journal: "Proceedings of the 47th Annual Conference of the Cognitive Science Society"
-  authors: "Schmidt, H., Bergey, C. A., Zhou, C., Helion, C., & Hawkins, R. D."
-  url: "https://escholarship.org/uc/item/15d3808f"
-  materials: "https://github.com/SocialInteractionLab/Candor"
-  image: "/images/papers/TopicDynamics.png"
-  themes: [conversation]
-
-- title: "Core Knowledge Deficits in Multi-Modal Language Models"
-  year: "2025"
-  journal: "ICML"
-  authors: "Li, Y., Gao, Q., Zhao, T., Wang, B., Sun, H., Lyu, H., Hawkins, R. D., Vasconcelos, N., et al."
-  url: "https://arxiv.org/abs/2410.10855"
-  image: "/images/papers/CoreKnowledge.png"
-  themes: [ai]
-
-- title: "Comparing human and LLM politeness strategies in free production"
-  year: "2025"
-  journal: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
-  authors: "Zhao, H., & Hawkins, R. D."
-  url: "https://aclanthology.org/2025.emnlp-main.820/"
-  materials: "https://github.com/haoranzhao419/politeness-speech-production"
-  image: "/images/papers/LLMPoliteness.png"
-  themes: [ai, pragmatics]
-
 - title: "Collective inference depends on the communication channel"
   year: "2025"
   journal: "Under review"
   authors: "Zubak, Y., & Hawkins, R. D."
   themes: [social]
 
-- title: "Ad hoc conventions generalize to new referents"
+- title: "Testing the roles of passive isolation and active social motivation in lexical variation using experimental microsocieties"
+  year: "2025"
+  journal: "Submitted"
+  authors: "Chen, A. M., Saxe, R., & Hawkins, R. D."
+  themes: [convention, social]
+
+- title: "Signaling social identity in referential communication"
   year: "2025"
   journal: "Under review"
-  authors: "Ji, A., Bergey, C. A., Eliav, R., Artzi, Y., & Hawkins, R. D."
-  url: "https://arxiv.org/abs/2509.05566"
-  image: "/images/papers/AdHocConventions.png"
-  themes: [convention]
+  authors: "Chen, A. M., Hawkins, R. D., & Saxe, R."
+  themes: [social, convention]
 
 - title: "When and why does shared reality generalize?"
   year: "2024"
