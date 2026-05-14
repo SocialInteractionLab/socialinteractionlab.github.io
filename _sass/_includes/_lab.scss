@@ -181,11 +181,40 @@
   }
 }
 
+.alum-details {
+  max-width: 1600px;
+  margin: 0 auto 40px auto;
+}
+
+.alum-summary {
+  font-size: 1.4rem;
+  font-weight: $h2-weight;
+  color: $text-dark-color;
+  text-align: left;
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 0;
+  margin-bottom: 8px;
+  user-select: none;
+
+  &::-webkit-details-marker { display: none; }
+
+  &::after {
+    content: " ▾";
+    font-size: 0.9rem;
+    opacity: 0.5;
+  }
+
+  details[open] > &::after {
+    content: " ▴";
+  }
+}
+
 .alum-list {
   list-style: none;
   padding-left: 0;
   max-width: 1600px;
-  margin: 20px auto 40px auto;
+  margin: 10px auto 20px auto;
   text-align: left;
 }
 

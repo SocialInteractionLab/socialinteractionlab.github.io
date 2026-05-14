@@ -147,77 +147,77 @@ current:
 alumni:
   - name: "Van Tran"
     year: 2025
-    order: 4
+    role: "Undergraduate Research Assistant"
     website: "https://www.linkedin.com/in/van-tran-05a1471aa/"
-    note: "Van Tran (Undergraduate Research Assistant, 2024-2025)"
+    note: "Van Tran (2024-2025)"
 
   - name: "Ben Plum"
     year: 2025
-    order: 4
-    note: "Ben Plum (Undergraduate Research Assistant, 2024-2025)"
+    role: "Undergraduate Research Assistant"
+    note: "Ben Plum (2024-2025)"
 
   - name: "Isaiah Zhou"
     year: 2025
-    order: 4
-    note: "Isaiah Zhou (Undergraduate Research Assistant, 2024-2025)"
+    role: "Undergraduate Research Assistant"
+    note: "Isaiah Zhou (2024-2025)"
 
   - name: "Senyi Yang"
     year: 2025
-    order: 4
+    role: "Undergraduate Research Assistant"
     website: "https://linkedin.com/in/senyi"
-    note: "Senyi Yang (Undergraduate Research Assistant, 2024-2025)"
+    note: "Senyi Yang (2024-2025)"
 
   - name: "Clementine Zimnicki"
     year: 2025
-    order: 4
+    role: "Lab Affiliate"
     website: "https://clementinezimnicki.github.io/"
-    note: "Clementine Zimnicki (Lab Affiliate, 2023-2025)"
+    note: "Clementine Zimnicki (2023-2025)"
 
   - name: "Sean Yun-Shiuan Chuang"
     year: 2025
-    order: 4
+    role: "Lab Affiliate"
     website: "https://yunshiuan.github.io/"
-    note: "Sean Yun-Shiuan Chuang (Lab Affiliate, 2023-2025)"
+    note: "Sean Yun-Shiuan Chuang (2023-2025)"
 
   - name: "Siddharth Suresh"
     year: 2025
-    order: 4
+    role: "Lab Affiliate"
     website: "https://www.sidsuresh.com"
-    note: "Siddharth Suresh (Lab Affiliate, 2023-2025)"
+    note: "Siddharth Suresh (2023-2025)"
 
   - name: "Yuliya Zubak"
     year: 2025
-    order: 3
+    role: "Lab Manager"
     website: "https://zubyul.github.io/"
-    note: "Yuliya Zubak (Lab Manager, 2023-2025) – Now a graduate student at Indiana University."
+    note: "Yuliya Zubak (2023-2025) – Now a graduate student at Indiana University."
 
   - name: "Abby Simon"
     year: 2025
-    order: 4
+    role: "Undergraduate Research Assistant"
     website: "https://www.linkedin.com/in/abigail-simon-3298531a3/"
-    note: "Abby Simon (Undergraduate Research Assistant, 2024-2025)"
+    note: "Abby Simon (2024-2025)"
 
   - name: "Artem Lyu"
     year: 2025
-    order: 4
+    role: "Undergraduate Research Assistant"
     website: "https://www.linkedin.com/in/artem-lyu/"
-    note: "Artem Lyu (Undergraduate Research Assistant, 2024-2025)"
+    note: "Artem Lyu (2024-2025)"
 
   - name: "Pranav Dronavalli"
     year: 2025
-    order: 4
+    role: "Undergraduate Research Assistant"
     website: "https://www.dronavalli.dev/"
-    note: "Pranav Dronavalli (Undergraduate Research Assistant, 2024-2025)"
+    note: "Pranav Dronavalli (2024-2025)"
 
   - name: "Jesse Yang"
     year: 2024
-    order: 4
+    role: "Undergraduate Research Assistant"
     website: "https://jesseyang1017.github.io/"
-    note: "Jesse Yang (Undergraduate Research Assistant, 2024)"
+    note: "Jesse Yang (2024)"
 
   - name: "Sarah Li"
     year: 2024
-    order: 4
+    role: "Undergraduate Research Assistant"
     website: "https://www.linkedin.com/in/sarah-biying-li"
-    note: "Sarah Li (Undergraduate Research Assistant, 2023-2024)"
+    note: "Sarah Li (2023-2024)"
 

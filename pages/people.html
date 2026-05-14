@@ -103,21 +103,30 @@ featured_image: /images/monstera3.jpg
     {% endfor %}
 
     <h2 class="groupname">Lab Alumni</h2>
-    {% assign alumni_by_year = site.data.team.alumni | group_by: "year" | sort: "name" | reverse %}
-    <ul class="alum-list">
-      {% for year_group in alumni_by_year %}
-        {% assign sorted_alumni = year_group.items | sort: "order" %}
-        {% for person in sorted_alumni %}
-          <li>
-            {% if person.website and person.website != "" %}
-              <a href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.note }}</a>
-            {% else %}
-              {{ person.note }}
-            {% endif %}
-          </li>
-        {% endfor %}
+    {% assign alumni_roles_priority = "Post-Doctoral Scholars,Lab Manager,PhD Students,Master's Students,Lab Affiliate,Undergraduate Research Assistant" | split: "," %}
+    {% assign alumni_by_role = site.data.team.alumni | group_by: "role" %}
+
+    {% for role_name in alumni_roles_priority %}
+      {% for group in alumni_by_role %}
+        {% if group.name == role_name %}
+          <details class="alum-details">
+            <summary class="alum-summary">{{ group.name }}s</summary>
+            {% assign sorted_alumni = group.items | sort: "year" | reverse %}
+            <ul class="alum-list">
+              {% for person in sorted_alumni %}
+                <li>
+                  {% if person.website and person.website != "" %}
+                    <a href="{{ person.website }}" onclick="window.open(this.href, '_blank'); return false;">{{ person.note }}</a>
+                  {% else %}
+                    {{ person.note }}
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endif %}
       {% endfor %}
-    </ul>
+    {% endfor %}
     
   </div>
 </section>
