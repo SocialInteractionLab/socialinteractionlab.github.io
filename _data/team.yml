@@ -30,7 +30,7 @@ current:
 
   - name: "Bran Papineau"
     role: "PhD Students"
-    order: 6
+    order: 7
     website: "https://branpap.com/"
     image: "/images/people/bran.jpg"
     bio: "I am a 6th year PhD candidate in the linguistics department at Stanford. My research focuses on the ways in which cognitive and social processes interact in language processing and production, with a special emphasis on gender and political ideology. When not dissertating, I can be found collaborating with friends on topics such as morphosyntactic variation, sociophonetic variation, and improving experimental methods. Outside of work, I enjoy reading (horror, especially), playing video games (tragically bad Zenyatta/Lifeweaver main), or hanging out with my dog (Dionysus)."
@@ -44,7 +44,7 @@ current:
 
   - name: "Jess Mankewitz"
     role: "PhD Students"
-    order: 5
+    order: 6
     website: "https://jmankewitz.com/"
     image: "/images/people/jess.jpg"
     bio: "Jess is interested in the way humans learn to communicate and interact with one another. They approach these questions using computational models, developmental experiments, and publicly available datasets. They are also affiliated with the [Infant Learning Lab](https://infantlearning.waisman.wisc.edu/). They graduated from UC Berkeley in 2020 with a B.A. in Cognitive Science and were the the Lab Manager for the Language and Cognition Lab at Stanford University prior to starting graduate school."
@@ -58,14 +58,14 @@ current:
 
   - name: "Selena She"
     role: "PhD Students"
-    order: 7
+    order: 8
     website: "https://selenashe.github.io/"
     image: "/images/people/selena.png"
     bio: "Selena is a first-year PhD student in Stanford’s Computer Science department. She is interested in how humans (and machines) understand and communicate with one another in goal-oriented settings. To study this, she combines tools from artificial intelligence and cognitive (neuro)science. Before Stanford, she graduated from Haverford College studying Math and Cognitive Science, then spent two years as a research assistant with Ev Fedorenko at MIT."
 
   - name: "Taka Yamakoshi"
     role: "PhD Students"
-    order: 8
+    order: 9
     website: "https://taka-yamakoshi.github.io/"
     image: "/images/people/taka.JPG"
     bio: "Taka is a first-year PhD student in the Computer Science Department at Stanford. His research goal is to understand the step-by-step computations that support language comprehension and production. To this end, he aims to develop computational models that are aligned to humans at both behavioral and algorithmic levels, using insights from cognitive science, linguistics, and neuroscience. Before coming to Stanford, he completed a medical degree from the University of Tokyo in 2025."
@@ -77,9 +77,15 @@ current:
     image: "/images/people/tilly_brooks.jpeg"
     bio: "From New Haven, CT, Tilly Brooks is a PhD student in the Stanford Department of Linguistics and JD candidate at Yale Law School.  She is interested in deontic modality, performative utterances, and the interface of law and linguistics.  Focusing both on the effects of law and policy decisions on marginalized linguistic communities and the application of linguistic theories, research methods, and tools to interpretive legal processes, Tilly researches what she calls “the law of language and the language of law.” In the long term, she aims to draw communities of legal scholars, linguists, and legal practitioners together with the common goals of advancing linguistic justice in the practice of law, refining the use of linguistic evidence and tools for law and policy purposes, and using the study of legal language to advance linguistic theory."
 
-  - name: "Yuka Machino"
+  - name: "Seo-young Lee"
     role: "PhD Students"
     order: 4
+    image: "/images/people/seoyoung_lee.jpg"
+    bio: "Seo-young is a PhD student (2025 admit) at Stanford Linguistics studying semantics and pragmatics. Broadly, she is interested in the question of how much of meaning is conventional/arbitrary and how much is rational/reasoned about. Narrowly, she has worked on phenomena related to questions (polarity preference, bias in English high negated questions) and modality (deontic possibility-to-necessity inference). She approaches these issues combining theoretical, computational, and experimental methodologies. Prior to joining Stanford, she recieved her BA in English, BS in Statistics, and MA in English Linguistics at Seoul National University. On a lucky day, you can catch her riding her unicycle around campus."
+
+  - name: "Yuka Machino"
+    role: "PhD Students"
+    order: 5
     image: "/images/people/yuka_machino.jpg"
     bio: "I am interested in how social factors shape communication. Using behavioral experiments and computational modeling, I am especially interested in understanding how cultural differences in values, common sense and ways of life, lead to differences in everyday interactions. Prior to starting grad school at Stanford in 2025, I completed my undergrad and master’s degrees at MIT. Outside of research I enjoy swimming, travelling, and doing math."
 
