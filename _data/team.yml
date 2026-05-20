@@ -22,11 +22,11 @@ current:
 
 
   - name: "Mary Rose Bell"
-    role: "Lab Manager"
+    role: "Research Staff"
     order: 4
     website: "https://www.linkedin.com/in/mary-rose-bell-14177b205"
     image: "/images/people/mary_rose_bell.jpg"
-    bio: "Mary Rose is the lab manager for the Life-span Development Lab, Social Interaction Lab, and a predoctoral researcher through the Stanford Institute for Research in the Social Sciences. She is broadly interested in the role of narrative and language in the emergence of collective phenomena, with a particular interest in how groups construct and revise collective memories. She graduated in 2024 from Washington University in St. Louis with a B.A. in English and Philosophy-Neuroscience-Psychology. Outside of the lab, she enjoys playing soccer, reading Irish literature, and hiking."
+    bio: "Mary Rose is a post-bacc researcher working with the Life-span Development Lab and Social Interaction Lab, and a predoctoral researcher through the Stanford Institute for Research in the Social Sciences. She is broadly interested in the role of narrative and language in the emergence of collective phenomena, with a particular interest in how groups construct and revise collective memories. She graduated in 2024 from Washington University in St. Louis with a B.A. in English and Philosophy-Neuroscience-Psychology. Outside of the lab, she enjoys playing soccer, reading Irish literature, and hiking."
 
   - name: "Misha O’Keeffe"
     role: "Lab Manager"
@@ -154,41 +154,41 @@ current:
 alumni:
   - name: "Van Tran"
     year: 2025
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     website: "https://www.linkedin.com/in/van-tran-05a1471aa/"
     note: "Van Tran (2024-2025)"
 
   - name: "Ben Plum"
     year: 2025
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     note: "Ben Plum (2024-2025)"
 
   - name: "Isaiah Zhou"
     year: 2025
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     note: "Isaiah Zhou (2024-2025)"
 
   - name: "Senyi Yang"
     year: 2025
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     website: "https://linkedin.com/in/senyi"
     note: "Senyi Yang (2024-2025)"
 
   - name: "Clementine Zimnicki"
     year: 2025
-    role: "Lab Affiliate"
+    role: "Lab Affiliates"
     website: "https://clementinezimnicki.github.io/"
     note: "Clementine Zimnicki (2023-2025)"
 
   - name: "Sean Yun-Shiuan Chuang"
     year: 2025
-    role: "Lab Affiliate"
+    role: "Lab Affiliates"
     website: "https://yunshiuan.github.io/"
     note: "Sean Yun-Shiuan Chuang (2023-2025)"
 
   - name: "Siddharth Suresh"
     year: 2025
-    role: "Lab Affiliate"
+    role: "Lab Affiliates"
     website: "https://www.sidsuresh.com"
     note: "Siddharth Suresh (2023-2025)"
 
@@ -200,31 +200,31 @@ alumni:
 
   - name: "Abby Simon"
     year: 2025
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     website: "https://www.linkedin.com/in/abigail-simon-3298531a3/"
     note: "Abby Simon (2024-2025)"
 
   - name: "Artem Lyu"
     year: 2025
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     website: "https://www.linkedin.com/in/artem-lyu/"
     note: "Artem Lyu (2024-2025)"
 
   - name: "Pranav Dronavalli"
     year: 2025
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     website: "https://www.dronavalli.dev/"
     note: "Pranav Dronavalli (2024-2025)"
 
   - name: "Jesse Yang"
     year: 2024
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     website: "https://jesseyang1017.github.io/"
     note: "Jesse Yang (2024)"
 
   - name: "Sarah Li"
     year: 2024
-    role: "Undergraduate Research Assistant"
+    role: "Undergraduate Research Assistants"
     website: "https://www.linkedin.com/in/sarah-biying-li"
     note: "Sarah Li (2023-2024)"
 
