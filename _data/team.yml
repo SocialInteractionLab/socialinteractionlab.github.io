@@ -21,6 +21,13 @@ current:
     bio: "Yajun is interested in how speakers and listeners share the work of communication in real time. Her current research examines the cognitive and neural mechanisms that support this division of labor, and how diverse language experience may modulate these processes. Before joining the lab at Stanford, Yajun completed her PhD in Developmental Linguistics at the University of Edinburgh, where she studied how bilingual experience reshapes the way in which speakers use their native language, focusing on anaphoric reference and lexical ambiguity in spoken Mandarin."
 
 
+  - name: "Mary Rose Bell"
+    role: "Lab Manager"
+    order: 4
+    website: "https://www.linkedin.com/in/mary-rose-bell-14177b205"
+    image: "/images/people/mary_rose_bell.jpg"
+    bio: "Mary Rose is the lab manager for the Life-span Development Lab, Social Interaction Lab, and a predoctoral researcher through the Stanford Institute for Research in the Social Sciences. She is broadly interested in the role of narrative and language in the emergence of collective phenomena, with a particular interest in how groups construct and revise collective memories. She graduated in 2024 from Washington University in St. Louis with a B.A. in English and Philosophy-Neuroscience-Psychology. Outside of the lab, she enjoys playing soccer, reading Irish literature, and hiking."
+
   - name: "Misha O’Keeffe"
     role: "Lab Manager"
     order: 4
