@@ -37,7 +37,7 @@ current:
 
   - name: "Bran Papineau"
     role: "PhD Students"
-    order: 7
+    order: 8
     website: "https://branpap.com/"
     image: "/images/people/bran.jpg"
     bio: "I am a 6th year PhD candidate in the linguistics department at Stanford. My research focuses on the ways in which cognitive and social processes interact in language processing and production, with a special emphasis on gender and political ideology. When not dissertating, I can be found collaborating with friends on topics such as morphosyntactic variation, sociophonetic variation, and improving experimental methods. Outside of work, I enjoy reading (horror, especially), playing video games (tragically bad Zenyatta/Lifeweaver main), or hanging out with my dog (Dionysus)."
@@ -56,6 +56,13 @@ current:
     image: "/images/people/jess.jpg"
     bio: "Jess is interested in the way humans learn to communicate and interact with one another. They approach these questions using computational models, developmental experiments, and publicly available datasets. They are also affiliated with the [Infant Learning Lab](https://infantlearning.waisman.wisc.edu/). They graduated from UC Berkeley in 2020 with a B.A. in Cognitive Science and were the the Lab Manager for the Language and Cognition Lab at Stanford University prior to starting graduate school."
 
+  - name: "Büşra Marşan"
+    role: "PhD Students"
+    order: 7
+    website: "https://busramarsan.com"
+    image: "/images/people/busra_marsan.jpg"
+    bio: "Büşra is a PhD student (2023 admit) in Stanford's Linguistics Department. She is broadly interested in meaning in humans and machines, with a particular focus on the semantics and pragmatics of ambiguity. She also has a background in Turkish NLP. Prior to Stanford, she completed her BA and MA at Boğaziçi University. Outside of research, she enjoys reading, hiking, and finding the best local coffee shops."
+
   - name: "Ke Fang"
     role: "PhD Students"
     order: 2
@@ -65,14 +72,14 @@ current:
 
   - name: "Selena She"
     role: "PhD Students"
-    order: 8
+    order: 9
     website: "https://selenashe.github.io/"
     image: "/images/people/selena.png"
     bio: "Selena is a first-year PhD student in Stanford’s Computer Science department. She is interested in how humans (and machines) understand and communicate with one another in goal-oriented settings. To study this, she combines tools from artificial intelligence and cognitive (neuro)science. Before Stanford, she graduated from Haverford College studying Math and Cognitive Science, then spent two years as a research assistant with Ev Fedorenko at MIT."
 
   - name: "Taka Yamakoshi"
     role: "PhD Students"
-    order: 9
+    order: 10
     website: "https://taka-yamakoshi.github.io/"
     image: "/images/people/taka.JPG"
     bio: "Taka is a first-year PhD student in the Computer Science Department at Stanford. His research goal is to understand the step-by-step computations that support language comprehension and production. To this end, he aims to develop computational models that are aligned to humans at both behavioral and algorithmic levels, using insights from cognitive science, linguistics, and neuroscience. Before coming to Stanford, he completed a medical degree from the University of Tokyo in 2025."
