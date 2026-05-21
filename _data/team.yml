@@ -61,7 +61,10 @@ current:
     order: 7
     website: "https://busramarsan.com"
     image: "/images/people/busra_marsan.jpg"
-    bio: "Büşra is a PhD student (2023 admit) in Stanford's Linguistics Department. She is broadly interested in meaning in humans and machines, with a particular focus on the semantics and pragmatics of ambiguity. She also has a background in Turkish NLP. Prior to Stanford, she completed her BA and MA at Boğaziçi University. Outside of research, she enjoys reading, hiking, and finding the best local coffee shops."
+    bio: |
+      I am a PhD student in Linguistics at Stanford (2023 admit), where I study meaning in humans and machines. I am interested in how humans and large language models represent, compute, and reason with meaning, with a particular focus on ambiguity.
+      Before Stanford, I received my BA in Translation and MA in Linguistics from Boğaziçi University, where I worked on linguistic benchmarking and Turkish NLP resources, including Turkish PropBank, Turkish FrameNet, Turkish WordNet, and UD-style treebanks.
+      On a good day, you can find me overcaffeinated, hanging out with my cats, and playing video games.
 
   - name: "Ke Fang"
     role: "PhD Students"
