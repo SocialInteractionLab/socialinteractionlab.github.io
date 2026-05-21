@@ -73,9 +73,10 @@ open `_data/team.yml` and add an entry under `current:`. the `order` field contr
 
 **role options** (must match exactly, caps and all):
 - `Principal Investigator`
-- `Post-Doctoral Scholar`
-- `Lab Manager`
-- `Graduate Students`
+- `Post-Doctoral Scholars`
+- `Research Staff`
+- `PhD Students`
+- `Master's Students`
 - `Research Assistants`
 - `Lab Affilates`
 
@@ -86,12 +87,20 @@ headshots go in `images/people/`. square crop, ideally 300×300px or bigger.
 ```yaml
   - name: "Full Name"
     year: 2025
-    order: 1
+    role: "Research Staff"
     website: "https://..."
-    note: "Full Name (Role, 2023–2025)"
+    note: "Full Name (2023–2025)"
 ```
 
-`year` groups alumni by cohort (descending). `order` sorts within the year.
+**alumni role options** (must match exactly):
+- `Post-Doctoral Scholars`
+- `Research Staff`
+- `PhD Students`
+- `Master's Students`
+- `Lab Affiliates`
+- `Undergraduate Research Assistants`
+
+`year` controls sort order within each role group (descending — most recent first). `website` is optional; if omitted the name renders as plain text.
 
 ---
 
