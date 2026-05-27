@@ -28,12 +28,11 @@ current:
     image: "/images/people/mary_rose_bell.jpg"
     bio: "Mary Rose is a post-bacc researcher working with the Life-span Development Lab and Social Interaction Lab, and a predoctoral researcher through the Stanford Institute for Research in the Social Sciences. She is broadly interested in the role of narrative and language in the emergence of collective phenomena, with a particular interest in how groups construct and revise collective memories. She graduated in 2024 from Washington University in St. Louis with a B.A. in English and Philosophy-Neuroscience-Psychology. Outside of the lab, she enjoys playing soccer, reading Irish literature, and hiking."
 
-  - name: "Misha O’Keeffe"
+  - name: "Abi Tenenbaum"
     role: "Research Staff"
-    order: 4
-    website: "https://www.mishaokeeffe.com/"
-    image: "/images/people/misha.jpg"
-    bio: "As a recent graduate from UW-Madison (2024) with a background in physics, economics, and psychology, I'm really interested in how we think about other minds and pretty much everything that goes into this sort of reasoning. More recently, I've been interested in how we can model these sorts of things across development. Outside of the lab, I love being outdoors, reading, and spending time with friends. Feel free to connect with me via email (Mokeeffe@stanford.edu)!"
+    order: 5
+    image: "/images/people/abi_tenenbaum.jpg"
+    bio: "Most broadly, I enjoy thinking about the representational frames or models that we use to carve up the world and structure our actions within it: what makes a \"good\" conceptual system, how do we learn one, and how do we share it with others. I find especially fascinating the dynamics of simultaneous learning across multiple scales. As an undergraduate at Yale, I studied physics and worked with Tom McCoy on a project characterizing the nature of inductive biases in meta-learned neural networks. Outside of research, I sing with Kitka Women’s Vocal Ensemble and dance whenever I can."
 
   - name: "Bran Papineau"
     role: "PhD Students"
@@ -201,6 +200,12 @@ alumni:
     role: "Lab Affiliates"
     website: "https://www.sidsuresh.com"
     note: "Siddharth Suresh (2023-2025)"
+
+  - name: "Misha O'Keeffe"
+    year: 2026
+    role: "Research Staff"
+    website: "https://www.mishaokeeffe.com/"
+    note: "Misha O'Keeffe (2024-2026) – Now a graduate student at New York University."
 
   - name: "Yuliya Zubak"
     year: 2025
